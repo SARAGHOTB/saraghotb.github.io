@@ -516,12 +516,12 @@ nav a:hover {
     height: 320px;
   }
 
- .expertise-grid,
-.experience-grid,
-.capability-grid,
-.research-writing-grid {
-  grid-template-columns: 1fr;
-}
+   .expertise-grid,
+   .experience-grid,
+   .capability-grid,
+   .research-writing-grid {
+     grid-template-columns: 1fr;
+   }
 
   .section {
     padding: 75px 0;
@@ -573,7 +573,11 @@ nav a:hover {
   }
 
   .contact-section {
-    margin: 30px 0 60px;
-    padding: 35px 25px;
-  }
+   margin: 30px 0 60px;
+   padding: 45px 50px;
+
+   border-radius: 16px;
+
+   background: #f4f6f7;
+}
 }
