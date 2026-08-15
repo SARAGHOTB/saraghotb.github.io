@@ -504,11 +504,15 @@ nav a:hover {
 }
 
    .expertise-grid,
-   .experience-grid,
-   .capability-grid,
-   .research-writing-grid {
-     grid-template-columns: 1fr;
-   }
+.experience-grid,
+.research-writing-grid {
+  grid-template-columns: 1fr;
+}
+
+.toolkit-row {
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
 
   .section {
     padding: 75px 0;
