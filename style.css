@@ -377,36 +377,35 @@ nav a:hover {
    Technical Capabilities
 ========================= */
 
-.capability-grid {
+/* =========================
+   Technical Toolkit
+========================= */
+
+.toolkit {
+  margin-top: 38px;
+  border-top: 1px solid #e3e7ea;
+}
+
+.toolkit-row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  grid-template-columns: 190px 1fr;
+  gap: 30px;
 
-  margin-top: 45px;
+  padding: 22px 0;
+
+  border-bottom: 1px solid #e3e7ea;
 }
 
-.capability-group {
-  padding: 30px 0;
-
-  border-top: 2px solid #dfe4e8;
-}
-
-.capability-group h3 {
-  margin-bottom: 12px;
-
-  font-size: 1.15rem;
+.toolkit-row h3 {
+  font-size: 0.98rem;
   font-weight: 650;
-
   color: #111827;
 }
 
-.capability-group p {
-  max-width: 500px;
-
-  font-size: 0.98rem;
-  line-height: 1.75;
-
-  color: #5b6570;
+.toolkit-row p {
+  font-size: 0.94rem;
+  line-height: 1.65;
+  color: #66707a;
 }
 
 
