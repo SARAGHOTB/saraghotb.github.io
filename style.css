@@ -81,43 +81,52 @@ nav a:hover {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.35fr 0.65fr;
+  grid-template-columns: 1.45fr 0.55fr;
   align-items: center;
-  gap: 80px;
-  min-height: 570px;
-  padding: 80px 0 90px;
+  gap: 70px;
+
+  min-height: 500px;
+  padding: 70px 0 80px;
 }
 
 .eyebrow {
   margin-bottom: 20px;
+
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+
   color: #52616b;
 }
 
 .hero h1 {
   margin-bottom: 8px;
+
   font-size: clamp(3rem, 6vw, 5.2rem);
   line-height: 0.98;
   letter-spacing: -0.055em;
+
   color: #111827;
 }
 
 .hero h2 {
   margin-bottom: 30px;
+
   font-size: clamp(1.5rem, 3vw, 2.3rem);
   line-height: 1.2;
   font-weight: 500;
   letter-spacing: -0.025em;
+
   color: #52616b;
 }
 
 .hero-description {
   max-width: 700px;
+
   font-size: 1.15rem;
   line-height: 1.75;
+
   color: #4b5563;
 }
 
@@ -125,6 +134,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+
   margin-top: 36px;
 }
 
@@ -133,10 +143,14 @@ nav a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   padding: 13px 22px;
+
   border-radius: 8px;
+
   font-size: 0.95rem;
   font-weight: 600;
+
   transition:
     transform 0.2s ease,
     background 0.2s ease,
@@ -170,13 +184,16 @@ nav a:hover {
 }
 
 .hero-image img {
-  width: 190px;
-  height: 240px;
+  width: 145px;
+  height: 180px;
+
   object-fit: cover;
-  border-radius: 14px;
+
+  border-radius: 12px;
+
   box-shadow:
-    0 16px 35px rgba(17, 24, 39, 0.10),
-    0 5px 12px rgba(17, 24, 39, 0.05);
+    0 12px 28px rgba(17, 24, 39, 0.09),
+    0 4px 10px rgba(17, 24, 39, 0.04);
 }
 
 
@@ -194,10 +211,12 @@ nav a:hover {
 
 .section-label {
   margin-bottom: 14px;
+
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
+
   color: #667784;
 }
 
@@ -205,16 +224,20 @@ nav a:hover {
 .contact-section h2 {
   max-width: 800px;
   margin-bottom: 24px;
+
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.12;
   letter-spacing: -0.04em;
+
   color: #111827;
 }
 
 .section-intro {
   max-width: 760px;
+
   font-size: 1.05rem;
   line-height: 1.75;
+
   color: #5b6570;
 }
 
@@ -227,6 +250,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
+
   margin-top: 38px;
 }
 
@@ -254,6 +278,7 @@ nav a:hover {
 .expertise-card:hover {
   transform: translateY(-3px);
   border-color: #cfd6dc;
+
   box-shadow: 0 12px 28px rgba(17, 24, 39, 0.07);
 }
 
@@ -298,19 +323,24 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 55px;
+
   margin-top: 42px;
 }
 
 .experience-grid h3 {
   margin-bottom: 15px;
+
   font-size: 1.2rem;
+
   color: #111827;
 }
 
 .experience-grid p {
   margin-bottom: 16px;
+
   font-size: 0.98rem;
   line-height: 1.75;
+
   color: #5b6570;
 }
 
@@ -321,6 +351,7 @@ nav a:hover {
 
 .toolkit {
   margin-top: 38px;
+
   border-top: 1px solid #e3e7ea;
 }
 
@@ -338,12 +369,14 @@ nav a:hover {
 .toolkit-row h3 {
   font-size: 0.98rem;
   font-weight: 650;
+
   color: #111827;
 }
 
 .toolkit-row p {
   font-size: 0.94rem;
   line-height: 1.65;
+
   color: #66707a;
 }
 
@@ -356,6 +389,7 @@ nav a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+
   margin-top: 40px;
 }
 
@@ -370,26 +404,32 @@ nav a:hover {
 
 .research-writing-card h3 {
   margin-bottom: 12px;
+
   font-size: 1.15rem;
+
   color: #111827;
 }
 
 .research-writing-card p {
   margin-bottom: 16px;
+
   font-size: 0.95rem;
   line-height: 1.7;
+
   color: #5b6570;
 }
 
 .small-note {
   font-size: 0.82rem !important;
   font-weight: 600;
+
   color: #7a838b !important;
 }
 
 .text-link {
   font-size: 0.92rem;
   font-weight: 600;
+
   color: #315f9e;
 }
 
@@ -431,6 +471,7 @@ nav a:hover {
 .contact-links a {
   font-size: 0.95rem;
   font-weight: 600;
+
   color: #111827;
 }
 
@@ -455,6 +496,7 @@ nav a:hover {
 
 .footer p {
   font-size: 0.85rem;
+
   color: #7a838b;
 }
 
@@ -477,9 +519,10 @@ nav a:hover {
 
   .hero {
     grid-template-columns: 1fr;
-    gap: 45px;
+    gap: 38px;
+
     min-height: auto;
-    padding: 70px 0;
+    padding: 60px 0 65px;
   }
 
   .hero-image {
@@ -487,8 +530,8 @@ nav a:hover {
   }
 
   .hero-image img {
-    width: 190px;
-    height: 240px;
+    width: 145px;
+    height: 180px;
   }
 
   .expertise-grid,
@@ -531,7 +574,7 @@ nav a:hover {
   }
 
   .hero {
-    padding: 50px 0 60px;
+    padding: 45px 0 55px;
   }
 
   .hero h1 {
@@ -547,8 +590,8 @@ nav a:hover {
   }
 
   .hero-image img {
-    width: 170px;
-    height: 215px;
+    width: 130px;
+    height: 165px;
   }
 
   .section {
