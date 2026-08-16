@@ -62,7 +62,7 @@
       </section>
 
 
-      <!-- Introduction -->
+      <!-- Why It Matters -->
       <section class="section">
 
         <p class="section-label">
@@ -94,7 +94,7 @@
           <p>
             What makes nanofabrication interesting to me is exactly this
             interaction between physics and process integration. A process
-            rarely fails because one tool simply "does not work." More often,
+            rarely fails because one tool simply “does not work.” More often,
             the final result reflects how multiple steps interact across the
             complete fabrication flow.
           </p>
@@ -103,255 +103,278 @@
 
       </section>
 
-<!-- EBL -->
-<section class="section">
 
-  <p class="section-label">
-    Lithography
-  </p>
+      <!-- EBL -->
+      <section class="section">
 
-  <h2>
-    Electron-beam lithography
-  </h2>
+        <p class="section-label">
+          Lithography
+        </p>
 
-  <div class="content-narrow">
+        <h2>
+          Electron-beam lithography
+        </h2>
 
-    <p>
-      Electron-beam lithography, or EBL, is one of the most versatile tools
-      for defining nanoscale patterns. A focused electron beam is scanned
-      across an electron-sensitive resist according to a digital pattern.
-      After development, the exposed resist acts either as the final mask
-      or as an intermediate layer for subsequent etching, deposition,
-      lift-off, or pattern transfer.
-    </p>
+        <div class="content-narrow">
 
-    <p>
-      What makes EBL particularly useful is not only its resolution, but also
-      the ability to write arbitrary geometries without a physical mask.
-      This makes it well suited to research-scale device fabrication,
-      alignment-sensitive structures, rapid design iteration, and patterns
-      where feature size approaches the limits of optical lithography.
-    </p>
+          <p>
+            Electron-beam lithography, or EBL, is one of the most versatile
+            techniques for defining nanoscale patterns. A focused electron beam
+            is scanned across an electron-sensitive resist according to a
+            digital pattern. After development, the resist becomes either the
+            final mask or an intermediate layer for etching, deposition,
+            lift-off, or further pattern transfer.
+          </p>
 
-  </div>
+          <p>
+            What makes EBL especially useful is not only its resolution, but
+            also the ability to write arbitrary geometries without a physical
+            mask. This makes it well suited to research-scale device
+            fabrication, alignment-sensitive structures, rapid design
+            iteration, and patterns where feature size approaches the limits
+            of optical lithography.
+          </p>
 
-
-  <div class="content-grid">
-
-    <div>
-
-      <h3>
-        Resolution is a process property
-      </h3>
-
-      <p>
-        The resolution of EBL is often associated with the nominal beam size,
-        but the final feature is determined by the complete process. Electron
-        scattering, resist chemistry, resist thickness, exposure dose,
-        development conditions, substrate composition, and pattern density
-        all influence the dimensions that remain after development.
-      </p>
-
-      <p>
-        A tool capable of producing a very small beam therefore does not
-        automatically guarantee that every resist stack or pattern geometry
-        can reproduce the same minimum feature size.
-      </p>
-
-    </div>
+        </div>
 
 
-    <div class="note-card">
+        <div class="content-grid">
 
-      <p class="note-title">
-        A useful way to think about EBL
-      </p>
+          <div>
 
-      <p>
-        The question is not simply:
-        <strong>How small can the beam write?</strong>
-      </p>
+            <h3>
+              Resolution is a process property
+            </h3>
 
-      <p>
-        The more useful question is:
-        <strong>
-          Can the complete lithography and pattern-transfer process reproduce
-          the required structure reliably?
-        </strong>
-      </p>
+            <p>
+              EBL resolution is often associated with the nominal beam size,
+              but the final feature is determined by the entire process.
+              Electron scattering, resist chemistry, resist thickness,
+              exposure dose, development conditions, substrate composition,
+              and local pattern density all influence the dimensions that
+              remain after development.
+            </p>
 
-    </div>
+            <p>
+              A tool capable of producing a very small beam therefore does not
+              automatically guarantee that every resist stack or pattern
+              geometry can reproduce the same minimum feature size.
+            </p>
 
-  </div>
-
-
-  <div class="topic-block">
-
-    <h3>
-      Positive and negative resists
-    </h3>
-
-    <p>
-      In a positive resist, the exposed regions become more soluble in the
-      developer and are removed. In a negative resist, exposure causes the
-      written regions to become less soluble, so the exposed material remains.
-    </p>
-
-    <p>
-      The choice between them depends on the application rather than one being
-      universally better. Important considerations include achievable
-      resolution, sensitivity, resist thickness, etch resistance, pattern
-      density, lift-off geometry, process compatibility, and total writing time.
-    </p>
-
-    <p>
-      For lift-off processes, the resist profile can be as important as the
-      nominal feature size because the deposited film must remain discontinuous
-      across the resist sidewall. For an etch mask, plasma resistance and
-      selectivity may become the dominant considerations instead.
-    </p>
-
-  </div>
+          </div>
 
 
-  <div class="topic-block">
+          <div class="note-card">
 
-    <h3>
-      Dose and process window
-    </h3>
+            <p class="note-title">
+              A useful way to think about EBL
+            </p>
 
-    <p>
-      Exposure dose determines how much electron energy is delivered to the
-      resist. Too little dose can leave features incompletely developed or
-      undersized, while excessive dose can broaden features, close small gaps,
-      or increase the influence of proximity effects.
-    </p>
+            <p>
+              The question is not simply:
+              <strong>How small can the beam write?</strong>
+            </p>
 
-    <p>
-      In practice, an EBL process is usually developed through dose testing
-      rather than relying on a single nominal value. The goal is not simply to
-      find one dose that works, but to identify a useful process window where
-      the required dimensions remain stable despite small variations in
-      exposure or development.
-    </p>
+            <p>
+              The more useful question is:
+              <strong>
+                Can the complete lithography and pattern-transfer process
+                reproduce the required structure reliably?
+              </strong>
+            </p>
 
-  </div>
+          </div>
 
-
-  <div class="topic-block">
-
-    <h3>
-      Proximity effects
-    </h3>
-
-    <p>
-      Electrons do not deposit all of their energy exactly where the beam enters
-      the resist. Forward scattering broadens the beam as electrons travel
-      through the resist, while electrons that penetrate the substrate can
-      backscatter and expose surrounding regions.
-    </p>
-
-    <p>
-      As a result, dense and isolated structures can receive different
-      effective doses even when the nominal writing dose is identical.
-      Proximity effects can alter line width, spacing, corner definition,
-      and the uniformity of repeated features.
-    </p>
-
-    <p>
-      This becomes particularly important when a pattern contains regions with
-      very different local densities. Dose correction, geometry adjustment,
-      resist choice, substrate effects, and development conditions may all
-      become part of the optimization.
-    </p>
-
-  </div>
+        </div>
 
 
-  <div class="topic-block">
+        <div class="topic-block">
 
-    <h3>
-      Development is part of the lithography process
-    </h3>
+          <h3>
+            Positive and negative resists
+          </h3>
 
-    <p>
-      Exposure changes the chemistry of the resist, but development determines
-      which part of that modified resist actually remains on the sample.
-      Developer composition, time, temperature, agitation, rinse conditions,
-      and resist thickness can therefore change the final critical dimension
-      and profile.
-    </p>
+          <p>
+            In a positive resist, the exposed regions become more soluble in
+            the developer and are removed. In a negative resist, exposure
+            causes the written regions to become less soluble, so the exposed
+            material remains.
+          </p>
 
-    <p>
-      I find it more useful to treat exposure and development as one coupled
-      process rather than optimizing them independently.
-    </p>
+          <p>
+            The choice depends on the application rather than one resist type
+            being universally better. Important considerations include
+            achievable resolution, sensitivity, resist thickness, etch
+            resistance, pattern density, lift-off geometry, process
+            compatibility, and writing time.
+          </p>
 
-  </div>
-
-
-  <div class="experience-note">
-
-    <p class="note-title">
-      From my cleanroom experience
-    </p>
-
-    <p>
-      I have used EBL for nanoscale device fabrication where the written resist
-      pattern was only one part of the final requirement. The process also had
-      to support subsequent etching, metallization, or lift-off while preserving
-      the intended geometry.
-    </p>
-
-    <p>
-      In practice, this means I pay particular attention to resist thickness,
-      dose, feature density, development quality, alignment, and how the resist
-      will behave during the next fabrication step.
-    </p>
-
-  </div>
+        </div>
 
 
-  <div class="failure-grid">
+        <div class="failure-grid">
 
-    <div class="failure-card">
-      <h3>Feature broadening</h3>
-      <p>
-        Possible causes include excessive dose, proximity effects,
-        over-development, or a resist stack that is not well matched to the
-        required dimensions.
-      </p>
-    </div>
+          <div class="failure-card">
+            <h3>Positive resist</h3>
+            <p>
+              Often useful when high resolution and straightforward pattern
+              definition are important. For lift-off, the developed profile
+              and any undercut can strongly influence how cleanly the deposited
+              film separates.
+            </p>
+          </div>
 
-    <div class="failure-card">
-      <h3>Incomplete development</h3>
-      <p>
-        Residual resist can come from insufficient exposure, development time,
-        temperature variation, or resist thickness and chemistry.
-      </p>
-    </div>
+          <div class="failure-card">
+            <h3>Negative resist</h3>
+            <p>
+              Can be attractive for dense or high-aspect-ratio structures,
+              depending on the chemistry and process. Sensitivity, crosslinking,
+              removal, and etch resistance can all become important tradeoffs.
+            </p>
+          </div>
 
-    <div class="failure-card">
-      <h3>Poor pattern transfer</h3>
-      <p>
-        A resist image can look good but still fail during etching if the mask
-        is too thin, selectivity is insufficient, or the resist degrades in the
-        plasma.
-      </p>
-    </div>
+        </div>
 
-    <div class="failure-card">
-      <h3>Lift-off failure</h3>
-      <p>
-        Even well-resolved features can fail during lift-off if deposition
-        bridges the resist sidewall or the resist profile does not provide
-        enough discontinuity.
-      </p>
-    </div>
 
-  </div>
+        <div class="topic-block">
 
-</section>
+          <h3>
+            Dose and process window
+          </h3>
+
+          <p>
+            Exposure dose determines how much electron energy is delivered to
+            the resist. Too little dose can leave features incompletely
+            developed or undersized, while excessive dose can broaden
+            features, close small gaps, or increase the influence of
+            proximity effects.
+          </p>
+
+          <p>
+            In practice, an EBL process is usually developed through dose
+            testing rather than relying on a single nominal value. The goal is
+            not simply to find one dose that works, but to identify a useful
+            process window where the required dimensions remain stable despite
+            small variations in exposure or development.
+          </p>
+
+        </div>
+
+
+        <div class="topic-block">
+
+          <h3>
+            Proximity effects
+          </h3>
+
+          <p>
+            Electrons do not deposit all of their energy exactly where the beam
+            enters the resist. Forward scattering broadens the beam as
+            electrons travel through the resist, while electrons that penetrate
+            the substrate can backscatter and expose surrounding regions.
+          </p>
+
+          <p>
+            As a result, dense and isolated structures can receive different
+            effective doses even when the nominal writing dose is identical.
+            Proximity effects can alter line width, spacing, corner definition,
+            and the uniformity of repeated features.
+          </p>
+
+          <p>
+            This becomes particularly important when a pattern contains
+            regions with very different local densities. Dose correction,
+            geometry adjustment, resist choice, substrate effects, and
+            development conditions may all become part of the optimization.
+          </p>
+
+        </div>
+
+
+        <div class="topic-block">
+
+          <h3>
+            Development is part of the lithography process
+          </h3>
+
+          <p>
+            Exposure changes the chemistry of the resist, but development
+            determines which part of that modified resist actually remains on
+            the sample. Developer composition, time, temperature, agitation,
+            rinse conditions, and resist thickness can therefore change the
+            final critical dimension and profile.
+          </p>
+
+          <p>
+            I find it more useful to treat exposure and development as one
+            coupled process rather than optimizing them independently.
+          </p>
+
+        </div>
+
+
+        <div class="experience-note">
+
+          <p class="note-title">
+            From my cleanroom experience
+          </p>
+
+          <p>
+            I have used EBL for nanoscale device fabrication where the written
+            resist pattern was only one part of the final requirement. The
+            process also had to support subsequent etching, metallization, or
+            lift-off while preserving the intended geometry.
+          </p>
+
+          <p>
+            In practice, this means I pay particular attention to resist
+            thickness, dose, feature density, development quality, alignment,
+            and how the resist will behave during the next fabrication step.
+          </p>
+
+        </div>
+
+
+        <div class="failure-grid">
+
+          <div class="failure-card">
+            <h3>Feature broadening</h3>
+            <p>
+              Possible causes include excessive dose, proximity effects,
+              over-development, or a resist stack that is not well matched to
+              the required dimensions.
+            </p>
+          </div>
+
+          <div class="failure-card">
+            <h3>Incomplete development</h3>
+            <p>
+              Residual resist can come from insufficient exposure, development
+              time, temperature variation, or resist thickness and chemistry.
+            </p>
+          </div>
+
+          <div class="failure-card">
+            <h3>Poor pattern transfer</h3>
+            <p>
+              A resist image can look good but still fail during etching if
+              the mask is too thin, selectivity is insufficient, or the resist
+              degrades in the plasma.
+            </p>
+          </div>
+
+          <div class="failure-card">
+            <h3>Lift-off failure</h3>
+            <p>
+              Even well-resolved features can fail during lift-off if
+              deposition bridges the resist sidewall or the resist profile
+              does not provide enough discontinuity.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
 
 
       <!-- Photolithography -->
@@ -368,19 +391,19 @@
         <div class="content-narrow">
 
           <p>
-            EBL is powerful, but it is not automatically the best tool for every
-            layer. When the required feature size allows it, photolithography
-            can provide much higher throughput and is often more practical for
-            larger device structures, contacts, alignment levels, and repeated
-            wafer-scale processing.
+            EBL is powerful, but it is not automatically the best tool for
+            every layer. When the required feature size allows it,
+            photolithography can provide much higher throughput and is often
+            more practical for larger device structures, contacts, alignment
+            levels, and repeated wafer-scale processing.
           </p>
 
           <p>
             In contact and proximity lithography, the relationship between the
             mask and the wafer becomes important. Resist thickness, exposure
-            dose, focus, mask-to-wafer spacing, substrate reflectivity, feature
-            dimensions, and development conditions can all influence the final
-            pattern.
+            dose, focus, mask-to-wafer spacing, substrate reflectivity,
+            feature dimensions, and development conditions can all influence
+            the final pattern.
           </p>
 
           <p>
@@ -408,9 +431,10 @@
         <div class="content-narrow">
 
           <p>
-            One of the most important lessons in fabrication is that a beautiful
-            resist pattern does not guarantee a good final structure. The
-            pattern still has to survive transfer into another material.
+            One of the most important lessons in fabrication is that a
+            beautiful resist pattern does not guarantee a good final
+            structure. The pattern still has to survive transfer into another
+            material.
           </p>
 
           <p>
@@ -533,8 +557,8 @@
             </h3>
 
             <p>
-              Gas chemistry determines which reactive species are available and
-              how volatile the reaction products are.
+              Gas chemistry determines which reactive species are available
+              and how volatile the reaction products are.
             </p>
 
           </div>
@@ -634,8 +658,8 @@
 
           <p>
             Individual processes can often be optimized in isolation. Device
-            fabrication becomes much more challenging when tens or hundreds of
-            steps have to work together.
+            fabrication becomes much more challenging when tens or hundreds
+            of steps have to work together.
           </p>
 
           <p>
