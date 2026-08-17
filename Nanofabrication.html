@@ -420,43 +420,302 @@
 
 
       <!-- Photolithography -->
-      <section class="section">
+<!-- Photolithography -->
+<section class="section">
 
-        <p class="section-label">
-          Optical Patterning
-        </p>
+  <p class="section-label">
+    Optical Patterning
+  </p>
 
-        <h2>
-          Photolithography and direct-write lithography
-        </h2>
+  <h2>
+    Photolithography and direct-write lithography
+  </h2>
 
-        <div class="content-narrow">
+  <div class="content-narrow">
 
-          <p>
-            EBL is powerful, but it is not automatically the best tool for
-            every layer. When the required feature size allows it,
-            photolithography can provide much higher throughput and is often
-            more practical for larger device structures, contacts, alignment
-            levels, and repeated wafer-scale processing.
-          </p>
+    <p>
+      Photolithography remains one of the most important patterning techniques
+      in microfabrication because it combines relatively high throughput with
+      reliable pattern transfer over much larger areas than electron-beam
+      lithography.
+    </p>
 
-          <p>
-            In contact and proximity lithography, the relationship between the
-            mask and the wafer becomes important. Resist thickness, exposure
-            dose, focus, mask-to-wafer spacing, substrate reflectivity,
-            feature dimensions, and development conditions can all influence
-            the final pattern.
-          </p>
+    <p>
+      When the required feature size does not demand EBL, optical lithography
+      is often the more practical choice for device contacts, alignment levels,
+      larger structural features, repeated processing, and wafer-scale
+      fabrication.
+    </p>
 
-          <p>
-            Direct-write optical lithography provides another useful option
-            when maskless processing and faster design iteration are more
-            important than achieving the smallest possible feature size.
-          </p>
+  </div>
 
-        </div>
 
-      </section>
+  <div class="content-grid">
+
+    <div>
+
+      <h3>
+        The basic idea
+      </h3>
+
+      <p>
+        A photoresist-coated substrate is exposed to ultraviolet light through
+        a patterned mask, or through a maskless optical writing system. The
+        exposure changes the solubility of the resist, and development converts
+        that latent image into a physical resist pattern.
+      </p>
+
+      <p>
+        As with EBL, the final pattern is not determined by exposure alone.
+        Resist thickness, wavelength, mask geometry, substrate reflectivity,
+        focus, exposure dose, development conditions, and the quality of
+        mask-to-wafer contact all influence the result.
+      </p>
+
+    </div>
+
+
+    <aside class="note-card">
+
+      <p class="note-title">
+        Choosing the patterning method
+      </p>
+
+      <p>
+        The smallest available lithography tool is not automatically the best
+        tool for every layer.
+      </p>
+
+      <p>
+        A useful process usually balances
+        <strong>
+          resolution, alignment, throughput, cost, resist compatibility,
+          and the needs of the next fabrication step.
+        </strong>
+      </p>
+
+    </aside>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Contact and proximity lithography
+    </h3>
+
+    <p>
+      In contact lithography, the photomask is brought into direct contact
+      with the resist-coated substrate. Minimizing the gap helps preserve
+      image fidelity because diffraction has less distance over which to
+      spread the projected pattern.
+    </p>
+
+    <p>
+      In proximity lithography, a small separation is intentionally maintained
+      between the mask and wafer. This reduces mechanical contact and the risk
+      of mask or wafer damage, but the additional gap increases diffraction
+      and can reduce resolution.
+    </p>
+
+  </div>
+
+
+  <div class="failure-grid">
+
+    <article class="failure-card">
+
+      <h3>
+        Contact mode
+      </h3>
+
+      <p>
+        Can provide better pattern fidelity when intimate mask-to-resist
+        contact is achieved, but particles, surface topography, or repeated
+        contact can create defects or damage.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Proximity mode
+      </h3>
+
+      <p>
+        Avoids direct mask contact and can be useful for delicate surfaces,
+        but the mask-to-wafer gap becomes a critical process variable because
+        diffraction increases as the separation grows.
+      </p>
+
+    </article>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Exposure dose and focus
+    </h3>
+
+    <p>
+      Exposure dose must be high enough to create the required chemical change
+      through the resist thickness, but excessive exposure can broaden
+      features or reduce the separation between nearby structures.
+    </p>
+
+    <p>
+      Focus and mask-to-wafer spacing are closely related to image quality.
+      Small deviations that are insignificant for large features can become
+      important as the critical dimension approaches the optical resolution
+      limit.
+    </p>
+
+    <p>
+      This is why dose matrices and controlled process tests are often more
+      useful than assuming that a single exposure setting will work equally
+      well for every resist thickness, substrate, and feature geometry.
+    </p>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Resist thickness matters
+    </h3>
+
+    <p>
+      Resist thickness is a process-design choice rather than simply a coating
+      parameter. A thicker resist may provide better protection during a later
+      etch or create more vertical space for lift-off, but it can also make
+      small features more difficult to resolve.
+    </p>
+
+    <p>
+      The required thickness therefore depends on what the resist must do next:
+      survive a plasma, define a lift-off profile, protect an underlying film,
+      or simply transfer a relatively shallow pattern.
+    </p>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Direct-write optical lithography
+    </h3>
+
+    <p>
+      Maskless direct-write systems expose the resist according to a digital
+      layout rather than using a physical photomask. They occupy a useful space
+      between conventional photolithography and EBL.
+    </p>
+
+    <p>
+      They generally do not provide the ultimate resolution of EBL, but they
+      can dramatically simplify design iteration because a new pattern does
+      not require fabrication of a new photomask.
+    </p>
+
+    <p>
+      This makes direct-write lithography particularly useful for prototyping,
+      larger device features, contact levels, test structures, and process
+      development where the design may change frequently.
+    </p>
+
+  </div>
+
+
+  <aside class="experience-note">
+
+    <p class="note-title">
+      From my cleanroom experience
+    </p>
+
+    <p>
+      I have worked with both conventional photolithography and maskless
+      direct-write processing for semiconductor and research-device
+      fabrication. In practice, I have found that reliable optical
+      lithography depends strongly on controlling resist thickness,
+      exposure conditions, alignment, mask-to-wafer spacing, and development.
+    </p>
+
+    <p>
+      I have also used lithography tests and exposure matrices when transferring
+      or optimizing processes, especially when the same nominal recipe behaves
+      differently on a new substrate, tool, resist stack, or device geometry.
+    </p>
+
+  </aside>
+
+
+  <div class="failure-grid">
+
+    <article class="failure-card">
+
+      <h3>
+        Poor contact or excessive gap
+      </h3>
+
+      <p>
+        Can reduce feature fidelity, soften edges, and change the final
+        dimensions because of diffraction between the mask and resist.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Underexposure
+      </h3>
+
+      <p>
+        Can lead to incomplete resist development, residual material, or
+        features that do not fully open through the resist thickness.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Overexposure
+      </h3>
+
+      <p>
+        Can broaden features, reduce small gaps, and shift the critical
+        dimension away from the intended design.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Nonuniform coating
+      </h3>
+
+      <p>
+        Resist-thickness variation can produce local differences in exposure,
+        development, focus, and downstream etch or lift-off performance.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
 
 
       <!-- Pattern Transfer -->
