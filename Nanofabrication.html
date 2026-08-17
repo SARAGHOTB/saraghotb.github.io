@@ -719,100 +719,329 @@
 
 
       <!-- Pattern Transfer -->
-      <section class="section">
+<!-- Pattern Transfer -->
+<section class="section">
 
-        <p class="section-label">
-          Pattern Transfer
-        </p>
+  <p class="section-label">
+    Pattern Transfer
+  </p>
 
-        <h2>
-          The lithography pattern is not the device
-        </h2>
+  <h2>
+    The lithography pattern is not the device
+  </h2>
 
-        <div class="content-narrow">
+  <div class="content-narrow">
 
-          <p>
-            One of the most important lessons in fabrication is that a
-            beautiful resist pattern does not guarantee a good final
-            structure. The pattern still has to survive transfer into another
-            material.
-          </p>
+    <p>
+      A well-defined resist pattern is only the starting point. The real
+      fabrication challenge is transferring that geometry into another
+      material while preserving the dimensions, profile, and surface quality
+      required by the device.
+    </p>
 
-          <p>
-            During dry etching, this introduces another set of constraints:
-            mask selectivity, ion directionality, chemical reactivity, chamber
-            condition, loading effects, sidewall passivation, substrate
-            temperature, and surface condition.
-          </p>
+    <p>
+      Pattern transfer can involve dry etching, ion milling, wet etching, or
+      deposition and lift-off. Each approach introduces its own constraints,
+      and the best choice depends on the material system, required feature
+      size, etch depth, sidewall profile, mask durability, and sensitivity of
+      the surrounding layers.
+    </p>
 
-        </div>
-
-
-        <div class="content-grid">
-
-          <article class="topic-card">
-
-            <h3>
-              Selectivity
-            </h3>
-
-            <p>
-              The mask must survive long enough to transfer the desired depth
-              into the underlying material. If mask erosion is too fast, the
-              final dimensions can shift or the target layer may not be fully
-              etched.
-            </p>
-
-          </article>
+  </div>
 
 
-          <article class="topic-card">
+  <div class="content-grid">
 
-            <h3>
-              Sidewall profile
-            </h3>
+    <div>
 
-            <p>
-              An etch can remove the correct amount of material and still be
-              unusable if the sidewall angle, undercut, bowing, roughness, or
-              footing is outside the process requirement.
-            </p>
+      <h3>
+        Pattern transfer is a coupled process
+      </h3>
 
-          </article>
+      <p>
+        The final feature is determined by both the lithography mask and the
+        transfer process. A resist pattern can look excellent under a
+        microscope and still produce poor device geometry if the mask erodes,
+        the etch becomes isotropic, the sidewalls roughen, or the underlying
+        material reacts differently than expected.
+      </p>
 
+      <p>
+        This is why I think about lithography and pattern transfer together.
+        The resist thickness, mask material, etch chemistry, selectivity, and
+        required depth should be considered before the pattern is written.
+      </p>
 
-          <article class="topic-card">
-
-            <h3>
-              Chamber history
-            </h3>
-
-            <p>
-              Plasma tools are not perfectly isolated from their usage history.
-              Chamber condition, deposits, previous materials, cleaning state,
-              and tool seasoning can influence reproducibility.
-            </p>
-
-          </article>
+    </div>
 
 
-          <article class="topic-card">
+    <aside class="note-card">
 
-            <h3>
-              Endpoint thinking
-            </h3>
+      <p class="note-title">
+        A useful process question
+      </p>
 
-            <p>
-              Etch time alone is not always enough. Film thickness variation,
-              tool drift, loading, and material differences can change the
-              amount of overetch required for a robust process.
-            </p>
+      <p>
+        It is not enough to ask:
+        <strong>Did the pattern develop correctly?</strong>
+      </p>
 
-          </article>
+      <p>
+        The more important question is:
+        <strong>
+          Did the final transferred structure preserve the geometry and
+          functionality required by the device?
+        </strong>
+      </p>
 
-        </div>
+    </aside>
 
-      </section>
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Mask selectivity
+    </h3>
+
+    <p>
+      Selectivity describes how quickly the target material is removed relative
+      to the mask. If the mask etches too quickly, it can lose thickness before
+      the desired etch depth is reached.
+    </p>
+
+    <p>
+      Mask erosion can also change the critical dimension during the process.
+      For deeper etches or more aggressive plasma chemistries, the mask may
+      need to be thicker, more resistant, or replaced by a hard mask such as a
+      dielectric or metal layer.
+    </p>
+
+  </div>
+
+
+  <div class="failure-grid">
+
+    <article class="failure-card">
+
+      <h3>
+        Resist mask
+      </h3>
+
+      <p>
+        Simple and convenient when the resist has sufficient plasma resistance,
+        but thickness and thermal stability can become limiting for longer or
+        more aggressive etches.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Hard mask
+      </h3>
+
+      <p>
+        Useful when greater etch resistance or dimensional control is required.
+        The hard mask introduces additional deposition and removal steps, but
+        can substantially improve transfer capability.
+      </p>
+
+    </article>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Anisotropy and sidewall profile
+    </h3>
+
+    <p>
+      Many device structures require material to be removed primarily in the
+      vertical direction. An anisotropic etch preserves lateral dimensions
+      better than an isotropic process and can produce steeper sidewalls.
+    </p>
+
+    <p>
+      But verticality alone does not guarantee a good profile. Bowing,
+      undercut, footing, taper, roughness, redeposition, and sidewall damage
+      can all affect the usefulness of the final structure.
+    </p>
+
+    <p>
+      In practice, sidewall shape is often just as important as etch depth
+      because it can influence electrical isolation, optical behavior,
+      subsequent conformal coating, and metallization.
+    </p>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Chemistry versus physical bombardment
+    </h3>
+
+    <p>
+      Dry etching often relies on a combination of chemical reactions and
+      energetic ion bombardment. The chemical component provides material
+      selectivity through volatile reaction products, while ion bombardment
+      helps drive directional removal and can assist reactions at the surface.
+    </p>
+
+    <p>
+      Increasing physical bombardment can improve anisotropy, but it can also
+      increase surface damage, mask erosion, and redeposition. Increasing the
+      chemical contribution may improve selectivity, but excessive lateral
+      chemical etching can reduce profile control.
+    </p>
+
+    <p>
+      Process development therefore becomes a balance between etch rate,
+      anisotropy, selectivity, surface condition, and dimensional control.
+    </p>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Loading and pattern density
+    </h3>
+
+    <p>
+      Etch behavior can depend on how much exposed material is present in the
+      chamber. Large open areas and dense arrays of small features may consume
+      reactive species differently, creating local or wafer-scale differences
+      in etch rate.
+    </p>
+
+    <p>
+      This means a recipe that performs well on a small test pattern may behave
+      differently when transferred to a denser design or a larger patterned
+      area.
+    </p>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Chamber condition and process history
+    </h3>
+
+    <p>
+      Plasma tools are not perfectly independent of their usage history.
+      Residues from previous materials, chamber wall condition, cleaning,
+      seasoning, and contamination can influence plasma chemistry and
+      reproducibility.
+    </p>
+
+    <p>
+      When an established process suddenly changes, chamber history is one of
+      the variables worth checking before immediately modifying the recipe.
+    </p>
+
+  </div>
+
+
+  <aside class="experience-note">
+
+    <p class="note-title">
+      From my cleanroom experience
+    </p>
+
+    <p>
+      I have worked with RIE, ICP-RIE, and ion milling for pattern transfer
+      across semiconductor and device-fabrication processes. One recurring
+      lesson is that process transfer between tools cannot always be treated
+      as a direct recipe copy.
+    </p>
+
+    <p>
+      Differences in plasma source, chamber geometry, bias conditions, tool
+      history, and hardware can change the resulting etch even when the
+      nominal gas chemistry looks similar.
+    </p>
+
+    <p>
+      I therefore treat tool transfer as a new process-development problem:
+      establish a baseline, measure the resulting profile and etch rate,
+      identify the variables that matter most, and then rebuild the process
+      window around the new system.
+    </p>
+
+  </aside>
+
+
+  <div class="failure-grid">
+
+    <article class="failure-card">
+
+      <h3>
+        Undercut
+      </h3>
+
+      <p>
+        Excessive lateral etching can shrink the transferred feature or create
+        a profile that is narrower beneath the mask than intended.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Bowing or taper
+      </h3>
+
+      <p>
+        Sidewalls can curve or slope because of the balance between chemical
+        etching, ion directionality, mask erosion, and sidewall passivation.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Mask erosion
+      </h3>
+
+      <p>
+        Insufficient selectivity can thin or distort the mask before the target
+        depth is reached, shifting the final feature dimensions.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Residue or redeposition
+      </h3>
+
+      <p>
+        Nonvolatile products or physically sputtered material can redeposit on
+        surfaces or sidewalls and interfere with the next fabrication step.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
 
 
       <!-- Plasma Etching -->
