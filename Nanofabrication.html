@@ -1045,93 +1045,446 @@
 
 
       <!-- Plasma Etching -->
-      <section class="section">
+<!-- Plasma Etching -->
+<section class="section">
 
-        <p class="section-label">
-          Plasma Etching
-        </p>
+  <p class="section-label">
+    Plasma Etching
+  </p>
 
-        <h2>
-          RIE and ICP-RIE
-        </h2>
+  <h2>
+    RIE and ICP-RIE
+  </h2>
 
-        <div class="content-narrow">
+  <div class="content-narrow">
 
-          <p>
-            Reactive ion etching combines physical ion bombardment with
-            chemically reactive species. The balance between these mechanisms
-            determines etch rate, anisotropy, selectivity, surface damage, and
-            sidewall behavior.
-          </p>
+    <p>
+      Reactive ion etching (RIE) is one of the central pattern-transfer
+      techniques in micro- and nanofabrication. Unlike purely physical
+      material removal, plasma etching combines chemically reactive species
+      with energetic ion bombardment to remove selected materials while
+      preserving the patterned mask.
+    </p>
 
-          <p>
-            ICP-RIE adds an inductively coupled plasma source, allowing plasma
-            density to be controlled more independently from substrate bias.
-            That additional degree of control can be extremely useful when
-            trying to separate ion energy from reactive-species density.
-          </p>
+    <p>
+      What makes plasma etching particularly interesting is the number of
+      interacting variables. Gas chemistry, plasma density, ion energy,
+      pressure, flow rate, substrate condition, mask material, and chamber
+      history can all influence the final etch rate, selectivity, anisotropy,
+      and sidewall profile.
+    </p>
 
-        </div>
-
-
-        <div class="process-principle">
-
-          <div>
-
-            <span class="principle-number">
-              01
-            </span>
-
-            <h3>
-              Chemistry
-            </h3>
-
-            <p>
-              Gas chemistry determines which reactive species are available
-              and how volatile the reaction products are.
-            </p>
-
-          </div>
+  </div>
 
 
-          <div>
+  <!-- RIE vs ICP-RIE -->
+  <div class="content-grid">
 
-            <span class="principle-number">
-              02
-            </span>
+    <div>
 
-            <h3>
-              Ion energy
-            </h3>
+      <h3>
+        RIE versus ICP-RIE
+      </h3>
 
-            <p>
-              Bias controls the energy of ions reaching the substrate and can
-              strongly influence anisotropy and physical damage.
-            </p>
+      <p>
+        In conventional RIE, RF power is used to sustain the plasma and
+        generate the substrate bias that accelerates ions toward the wafer.
+        Plasma density and ion bombardment are therefore relatively coupled.
+      </p>
 
-          </div>
+      <p>
+        ICP-RIE introduces a separate inductively coupled plasma source.
+        This allows plasma generation and substrate bias to be controlled more
+        independently, providing greater flexibility when balancing chemical
+        activity, ion flux, and ion energy.
+      </p>
+
+    </div>
 
 
-          <div>
+    <aside class="note-card">
 
-            <span class="principle-number">
-              03
-            </span>
+      <p class="note-title">
+        Why independent control matters
+      </p>
 
-            <h3>
-              Plasma density
-            </h3>
+      <p>
+        A useful etch process is rarely about maximizing a single parameter
+        such as etch rate.
+      </p>
 
-            <p>
-              Plasma density influences the concentration of ions and radicals
-              available for the etch reaction.
-            </p>
+      <p>
+        The goal is usually to balance
+        <strong>
+          etch rate, selectivity, anisotropy, dimensional control,
+          surface condition, and mask survival.
+        </strong>
+      </p>
 
-          </div>
+    </aside>
 
-        </div>
+  </div>
 
-      </section>
+
+  <!-- Three Main Physical Components -->
+  <div class="process-principle">
+
+    <div>
+
+      <span class="principle-number">
+        01
+      </span>
+
+      <h3>
+        Plasma chemistry
+      </h3>
+
+      <p>
+        Reactive radicals generated in the plasma interact chemically with the
+        exposed material. An effective chemistry forms reaction products that
+        can leave the surface rather than accumulating during the etch.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <span class="principle-number">
+        02
+      </span>
+
+      <h3>
+        Ion bombardment
+      </h3>
+
+      <p>
+        Positively charged ions are accelerated toward the substrate. Their
+        directional momentum can assist surface reactions and promote
+        anisotropic material removal.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <span class="principle-number">
+        03
+      </span>
+
+      <h3>
+        Surface reactions
+      </h3>
+
+      <p>
+        The final etch behavior depends on how reactive species adsorb, react,
+        desorb, and interact with ion bombardment at the material surface.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- ICP Power -->
+  <div class="topic-block">
+
+    <h3>
+      ICP power: controlling plasma density
+    </h3>
+
+    <p>
+      In an ICP system, the inductively coupled source generates a high-density
+      plasma. Increasing ICP power generally increases the population of ions,
+      electrons, radicals, and other reactive species available to participate
+      in the etch.
+    </p>
+
+    <p>
+      A higher plasma density can increase etch rate, but more plasma is not
+      automatically better. Changes in species concentration can alter
+      selectivity, surface chemistry, mask behavior, and sidewall passivation.
+    </p>
+
+    <p>
+      ICP power therefore needs to be considered together with bias power,
+      pressure, gas chemistry, and the material being etched.
+    </p>
+
+  </div>
+
+
+  <!-- Bias -->
+  <div class="topic-block">
+
+    <h3>
+      RF bias: controlling ion energy
+    </h3>
+
+    <p>
+      The substrate bias influences the energy with which ions reach the wafer.
+      Increasing ion energy can enhance directional material removal and help
+      produce more anisotropic profiles.
+    </p>
+
+    <p>
+      However, excessive ion bombardment can increase mask erosion, surface
+      damage, sputtering, redeposition, and loss of selectivity. For sensitive
+      materials or interfaces, minimizing unnecessary ion damage may be just
+      as important as achieving the desired etch depth.
+    </p>
+
+    <p>
+      One advantage of ICP-RIE is therefore the ability to maintain a
+      relatively dense plasma while independently adjusting the ion energy
+      reaching the substrate.
+    </p>
+
+  </div>
+
+
+  <!-- Pressure -->
+  <div class="topic-block">
+
+    <h3>
+      Chamber pressure and directionality
+    </h3>
+
+    <p>
+      Pressure affects how frequently particles collide while travelling
+      through the plasma sheath and chamber. At lower pressure, the mean free
+      path is generally longer, allowing ions to reach the substrate with
+      fewer collisions and better directional control.
+    </p>
+
+    <p>
+      At higher pressure, more collisions can broaden the distribution of
+      particle trajectories and modify the balance between chemical and
+      physical etching.
+    </p>
+
+    <p>
+      Pressure also influences plasma stability, residence time, reactive
+      species concentration, and transport of reaction products, so its effect
+      cannot be considered independently from gas flow and power.
+    </p>
+
+  </div>
+
+
+  <!-- Gas Chemistry -->
+  <div class="topic-block">
+
+    <h3>
+      Gas chemistry depends on the material
+    </h3>
+
+    <p>
+      The choice of plasma chemistry depends strongly on the material being
+      etched and the volatility of the products that can be formed.
+      Fluorine-based chemistries are widely used for many silicon-containing
+      and dielectric materials, while chlorine-based chemistries are commonly
+      used for a range of III-V semiconductor and metal-containing systems.
+    </p>
+
+    <p>
+      Additional gases can be introduced to modify sidewall passivation,
+      dilution, ion bombardment, polymer formation, or the concentration of
+      reactive species.
+    </p>
+
+    <p>
+      The relevant question is therefore not simply whether a chemistry can
+      etch a material, but whether it can do so with the required selectivity,
+      profile, surface quality, and compatibility with the rest of the device.
+    </p>
+
+  </div>
+
+
+  <!-- Selectivity -->
+  <div class="topic-block">
+
+    <h3>
+      Selectivity and mask survival
+    </h3>
+
+    <p>
+      Selectivity compares the removal rate of the target material with the
+      removal rate of another material, often the lithography mask or an
+      underlying layer.
+    </p>
+
+    <p>
+      If the mask selectivity is insufficient, the resist or hard mask can
+      erode before the required depth is reached. Mask erosion can also change
+      the lateral dimensions of the feature during the etch.
+    </p>
+
+    <p>
+      For this reason, resist thickness and mask material should be selected
+      together with the expected etch depth and process chemistry rather than
+      treated as independent decisions.
+    </p>
+
+  </div>
+
+
+  <!-- Profile Control -->
+  <div class="topic-block">
+
+    <h3>
+      Profile control is often the real objective
+    </h3>
+
+    <p>
+      Etch rate alone provides very little information about whether a process
+      is suitable for device fabrication. Two recipes can remove the same film
+      at similar rates while producing completely different sidewall profiles.
+    </p>
+
+    <p>
+      Undercut, taper, bowing, roughness, footing, mask erosion, and
+      redeposition can all affect subsequent processing and ultimately device
+      performance.
+    </p>
+
+    <p>
+      This is why cross-sectional or high-resolution inspection can be much
+      more informative during process development than simply measuring how
+      much material was removed.
+    </p>
+
+  </div>
+
+
+  <!-- Cleanroom Experience -->
+  <aside class="experience-note">
+
+    <p class="note-title">
+      From my cleanroom experience
+    </p>
+
+    <p>
+      One of the most useful lessons I learned from plasma processing came from
+      transferring a dielectric etch between different dry-etch systems. A
+      process that behaved reliably on one RIE tool did not reproduce the same
+      profile when moved to an ICP-RIE system, even though the target material
+      and overall chemistry were similar.
+    </p>
+
+    <p>
+      Rather than treating the original recipe as a set of numbers that had to
+      be copied, I found it more useful to identify what the original process
+      was physically accomplishing: the required etch rate, mask survival,
+      anisotropy, and profile.
+    </p>
+
+    <p>
+      From there, the new process could be rebuilt around the characteristics
+      of the new tool. This experience reinforced for me that recipe transfer
+      is really process transfer — the goal is to reproduce the outcome, not
+      necessarily the original settings.
+    </p>
+
+  </aside>
+
+
+  <!-- Common Failure Modes -->
+  <div class="failure-grid">
+
+    <article class="failure-card">
+
+      <h3>
+        Undercut
+      </h3>
+
+      <p>
+        Excessive lateral material removal can reduce dimensional control and
+        produce a feature narrower beneath the mask than intended.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Bowing or taper
+      </h3>
+
+      <p>
+        Sidewall curvature or slope can result from the balance between
+        directional ion bombardment, chemical etching, mask behavior, and
+        sidewall passivation.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Mask erosion
+      </h3>
+
+      <p>
+        Excessive ion energy or poor selectivity can consume the mask during
+        the process and change the dimensions transferred into the target
+        material.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Residue and redeposition
+      </h3>
+
+      <p>
+        Nonvolatile reaction products or sputtered material can accumulate on
+        surfaces and sidewalls, creating contamination or interfering with
+        subsequent processing.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Surface damage
+      </h3>
+
+      <p>
+        Energetic ion bombardment can modify sensitive surfaces or interfaces,
+        making ion energy an important consideration beyond simply maximizing
+        etch rate.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Process drift
+      </h3>
+
+      <p>
+        Chamber condition, seasoning, previous materials, cleaning history,
+        and tool state can change plasma behavior even when the nominal recipe
+        remains unchanged.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
 
 
       <!-- Lift-Off -->
