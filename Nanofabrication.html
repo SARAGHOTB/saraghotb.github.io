@@ -1869,42 +1869,448 @@
 
 
       <!-- Process Integration -->
-      <section class="section">
+<!-- Process Integration -->
+<section class="section">
 
-        <p class="section-label">
-          Process Integration
-        </p>
+  <p class="section-label">
+    Process Integration
+  </p>
 
-        <h2>
-          Where fabrication becomes systems engineering
-        </h2>
+  <h2>
+    Where fabrication becomes systems engineering
+  </h2>
 
-        <div class="content-narrow">
+  <div class="content-narrow">
 
-          <p>
-            Individual processes can often be optimized in isolation. Device
-            fabrication becomes much more challenging when tens or hundreds of
-            steps have to work together.
-          </p>
+    <p>
+      A fabrication process is more than a collection of individual recipes.
+      Lithography, etching, deposition, thermal processing, passivation,
+      cleaning, and metrology all interact, and a change that improves one
+      step can create a problem several steps later.
+    </p>
 
-          <p>
-            A change that improves one step can create a new problem several
-            steps later. A thicker dielectric may improve isolation but make
-            contact opening more difficult. A more conformal film can improve
-            coverage but make lift-off impossible. A lithography process that
-            resolves a small feature may use a resist that is too thin to
-            survive the subsequent etch.
-          </p>
+    <p>
+      This is what makes process integration different from optimizing an
+      isolated operation. The objective is not to make every individual step
+      perfect on its own, but to build a complete fabrication flow that
+      repeatedly produces the intended device structure and performance.
+    </p>
 
-          <p>
-            For me, process integration means thinking beyond the immediate
-            operation and asking how each decision affects the complete device
-            architecture.
-          </p>
+  </div>
 
-        </div>
 
-      </section>
+  <!-- Local Optimization vs Integration -->
+  <div class="content-grid">
+
+    <div>
+
+      <h3>
+        Local optimization is not always global optimization
+      </h3>
+
+      <p>
+        Consider a simple example: increasing dielectric thickness may improve
+        electrical isolation, but it can also make contact opening more
+        difficult, increase topography, and create challenges for subsequent
+        metallization.
+      </p>
+
+      <p>
+        Similarly, a more conformal deposition may improve sidewall coverage
+        while making lift-off difficult. A thinner resist may improve
+        lithographic resolution but provide insufficient protection during a
+        later plasma etch.
+      </p>
+
+      <p>
+        The best process condition is therefore often a compromise that
+        satisfies several downstream requirements simultaneously.
+      </p>
+
+    </div>
+
+
+    <aside class="note-card">
+
+      <p class="note-title">
+        The integration mindset
+      </p>
+
+      <p>
+        Instead of asking only:
+        <strong>Does this step work?</strong>
+      </p>
+
+      <p>
+        I find it more useful to ask:
+        <strong>
+          What does this step change, and how will that change propagate
+          through the rest of the fabrication flow?
+        </strong>
+      </p>
+
+    </aside>
+
+  </div>
+
+
+  <!-- Process Window -->
+  <div class="topic-block">
+
+    <h3>
+      Process windows matter more than perfect recipes
+    </h3>
+
+    <p>
+      A recipe that produces an excellent result at one exact condition is not
+      necessarily a robust manufacturing process. Real fabrication contains
+      variation: film thickness changes slightly, resist coatings vary,
+      chambers drift, substrates differ, and measurements contain uncertainty.
+    </p>
+
+    <p>
+      A useful process therefore needs a window in which reasonable variation
+      still produces an acceptable result. Understanding that window also
+      helps identify which parameters are truly critical and which have more
+      tolerance.
+    </p>
+
+    <p>
+      For me, process development is therefore not simply about finding the
+      best-looking sample. It is about finding conditions that can be repeated
+      reliably.
+    </p>
+
+  </div>
+
+
+  <!-- Process Interactions -->
+  <div class="process-principle">
+
+    <div>
+
+      <span class="principle-number">
+        01
+      </span>
+
+      <h3>
+        Upstream conditions
+      </h3>
+
+      <p>
+        Surface preparation, film thickness, lithography quality, and previous
+        thermal or plasma exposure establish the starting condition for the
+        next process.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <span class="principle-number">
+        02
+      </span>
+
+      <h3>
+        Current process
+      </h3>
+
+      <p>
+        The immediate recipe determines more than its primary output. It can
+        also change surface chemistry, topography, stress, damage, or interface
+        condition.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <span class="principle-number">
+        03
+      </span>
+
+      <h3>
+        Downstream consequences
+      </h3>
+
+      <p>
+        Those changes influence later lithography, deposition, contact
+        formation, passivation, packaging, and ultimately device performance.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- Geometry -->
+  <div class="topic-block">
+
+    <h3>
+      Geometry can change the process
+    </h3>
+
+    <p>
+      A process developed on one geometry does not always behave identically
+      when feature size, pitch, aspect ratio, or pattern density changes.
+      Deposition and etching are three-dimensional processes, so the available
+      space around a structure can influence how material reaches or leaves
+      the surface.
+    </p>
+
+    <p>
+      For example, a deposition that fills a relatively open structure may
+      behave differently in a narrow gap, while a conformal film can gradually
+      close an opening from the sidewalls before the underlying volume has
+      been completely filled.
+    </p>
+
+    <p>
+      This is why scaling a device is not always equivalent to scaling a
+      drawing. Changes in geometry can require changes in the fabrication
+      strategy itself.
+    </p>
+
+  </div>
+
+
+  <!-- Metrology -->
+  <div class="topic-block">
+
+    <h3>
+      Metrology closes the process loop
+    </h3>
+
+    <p>
+      Process integration depends on knowing what actually happened at each
+      critical stage. SEM, profilometry, ellipsometry, reflectometry, AFM,
+      XRD, electrical measurements, and cross-sectional analysis can provide
+      different pieces of that information.
+    </p>
+
+    <p>
+      I think of metrology as part of fabrication rather than something that
+      happens after fabrication. Measurements create the feedback loop needed
+      to compare the intended process with the structure that was actually
+      produced.
+    </p>
+
+    <p>
+      When a device fails, that process history can be used to work backward
+      from the final symptom and identify where the structure first departed
+      from the expected result.
+    </p>
+
+  </div>
+
+
+  <!-- Troubleshooting -->
+  <div class="topic-block">
+
+    <h3>
+      Troubleshooting means separating symptoms from causes
+    </h3>
+
+    <p>
+      The step where a failure becomes visible is not necessarily the step
+      that caused it. Poor electrical performance after metallization, for
+      example, could originate from the metal itself, but it could also reflect
+      an earlier surface-cleaning problem, incomplete etching, dielectric
+      residue, or damage introduced upstream.
+    </p>
+
+    <p>
+      I therefore prefer to troubleshoot by building hypotheses from the
+      process history and available measurements, then testing those
+      hypotheses systematically rather than immediately changing multiple
+      recipe parameters.
+    </p>
+
+  </div>
+
+
+  <!-- Real Experience -->
+  <aside class="experience-note">
+
+    <p class="note-title">
+      From my cleanroom experience
+    </p>
+
+    <p>
+      One process-integration problem I worked on involved dielectric
+      passivation around densely patterned semiconductor structures. A
+      deposition approach that initially appeared suitable did not always
+      produce the internal coverage required by the device geometry.
+    </p>
+
+    <p>
+      The issue was not obvious from the top surface alone. Cross-sectional
+      structural analysis revealed that material deposited from opposing
+      sidewalls could close the upper part of an opening before the interior
+      was completely filled, leaving buried voids.
+    </p>
+
+    <p>
+      Rather than treating this simply as a deposition-rate problem, we looked
+      at the interaction between geometry, conformality, film thickness, and
+      the complete process sequence. The integration strategy was then
+      modified to achieve more reliable filling and electrical isolation.
+    </p>
+
+    <p>
+      Experiences like this are why I find process integration especially
+      interesting: the failure may appear in one step, while the solution
+      requires understanding several steps and the device geometry together.
+    </p>
+
+  </aside>
+
+
+  <!-- RCA -->
+  <div class="topic-block">
+
+    <h3>
+      Root-cause analysis starts with evidence
+    </h3>
+
+    <p>
+      When a previously stable process moves outside its expected window, I
+      first look for what changed. That can include the incoming material,
+      resist or chemical lot, tool condition, chamber history, recipe revision,
+      operator sequence, upstream processing, or even the measurement method
+      used to evaluate the result.
+    </p>
+
+    <p>
+      Run records, travelers, tool logs, metrology, and comparison with
+      successful baseline samples help narrow the possibilities. Once a likely
+      cause is identified, controlled experiments can distinguish correlation
+      from the actual mechanism.
+    </p>
+
+  </div>
+
+
+  <!-- Change Management -->
+  <div class="topic-block">
+
+    <h3>
+      Change one thing, understand everything it touches
+    </h3>
+
+    <p>
+      Process changes are sometimes necessary because of tool availability,
+      scaling, yield, material changes, or a newly identified failure mode.
+      But even a seemingly small modification can affect several downstream
+      operations.
+    </p>
+
+    <p>
+      Before adopting a change, I find it useful to define what problem the
+      change is intended to solve, what new risks it introduces, how success
+      will be measured, and which downstream steps need to be revalidated.
+    </p>
+
+    <p>
+      This makes process development more deliberate and helps prevent solving
+      one problem by quietly creating another.
+    </p>
+
+  </div>
+
+
+  <!-- Failure / Integration Challenges -->
+  <div class="failure-grid">
+
+    <article class="failure-card">
+
+      <h3>
+        Hidden upstream cause
+      </h3>
+
+      <p>
+        A failure may appear during a late fabrication step even though the
+        underlying deviation was introduced much earlier in the process.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Narrow process window
+      </h3>
+
+      <p>
+        A recipe may work under ideal conditions but become unreliable when
+        normal tool, material, or dimensional variation is introduced.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Geometry-dependent behavior
+      </h3>
+
+      <p>
+        Changes in pitch, aspect ratio, pattern density, or topography can
+        alter deposition, etching, coating, and filling behavior.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Tool-to-tool variation
+      </h3>
+
+      <p>
+        Nominally similar equipment can produce different results because of
+        chamber geometry, hardware, calibration, history, or process
+        conditions.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Incomplete process history
+      </h3>
+
+      <p>
+        Missing or inaccurate run information makes it much harder to separate
+        real process changes from uncontrolled variation.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Fixing the symptom
+      </h3>
+
+      <p>
+        Adjusting the step where a defect becomes visible may temporarily
+        improve the result without addressing the actual upstream mechanism.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
 
 
       <!-- Practical Lessons -->
