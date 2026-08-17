@@ -1488,42 +1488,384 @@
 
 
       <!-- Lift-Off -->
-      <section class="section">
+<!-- Lift-Off -->
+<section class="section">
 
-        <p class="section-label">
-          Metallization
-        </p>
+  <p class="section-label">
+    Metallization
+  </p>
 
-        <h2>
-          Lift-off and deposition geometry
-        </h2>
+  <h2>
+    Lift-off and deposition geometry
+  </h2>
 
-        <div class="content-narrow">
+  <div class="content-narrow">
 
-          <p>
-            Lift-off looks simple in a process diagram: pattern the resist,
-            deposit a film, and dissolve the resist. In practice, the geometry
-            of the resist profile and the directionality of the deposition are
-            critical.
-          </p>
+    <p>
+      Lift-off is one of the most common ways to define patterned metal layers
+      in micro- and nanofabrication. The basic sequence is simple: pattern the
+      resist, deposit the film, and dissolve the resist so that only the
+      material deposited directly on the substrate remains.
+    </p>
 
-          <p>
-            If deposited material forms a continuous coating along the resist
-            sidewall, the metal on the substrate can become connected to the
-            film sitting on top of the resist. That makes clean lift-off much
-            more difficult and can create fences, flakes, or unwanted metal
-            remnants.
-          </p>
+    <p>
+      In practice, lift-off quality depends strongly on geometry. The resist
+      profile, film thickness, deposition directionality, step coverage,
+      adhesion, and solvent access all influence whether the unwanted material
+      separates cleanly or remains connected to the patterned film.
+    </p>
 
-          <p>
-            This is why resist undercut, film thickness, deposition angle,
-            conformality, and resist thickness should be considered together
-            when designing a lift-off process.
-          </p>
+  </div>
 
-        </div>
 
-      </section>
+  <div class="content-grid">
+
+    <div>
+
+      <h3>
+        The key is discontinuity
+      </h3>
+
+      <p>
+        Lift-off works best when the film deposited on top of the resist is not
+        continuously connected to the film deposited on the exposed substrate.
+        A break in coverage near the resist sidewall gives the solvent access
+        to the resist and allows the unwanted film to detach.
+      </p>
+
+      <p>
+        If the deposition coats the sidewall continuously, the film can bridge
+        across the resist profile. Once that happens, even a perfectly defined
+        lithography pattern can produce poor lift-off.
+      </p>
+
+    </div>
+
+
+    <aside class="note-card">
+
+      <p class="note-title">
+        A useful way to think about lift-off
+      </p>
+
+      <p>
+        The question is not only:
+        <strong>Did the lithography resolve the feature?</strong>
+      </p>
+
+      <p>
+        The more useful question is:
+        <strong>
+          Will the resist profile and deposition geometry create enough
+          discontinuity for the unwanted film to release cleanly?
+        </strong>
+      </p>
+
+    </aside>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Resist profile and undercut
+    </h3>
+
+    <p>
+      An undercut profile is often helpful for lift-off because the resist
+      sidewall recedes beneath the top surface. This reduces the chance that
+      deposited material forms a continuous bridge from the substrate to the
+      top of the resist.
+    </p>
+
+    <p>
+      Bilayer resist stacks are commonly used when a controlled undercut is
+      needed. The lower resist layer can develop laterally beneath the upper
+      imaging layer, creating a geometry that favors discontinuous deposition.
+    </p>
+
+    <p>
+      The required undercut depends on the film thickness, deposition method,
+      feature size, and resist thickness. Too little undercut may not solve
+      bridging, while excessive undercut can weaken the resist structure or
+      distort small features.
+    </p>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Film thickness versus resist thickness
+    </h3>
+
+    <p>
+      Resist thickness should be chosen with the final deposited film in mind.
+      If the deposited layer becomes too thick relative to the resist profile,
+      material can coat the sidewall and connect the top film to the film on
+      the substrate.
+    </p>
+
+    <p>
+      A thicker resist can provide more vertical separation, but it can also
+      reduce lithographic resolution or make small features harder to define.
+      As with many fabrication choices, the useful solution is a balance rather
+      than simply maximizing one parameter.
+    </p>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Directional and conformal deposition behave differently
+    </h3>
+
+    <p>
+      Evaporation is relatively directional because atoms or molecules travel
+      predominantly along line-of-sight trajectories from the source toward
+      the substrate. This makes e-beam and thermal evaporation particularly
+      compatible with lift-off because sidewall coverage can remain limited.
+    </p>
+
+    <p>
+      Sputtering is generally less directional. Scattering in the process gas
+      and the broader angular distribution of arriving species can improve
+      sidewall and step coverage, which is valuable for many applications but
+      can make lift-off more difficult.
+    </p>
+
+    <p>
+      The same property can therefore be beneficial or problematic depending on
+      the fabrication goal: conformality is useful when continuous coverage is
+      required, while directionality is often preferred when clean lift-off is
+      the priority.
+    </p>
+
+  </div>
+
+
+  <div class="failure-grid">
+
+    <article class="failure-card">
+
+      <h3>
+        Evaporation
+      </h3>
+
+      <p>
+        Directional deposition is often favorable for lift-off because the
+        resist sidewalls receive less material, helping maintain separation
+        between the top film and the device layer.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Sputtering
+      </h3>
+
+      <p>
+        Better step coverage can be desirable for device continuity, but the
+        broader deposition angle can coat resist sidewalls and make clean
+        lift-off more challenging.
+      </p>
+
+    </article>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Step coverage and device continuity
+    </h3>
+
+    <p>
+      A directional film can produce excellent lift-off but may not cover
+      vertical or sloped device topography well. Conversely, a more conformal
+      film can improve electrical continuity across steps while becoming harder
+      to pattern by lift-off.
+    </p>
+
+    <p>
+      This becomes especially important when contacts need to reach across
+      dielectric edges, etched mesas, or other three-dimensional structures.
+      The deposition method should therefore be chosen based on the complete
+      device geometry rather than only the lithography process.
+    </p>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Adhesion and interface preparation
+    </h3>
+
+    <p>
+      Even a geometrically perfect metal pattern can fail if the film does not
+      adhere well to the underlying surface. Native oxides, organic residue,
+      moisture, contamination, or incompatible materials can weaken the
+      interface.
+    </p>
+
+    <p>
+      Surface preparation and adhesion layers are therefore often part of the
+      metallization process. The appropriate approach depends on the substrate,
+      contact material, device function, and whether the interface is intended
+      to be electrically active.
+    </p>
+
+  </div>
+
+
+  <div class="topic-block">
+
+    <h3>
+      Lift-off is also a cleaning problem
+    </h3>
+
+    <p>
+      Once deposition is complete, the resist still needs to be removed without
+      damaging the desired structure. Solvent choice, soaking time, temperature,
+      agitation, and mechanical assistance can all affect the result.
+    </p>
+
+    <p>
+      Aggressive ultrasonication may remove stubborn material, but it can also
+      damage delicate features. For small or fragile structures, patience and
+      controlled solvent access can be more important than mechanical force.
+    </p>
+
+  </div>
+
+
+  <aside class="experience-note">
+
+    <p class="note-title">
+      From my cleanroom experience
+    </p>
+
+    <p>
+      I have used e-beam evaporation, thermal evaporation, and sputtering for
+      metallization and thin-film integration in both semiconductor and
+      research-device fabrication.
+    </p>
+
+    <p>
+      One practical lesson is that the deposition method should be selected
+      together with the patterning strategy. A highly directional deposition
+      can simplify lift-off, while a more conformal deposition may be preferable
+      when sidewall or step coverage is important for electrical continuity.
+    </p>
+
+    <p>
+      I therefore think about metallization as part of the full device process:
+      contact geometry, surface preparation, resist profile, film thickness,
+      adhesion, step coverage, and the next fabrication step all need to work
+      together.
+    </p>
+
+  </aside>
+
+
+  <div class="failure-grid">
+
+    <article class="failure-card">
+
+      <h3>
+        Metal fences
+      </h3>
+
+      <p>
+        Continuous deposition along the resist sidewall can leave narrow metal
+        remnants around the patterned feature after lift-off.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Bridging
+      </h3>
+
+      <p>
+        If the film connects across a narrow gap or along the resist profile,
+        neighboring structures can become electrically shorted.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Flaking
+      </h3>
+
+      <p>
+        Poorly separated film from the resist top can break into particles
+        during lift-off and redeposit elsewhere on the sample.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Poor adhesion
+      </h3>
+
+      <p>
+        Surface contamination, incompatible materials, or inadequate interface
+        preparation can cause the desired metal pattern to peel or delaminate.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Incomplete lift-off
+      </h3>
+
+      <p>
+        Insufficient solvent access, inadequate undercut, or excessive film
+        thickness can leave unwanted material attached to the device.
+      </p>
+
+    </article>
+
+
+    <article class="failure-card">
+
+      <h3>
+        Poor step coverage
+      </h3>
+
+      <p>
+        Highly directional deposition can become too thin at sharp topographic
+        transitions, producing discontinuous electrical paths.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
 
 
       <!-- Process Integration -->
