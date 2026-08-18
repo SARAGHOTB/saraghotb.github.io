@@ -1,274 +1,826 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="poststyle.css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>Physics lab</title>
-  </head>
 
-  <body>
-    <div class="container">
-      <header class="main-header">
-       <h1></h1>
-        <nav class="post-nav">
-          <a href="index.html">About</a>
-          <a href="Posts.html">Posts</a>
-          <a href="-blog/index.html">Blog</a>
-          <a href="CV.html">CV</a>
-        </nav>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <article>
-        <header class="post-header">
-          <h2>A Daily Dose of Physics</h2>
-          <p>Physics is the foundation for understanding the natural world, from the smallest particles to the complex behavior of materials and devices. In this section, I share explanations of concepts from theoretical and experimental physics that I have studied, researched, or find fascinating.
-The goal of this series is to make physics more approachable by exploring fundamental ideas, scientific discoveries, and the connections between theory and experiment. The topics cover areas such as condensed matter physics, quantum materials, and modern physics.</p>
-     
-          <img
-          src="img/hero2.jpg"
-          alt="HTML code on a screen"
-          width="500"
-          height="200"
-          class="post-img"
-        />
+  <meta
+    name="description"
+    content="Physics and research notes by Sara Ghotb, PhD, exploring superconductivity, quantum materials, electronic transport, condensed matter physics, experimental physics, and scientific measurement."
+  />
 
-        <h3>Let's learn some concepts in physics</h3>
+  <meta name="author" content="Sara Ghotb" />
+  <meta name="robots" content="index, follow" />
 
-        <section>
-          <div class="grid-2-cols">
-            <figure class="phys">
-              <img src="img/phys-dose/Hall.png" alt="Chair" />
-              <div class="phys-box">
-                <p class="comic-title"><a href="#">What is Hall effect?</a></p>
-                <p class="comics-description">
-                  Learn about Hall effect and it's signature in superconducting materials.
+  <title>Physics & Research | Sara Ghotb, PhD</title>
 
-                </p>
-              </div>
-            </figure>
-  
-            <figure class="phys">
-              <img src="img/phys-dose/resistivity.png" alt="Chair" />
-              <div class="phys-box">
-                <p class="comic-title"><a href="#">What is the limit of resistance one can measure?</a></p>
-                <p class="comics-description">
-                  How do you know how low the resistance is once the material goes through the phase transition to superconductivity state? and what do we mean by zero resistance?
-                </p>
-              </div>
-            </figure>
-        </section>
+  <link
+    rel="canonical"
+    href="https://saraghotb.github.io/Posts.html"
+  />
 
+  <link
+    rel="stylesheet"
+    href="/-style/style.css?v=20260818"
+  />
+
+</head>
+
+
+<body>
+
+  <div class="container">
+
+
+    <!-- Navigation -->
+    <header class="main-header">
+
+      <a href="index.html" class="site-name">
+        Sara Ghotb
+      </a>
+
+      <nav aria-label="Main navigation">
+
+        <a href="index.html">
+          About
+        </a>
+
+        <a href="Nanofabrication.html">
+          Nanofabrication
+        </a>
+
+        <a href="ThinFilmGrowth.html">
+          Thin Films
+        </a>
+
+        <a href="Characterization.html">
+          Characterization
+        </a>
+
+        <a href="Posts.html" class="active">
+          Physics
+        </a>
+
+        <a href="CV.html">
+          CV
+        </a>
+
+      </nav>
+
+    </header>
+
+
+
+    <main>
+
+
+      <!-- Page Hero -->
+      <section class="page-hero">
+
+        <p class="eyebrow">
+          Condensed Matter • Quantum Materials • Experimental Physics
+        </p>
+
+        <h1>
+          Physics & Research
+        </h1>
+
+        <p class="page-lead">
+          Physics is where my interest in fabrication began. Before a device
+          becomes a process flow, it starts with a physical question: how
+          electrons move, how materials organize, how superconductivity
+          emerges, or how a system responds to temperature and magnetic field.
+          This page is where I collect concepts, experiments, and research
+          topics that I have studied or simply find fascinating.
+        </p>
+
+      </section>
+
+
+
+      <!-- Why Physics -->
+      <section class="section">
+
+        <p class="section-label">
+          The Bigger Picture
+        </p>
+
+        <h2>
+          From physical questions to experimental devices
+        </h2>
+
+        <div class="content-narrow">
+
+          <p>
+            Condensed matter physics sits at an interesting intersection
+            between fundamental science and technology. Questions about
+            electronic structure, magnetism, superconductivity, disorder,
+            phase transitions, and quantum behavior can eventually lead to
+            materials and devices with entirely new functionality.
+          </p>
+
+          <p>
+            Experimental physics adds another layer: understanding a phenomenon
+            often requires growing the material, fabricating a device, designing
+            the measurement, and deciding whether the resulting signal really
+            represents the physics being investigated.
+          </p>
+
+          <p>
+            That connection between theory, materials, fabrication, and
+            measurement is one of the things I enjoy most about physics.
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- Research Areas -->
+      <section class="section">
+
+        <p class="section-label">
+          Research Themes
+        </p>
+
+        <h2>
+          Topics I keep coming back to
+        </h2>
+
+
+        <div class="expertise-grid">
+
+
+          <!-- Superconductivity -->
+          <article class="expertise-card">
+
+            <h3>
+              Superconductivity
+            </h3>
+
+            <p>
+              Superconductivity combines macroscopic quantum behavior,
+              electronic correlations, phase coherence, and some of the most
+              interesting unresolved questions in condensed matter physics.
+            </p>
+
+            <a href="HTC.html">
+              Explore superconductivity →
+            </a>
+
+          </article>
+
+
+
+          <!-- Little Parks -->
+          <article class="expertise-card">
+
+            <h3>
+              Little–Parks Effect
+            </h3>
+
+            <p>
+              A beautiful example of quantum interference at a macroscopic
+              scale, where the resistance of a superconducting ring oscillates
+              periodically with applied magnetic flux.
+            </p>
+
+            <a href="LP.html">
+              Explore Little–Parks →
+            </a>
+
+          </article>
+
+
+
+          <!-- Transport -->
+          <article class="expertise-card">
+
+            <h3>
+              Electronic Transport
+            </h3>
+
+            <p>
+              Resistivity, Hall response, magnetoresistance, and nonlinear
+              transport provide indirect but powerful ways to understand the
+              electronic structure and scattering processes inside a material.
+            </p>
+
+          </article>
+
+
+
+          <!-- Quantum Materials -->
+          <article class="expertise-card">
+
+            <h3>
+              Quantum Materials
+            </h3>
+
+            <p>
+              Correlated electrons, unconventional superconductivity, layered
+              materials, and emergent phases are recurring themes in the
+              systems I enjoy reading and thinking about.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- Superconductivity -->
+      <section class="section">
+
+        <p class="section-label">
+          Superconductivity
+        </p>
+
+        <h2>
+          More than zero resistance
+        </h2>
+
+        <div class="content-narrow">
+
+          <p>
+            Superconductivity is often introduced through its most striking
+            property: electrical resistance disappears below a critical
+            temperature. But the phenomenon is much richer than simply
+            perfect conductivity.
+          </p>
+
+          <p>
+            The superconducting state is characterized by phase coherence,
+            magnetic-field expulsion, flux quantization, and collective
+            quantum behavior. These properties make superconductors a
+            particularly interesting platform for asking how microscopic
+            electronic interactions produce macroscopic quantum states.
+          </p>
+
+          <p>
+            In unconventional superconductors, the problem becomes even more
+            interesting because the mechanism responsible for pairing may not
+            follow the simple picture developed for conventional
+            superconductors.
+          </p>
+
+        </div>
+
+
+        <div class="content-grid">
 
           <div>
-            <h3>Life of an experimental physicist</h3>
 
-<p>
-Physics is not only about developing theories and mathematical models; it is also
-about designing experiments and building the tools that allow us to explore the
-physical world. Experimental physicists use advanced fabrication techniques and
-measurement systems to create, manipulate, and understand materials and devices.
-</p>
+            <h3>
+              Why cuprates remain interesting
+            </h3>
 
-<p>
-Throughout my research journey, I have worked with a wide range of experimental
-techniques used in condensed matter physics, quantum materials, and semiconductor
-device research. These techniques include thin film growth, nanofabrication,
-cleanroom processing, and advanced material characterization.
-</p>
+            <p>
+              High-temperature cuprate superconductors exhibit a complicated
+              phase diagram in which superconductivity appears alongside
+              strongly correlated electronic behavior.
+            </p>
 
-<p>
-In this section, I introduce the fundamental principles behind the experimental
-tools used to fabricate and study modern materials and nanoscale devices.
-</p>
+            <p>
+              Understanding how charge carriers evolve across that phase
+              diagram remains closely connected to broader questions about
+              electronic correlations and the origin of superconductivity.
+            </p>
 
-<p>
-<a href="Experimental.html">Explore Experimental Techniques →</a>
-</p>
           </div>
 
-          <img
-            src="img/hero1.jpg"
-            alt="HTML code on a screen"
-            width="500"
-            height="200"
-            class="post-img"
-          />
-          <button>❤️ Like</button>
-        </header>
+
+          <aside class="note-card">
+
+            <p class="note-title">
+              A question I find fascinating
+            </p>
+
+            <p>
+              What does a transport measurement actually tell us about the
+              underlying electronic state?
+            </p>
+
+            <p>
+              Much of experimental condensed matter physics is about building
+              the bridge between an observable quantity and the microscopic
+              physics that produced it.
+            </p>
+
+          </aside>
+
+        </div>
+
+      </section>
 
 
-      <div class="phys-exp">
-        <h3>Experimental Tools:</h3>
-        <p>
-      Experimental physics relies on the ability to observe, measure, and manipulate physical systems. To investigate the properties of materials, experimental physicists use a wide range of specialized instruments that allow them to probe structural, electronic, magnetic, and optical behaviors at different length scales.
-Throughout my research journey, I have worked with various fabrication and characterization tools used to study advanced materials and nanoscale devices. In this section, I introduce the fundamental principles behind these techniques, explain how the instruments operate, and discuss their applications in modern physics research.
-The topics covered include thin-film deposition techniques, nanofabrication methods, microscopy, spectroscopy, and electrical characterization tools.
+
+      <!-- Little Parks -->
+      <section class="section">
+
+        <p class="section-label">
+          Quantum Interference
         </p>
-      </div>
 
-      <h3>Physical Property Measurement System (PPMS)</h3>
+        <h2>
+          The Little–Parks experiment
+        </h2>
+
+        <div class="content-narrow">
+
+          <p>
+            The Little–Parks effect is one of my favorite examples of how
+            quantum mechanics becomes visible at a device scale.
+          </p>
+
+          <p>
+            In a superconducting ring, the phase of the superconducting order
+            parameter must remain consistent around the closed loop. The
+            resulting flux quantization condition produces periodic changes in
+            the superconducting state as magnetic flux threads the ring.
+          </p>
+
+          <p>
+            Experimentally, these changes can appear as oscillations in
+            resistance near the superconducting transition.
+          </p>
+
+        </div>
+
+
+        <aside class="experience-note">
+
+          <p class="note-title">
+            From my research experience
+          </p>
+
+          <p>
+            During my doctoral research, I worked on superconducting
+            nanostructures designed for Little–Parks measurements. The
+            experiment required connecting materials growth, nanoscale
+            fabrication, device geometry, low-temperature transport, and
+            magnetic-field control.
+          </p>
+
+          <p>
+            It is a good example of why fabrication and physics cannot always
+            be separated: the geometry of the device is itself part of the
+            experiment.
+          </p>
+
+        </aside>
+
+
+        <div class="page-closing-links">
+
+          <a href="LP.html">
+            Read my Little–Parks notes →
+          </a>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- Hall Effect -->
+      <section class="section">
+
+        <p class="section-label">
+          Electronic Transport
+        </p>
+
+        <h2>
+          The Hall effect as a probe of electronic behavior
+        </h2>
+
+        <div class="content-narrow">
+
+          <p>
+            When a current-carrying material is placed in a magnetic field,
+            charge carriers experience a transverse force that produces a Hall
+            voltage. In a simple single-carrier metal, the Hall coefficient can
+            be directly related to the carrier density and carrier sign.
+          </p>
+
+          <p>
+            Real materials can be much more complicated. Multiple bands,
+            temperature-dependent scattering, reconstruction of the electronic
+            structure, and interaction effects can all influence the measured
+            Hall response.
+          </p>
+
+          <p>
+            That complexity is exactly what makes transport interesting:
+            deviations from the simplest expectation can contain information
+            about the underlying electronic system.
+          </p>
+
+        </div>
+
+
+        <div class="topic-block">
+
+          <h3>
+            Simple measurement, complicated interpretation
+          </h3>
+
+          <p>
+            Measuring a transverse voltage is experimentally straightforward
+            in principle. Interpreting what that voltage means can be much more
+            subtle.
+          </p>
+
+          <p>
+            Geometry, contact alignment, longitudinal-voltage mixing,
+            magnetic-field antisymmetrization, multiple carriers, and nonlinear
+            field dependence all become important when moving beyond the
+            simplest Hall-effect model.
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- Experimental Physics -->
+      <section class="section">
+
+        <p class="section-label">
+          Experimental Physics
+        </p>
+
+        <h2>
+          Physics becomes real when you have to measure it
+        </h2>
+
+        <div class="content-narrow">
+
+          <p>
+            Experimental physics is not simply the verification of theoretical
+            predictions. Often the experiment itself determines what questions
+            can realistically be answered.
+          </p>
+
+          <p>
+            Samples have defects. Contacts introduce resistance. Instruments
+            have noise floors. Temperature requires time to stabilize.
+            Magnetic fields have history. Fabrication changes the material.
+            Every measurement therefore contains both the physics of interest
+            and the realities of the experimental system.
+          </p>
+
+          <p>
+            Learning to separate those two is one of the most important skills
+            in experimental research.
+          </p>
+
+        </div>
+
+
+        <div class="lesson-grid">
+
+
+          <article class="lesson-card">
+
+            <span>
+              01
+            </span>
+
+            <h3>
+              Understand the instrument
+            </h3>
+
+            <p>
+              A measurement is easier to interpret when you understand how the
+              instrument actually generates the reported quantity.
+            </p>
+
+          </article>
+
+
+
+          <article class="lesson-card">
+
+            <span>
+              02
+            </span>
+
+            <h3>
+              Know the measurement limit
+            </h3>
+
+            <p>
+              Every experiment has finite resolution, noise, calibration
+              uncertainty, and a range over which the measurement remains
+              meaningful.
+            </p>
+
+          </article>
+
+
+
+          <article class="lesson-card">
+
+            <span>
+              03
+            </span>
+
+            <h3>
+              Look for artifacts
+            </h3>
+
+            <p>
+              A surprising signal is interesting, but before assigning new
+              physics to it, experimental artifacts need to be ruled out.
+            </p>
+
+          </article>
+
+
+
+          <article class="lesson-card">
+
+            <span>
+              04
+            </span>
+
+            <h3>
+              Reproduce the result
+            </h3>
+
+            <p>
+              Repeatability across samples, measurements, or experimental
+              conditions is often what separates a real phenomenon from an
+              accidental observation.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- Experimental Tools -->
+      <section class="section">
+
+        <p class="section-label">
+          Experimental Tools
+        </p>
+
+        <h2>
+          Instruments as extensions of the experiment
+        </h2>
+
+
+        <div class="failure-grid">
+
+
+          <!-- PPMS -->
+          <article class="failure-card">
+
+            <h3>
+              PPMS
+            </h3>
+
+            <p>
+              Cryogenic measurement systems make it possible to study
+              resistance, Hall response, magnetoresistance, susceptibility,
+              and other material properties as functions of temperature and
+              magnetic field.
+            </p>
+
+          </article>
+
+
+
+          <!-- XRD -->
+          <article class="failure-card">
+
+            <h3>
+              X-Ray Diffraction
+            </h3>
+
+            <p>
+              XRD connects diffraction to crystal structure, providing
+              information about phase, orientation, lattice parameters, and
+              crystalline quality.
+            </p>
+
+            <a href="XRD.html" class="text-link">
+              Explore XRD →
+            </a>
+
+          </article>
+
+
+
+          <!-- SQUID -->
+          <article class="failure-card">
+
+            <h3>
+              SQUID Magnetometry
+            </h3>
+
+            <p>
+              SQUID-based measurements use superconducting quantum interference
+              to detect extremely small magnetic signals and are particularly
+              useful for studying magnetic and superconducting materials.
+            </p>
+
+          </article>
+
+
+
+          <!-- Nanofabrication -->
+          <article class="failure-card">
+
+            <h3>
+              Nanofabrication
+            </h3>
+
+            <p>
+              In device-based experiments, fabrication determines the geometry
+              through which the physical system is interrogated. Lithography
+              and pattern transfer therefore become experimental tools
+              themselves.
+            </p>
+
+            <a href="Nanofabrication.html" class="text-link">
+              Explore nanofabrication →
+            </a>
+
+          </article>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- More Physics -->
+      <section class="section">
+
+        <p class="section-label">
+          More Physics
+        </p>
+
+        <h2>
+          Other topics I have explored
+        </h2>
+
+
+        <div class="expertise-grid">
+
+
+          <article class="expertise-card">
+
+            <h3>
+              Twisted Bilayer Graphene
+            </h3>
+
+            <p>
+              Moiré structures provide a remarkable example of how geometry
+              and electronic structure can combine to create new correlated
+              states.
+            </p>
+
+            <a href="GTL.html">
+              Read more →
+            </a>
+
+          </article>
+
+
+
+          <article class="expertise-card">
+
+            <h3>
+              Hubbard Model
+            </h3>
+
+            <p>
+              One of the foundational models for thinking about interacting
+              electrons, competition between kinetic energy and Coulomb
+              repulsion, and correlated electronic phases.
+            </p>
+
+            <a href="hubbard.html">
+              Read more →
+            </a>
+
+          </article>
+
+
+
+          <article class="expertise-card">
+
+            <h3>
+              High-Temperature Superconductors
+            </h3>
+
+            <p>
+              Cuprates remain one of the central materials families in the
+              study of unconventional superconductivity and strongly
+              correlated electrons.
+            </p>
+
+            <a href="HTC.html">
+              Read more →
+            </a>
+
+          </article>
+
+
+
+          <article class="expertise-card">
+
+            <h3>
+              Experimental Techniques
+            </h3>
+
+            <p>
+              A broader collection of tools and ideas used to grow, fabricate,
+              measure, and understand materials in experimental condensed
+              matter physics.
+            </p>
+
+            <a href="Experimental.html">
+              Explore techniques →
+            </a>
+
+          </article>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- Connection to the rest of the website -->
+      <section class="page-closing">
+
+        <p class="section-label">
+          From Physics to Devices
+        </p>
+
+        <h2>
+          Physics is the thread connecting the rest of this site
+        </h2>
+
+        <p>
+          My interests in nanofabrication, thin-film growth, semiconductor
+          processing, and characterization all grew from the same underlying
+          curiosity: understanding how materials behave and how physical ideas
+          can be turned into experiments and devices.
+        </p>
+
+
+        <div class="page-closing-links">
+
+          <a href="Nanofabrication.html">
+            Explore Nanofabrication →
+          </a>
+
+          <a href="ThinFilmGrowth.html">
+            Explore Thin Films →
+          </a>
+
+          <a href="Characterization.html">
+            Explore Characterization →
+          </a>
+
+        </div>
+
+      </section>
+
+
+    </main>
+
+
+
+    <footer class="footer">
+
       <p>
-        One of the essential measurements in a physics lab is a transport properties like measuring resistivity, Ac Susceptibility, Hall effect, and other kind of transport properties.
-        The Physical Property Measurement System or PPMS for short is the device which makes these kind of experiment happen. The cool thing about PPMS or device like that is the possibility of measuring the 
-        transport properties of all kind of material at very low temperature down to few mK.
-        PPMS system is designed to measure the physical properties of materials in bulk, thin film, and powder form. 
+        © 2026 Sara Ghotb
       </p>
 
-        <h3>X-Ray Diffractometer(XRD)</h3>
-        <p>
-          X-Ray diffraction is a technique used to determine the atomic and molecular structure of materials.
-          In crystal, atoms are placed align with each other and they have regular spacing where this spacing is about 10 A. The general process that happens in XRD is look exactly like diffraction.
-          The wavelength of the visible light is about 400 - 700 nm which is way bigger than the crystal spacing so we can not have this diffraction in the crystal with the visible light. 
-          However, if we can find a wavelength comparable to the atomic spacing 10 -10 m we can get a lot of information about the crystal by having the reflection in the crystal.
-          As a matter of fact, x-ray light has this similar wavelength and this whole process is called X-Ray diffraction.
-          Note that, we only get x-ray diffraction in the crystalline structure and there is no diffraction pattern for amorphous structures since they don't have any regular spacing.</p>
-          
-          <div class="author-box">
-            <img
-              src="img/posts/bragg.png"
-              alt="Bragg law"
-              width="650"
-              height="450"
-              class="author-img-gblxrd"
-            />
-          </div>
-          <p><a href="XRD.html">Read more</a> on XRD and the theories related to diffraction.</p>
-       
-
-        <h3>SQUID magnetometer</h3>
-        <p>
-          A SQUID (superconducting quantum interference device) is a very sensitive magnetometer used to measure extremely subtle magnetic fields, based on superconducting loops containing Josephson junctions. 
-          SQUIDs are sensitive enough to measure fields as low as 5×10−14 T with a few days of averaged measurements.
-
-          The mechanism of SQUID magnetometer is explained in the diagram. The sample is shown as green which has some magnetization (a dipole field is shown in the figure). The sample is put on the rod and it put up and down through the coil, it generates current in the coil because there is a change in flux associated with this coil. There is a SQUID loop fat away from this region and through the flux transformer there are current which are induced in the pick-up coils.
-          currents flow and generate the magnetic flux in the SQUID loop. The SQUID detects the magnetic flux and tells you how much current is present. The field that is generated in the SQUID loop is proportional to how much current is induced in the coil through which the magnetized sample is moving.
-          In this way even a very weak magnetized samples which induced a very weak currents in pick-up coil can be detected using a SQUID magnetometer.
-            <div class="author-box">
-              <img
-                src="img/SQUID.png"
-                alt="Bragg law"
-                width="650"
-                height="450"
-                class="author-img-gblxrd"
-              />
-            </div>
-          Also, note that the SQUID loop is kept far away from the sample and pick-up coil and it is kept in a magnetically shielded region because if we want to apply a magnetic field to the sample this magnetic field should not affect the SQUID.
-
-        </p>
-
- 
-
-        
-
-        <section>
-          <div class="grid-2-cols">
-            <figure class="phys">
-              <img src="img/phys-dose/cleanroom.jpg" alt="Chair" />
-              <div class="phys-box">
-                <p class="comic-title"><a href="#">Clean room</a></p>
-                
-                <p class="comics-description">
-
-                </p>
-              </div>
-            </figure>
-  
-            <figure class="phys">
-              <img src="img/phys-dose/resistivity.png" alt="Chair" />
-              <div class="phys-box">
-                <p class="comic-title"><a href="#">different class of superconducting material</a></p>
-                <p class="comics-description">
-                  
-                </p>
-              </div>
-            </figure>
-        </section>
-
-        <p>Hopefully you learned something new here. See you next time!</p>
-      </article>
-
-      <aside>
-        <h4>Related posts</h4>
-
-        <ul class="related">
-          <li class="related-post">
-            <img
-              src="img/related-1.jpg"
-              alt="lord of the rings"
-              width="100"
-              height="100"
-            />
-            <div>
-              <a href="LP.html" class="related-link">Little Parks effect</a>
-            </div>
-          </li>
-          <li class="related-post">
-            <img
-              src="img/related-2.jpeg"
-              alt="TBG"
-              width="100"
-              height="100"
-            />
-
-            <div>
-              <a href="GTL.html" class="related-link">Twisted bilayer Graphene </a>
-            </div>
-          </li>
-          <li class="related-post">
-            <img
-              src="img/related-3.png"
-              alt="The code on a screen"
-              width="100"
-              height="100"
-            />
-            <div>
-              <a href="hubbard.html" class="related-link">Hubbard model</a>
-            </div>
-          </li>
-
-          <li class="related-post">
-            <img
-              src="img/related-4.png"
-              alt="The code on a screen"
-              width="100"
-              height="100"
-            />
-            <div>
-              <a href="HTC.html" class="related-link">High temperature superconductors</a>
-            </div>
-          </li>
-
-          <li class="related-post">
-            <img
-              src="img/posts/bragg.png"
-              alt="The code on a screen"
-              width="100"
-              height="100"
-            />
-            <div>
-              <a href="XRD.html" class="related-link">X Ray Diffraction</a>
-            </div>
-          </li>
-        </ul>
-      </aside>
-
-
-      <footer class="footer">
-        <p id="copyright_name">Sara Ghotb</p> 
-        <a href="#" id="copyright_email">s.ghotb@gmail.com</a>
-      </p>
-      
-      <div>
-        <a href='https://twitter.com/sara94704737'><img src='https://img.icons8.com/ios-glyphs/30/000000/twitter-squared.png'/></a>
-        <a href='https://www.linkedin.com/in/sara-ghotb-b7355384/'><img src='https://img.icons8.com/ios-glyphs/30/000000/linkedin.png'/></a>
-        <a href='https://github.com/SARAGHOTB'><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/></a>
- 
-      </div>
     </footer>
-    </div>
-  </body>
-</html>
 
+
+  </div>
+
+</body>
+
+</html>
