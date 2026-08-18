@@ -2,175 +2,982 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="poststyle.css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Thin Film Growth & Deposition</title>
+  <meta
+    name="description"
+    content="Thin-film growth and deposition notes by Sara Ghotb, PhD, covering PLD, sputtering, evaporation, ALD, PECVD, film quality, interfaces, and process integration for semiconductor and quantum devices."
+  />
+
+  <title>Thin Films | Sara Ghotb, PhD</title>
+
+  <link rel="stylesheet" href="/-style/style.css?v=20260817" />
 </head>
-
 
 <body>
 
-<div class="container">
+  <div class="container">
+
+    <!-- Navigation -->
+    <header class="main-header">
+
+      <a href="index.html" class="site-name">
+        Sara Ghotb
+      </a>
+
+      <nav>
+        <a href="index.html">About</a>
+        <a href="Nanofabrication.html">Nanofabrication</a>
+        <a href="ThinFilmGrowth.html" class="active">Thin Films</a>
+        <a href="Characterization.html">Characterization</a>
+        <a href="CV.html">CV</a>
+      </nav>
+
+    </header>
 
 
-<header class="main-header">
+    <main>
 
-<h1>Thin Film Growth & Deposition</h1>
+      <!-- Page Hero -->
+      <section class="page-hero">
 
-<nav class="post-nav">
-    <a href="index.html">About</a>
-    <a href="Posts.html">Posts</a>
-    <a href="CV.html">CV</a>
-</nav>
+        <p class="eyebrow">
+          Materials • Deposition • Interfaces
+        </p>
 
-</header>
+        <h1>
+          Thin Films
+        </h1>
 
+        <p class="page-lead">
+          Thin films are where materials science becomes device engineering.
+          Their thickness, composition, structure, interfaces, roughness,
+          stress, and growth history can all influence how a semiconductor,
+          superconducting, optical, or quantum device ultimately behaves.
+          This page collects some of the deposition techniques I have worked
+          with and the practical considerations that matter beyond simply
+          putting a film on a substrate.
+        </p>
 
-
-<article>
-
-
-<header class="post-header">
-
-
-<h2>Thin Film Growth & Deposition</h2>
-
-
-<p>
-Thin films are layers of material ranging from a few atomic layers to several
-micrometers in thickness. The ability to grow thin films with precise control over
-composition, thickness, crystal structure, and interfaces has enabled many modern
-technologies, including semiconductor devices, superconducting electronics,
-quantum devices, and advanced sensors.
-</p>
+      </section>
 
 
-<p>
-Thin film deposition techniques allow researchers to engineer materials at the
-nanoscale and create structures with tailored physical properties. The choice of
-growth technique depends on the material system, desired film quality, substrate,
-and application requirements.
-</p>
+      <!-- Why Thin Films Matter -->
+      <section class="section">
+
+        <p class="section-label">
+          Why They Matter
+        </p>
+
+        <h2>
+          A thin film is not just a thin piece of bulk material
+        </h2>
+
+        <div class="content-narrow">
+
+          <p>
+            When material dimensions are reduced to the thin-film regime,
+            interfaces and surfaces become increasingly important. Crystal
+            structure, strain, defects, composition, surface morphology,
+            adhesion, and interactions with the substrate can all change the
+            resulting electrical, optical, magnetic, or superconducting
+            properties.
+          </p>
+
+          <p>
+            In device fabrication, the film must also survive everything that
+            happens next: lithography, plasma exposure, cleaning, thermal
+            cycling, contact formation, passivation, and packaging.
+          </p>
+
+          <p>
+            This is why I think about deposition as part of the complete device
+            process rather than as an isolated materials step.
+          </p>
+
+        </div>
+
+      </section>
 
 
-<img
-src="img/thinfilm-growth.jpg"
-alt="Thin film deposition"
-width="650"
-height="300"
-class="post-img"
-/>
+      <!-- Choosing Technique -->
+      <section class="section">
+
+        <p class="section-label">
+          Deposition Strategy
+        </p>
+
+        <h2>
+          Choosing a deposition technique
+        </h2>
+
+        <div class="content-grid">
+
+          <div>
+
+            <h3>
+              There is no universally best deposition method
+            </h3>
+
+            <p>
+              Different deposition techniques solve different problems.
+              A method that produces excellent conformality may not be ideal
+              for lift-off. A highly directional deposition may simplify
+              patterning while providing poor step coverage. A technique that
+              offers excellent crystalline quality may require substrate
+              temperatures that are incompatible with an integrated device.
+            </p>
+
+            <p>
+              The useful question is therefore not simply which technique
+              produces the highest-quality film in isolation, but which
+              deposition method produces the properties required by the
+              complete process flow.
+            </p>
+
+          </div>
 
 
+          <aside class="note-card">
 
-<h3>Thin Film Growth in Experimental Physics</h3>
+            <p class="note-title">
+              A useful way to choose
+            </p>
 
+            <p>
+              I usually think about:
+              <strong>
+                material compatibility, thickness control, conformality,
+                directionality, thermal budget, film quality, interfaces,
+                throughput, and downstream processing.
+              </strong>
+            </p>
 
-<p>
-In condensed matter physics and materials science, thin film growth is a crucial
-step in studying and developing functional materials. High-quality thin films
-enable the investigation of electronic, magnetic, optical, and superconducting
-properties while providing control over material composition and interfaces.
-</p>
+          </aside>
 
+        </div>
 
-<p>
-During my research journey, I have worked with several thin film deposition
-techniques to fabricate and study advanced materials, including superconducting
-oxide thin films and semiconductor structures.
-</p>
-
-
-
-<h3>Deposition Techniques</h3>
-
-
-<p>
-Thin film deposition techniques can be broadly categorized into physical and
-chemical deposition methods. Each technique offers unique advantages depending
-on the material system and the desired properties of the final film.
-</p>
+      </section>
 
 
+      <!-- Sputtering -->
+      <section class="section">
 
-<h3>Physical Vapor Deposition (PVD)</h3>
+        <p class="section-label">
+          Physical Vapor Deposition
+        </p>
 
+        <h2>
+          RF and DC sputtering
+        </h2>
 
-<p>
-Physical vapor deposition techniques create thin films by transferring atoms or
-molecules from a solid source material to a substrate through a vapor phase.
-These methods are widely used for metals, superconductors, semiconductors, and
-functional oxide materials.
-</p>
+        <div class="content-narrow">
 
+          <p>
+            In sputtering, energetic ions generated in a plasma bombard a
+            target and eject atoms from its surface. Those atoms travel through
+            the chamber and condense on the substrate to form a thin film.
+          </p>
 
-<ul>
-    <li>Pulsed Laser Deposition (PLD)</li>
-    <li>Molecular Beam Epitaxy (MBE)</li>
-    <li>RF/DC Magnetron Sputtering</li>
-    <li>Thermal Evaporation</li>
-    <li>E-beam Evaporation</li>
-</ul>
+          <p>
+            Sputtering is widely used because it can deposit many metals,
+            dielectrics, and functional materials with good thickness
+            uniformity and useful step coverage.
+          </p>
 
-
-
-<h3>Chemical Deposition Techniques</h3>
-
-
-<p>
-Chemical deposition methods rely on chemical reactions to form thin films on a
-substrate surface. These techniques are commonly used in semiconductor
-manufacturing and nanoscale device fabrication.
-</p>
+        </div>
 
 
-<ul>
-    <li>Atomic Layer Deposition (ALD)</li>
-    <li>Chemical Vapor Deposition (CVD)</li>
-    <li>Plasma Enhanced Chemical Vapor Deposition (PECVD)</li>
-</ul>
+        <div class="content-grid">
+
+          <div>
+
+            <h3>
+              DC versus RF sputtering
+            </h3>
+
+            <p>
+              DC sputtering is commonly used for electrically conductive
+              targets because charge can flow continuously through the target.
+              For insulating targets, charge accumulation can destabilize a DC
+              discharge.
+            </p>
+
+            <p>
+              RF sputtering uses an alternating electric field, allowing charge
+              to redistribute during the RF cycle and making it possible to
+              sputter insulating materials as well as conductors.
+            </p>
+
+          </div>
 
 
+          <aside class="note-card">
 
-<h3>My Experience</h3>
+            <p class="note-title">
+              More than deposition rate
+            </p>
 
+            <p>
+              Sputtering conditions can influence
+              <strong>
+                film stress, density, roughness, composition, step coverage,
+                adhesion, and damage to the underlying surface.
+              </strong>
+            </p>
 
-<p>
-My experience with thin film growth includes fabrication of superconducting oxide
-thin films using Pulsed Laser Deposition (PLD), as well as semiconductor and
-device fabrication processes involving multiple deposition techniques.
-</p>
+          </aside>
 
-
-<p>
-Understanding thin film growth requires knowledge of material properties,
-deposition parameters, interface engineering, and characterization methods.
-The quality of a thin film directly influences the performance and reliability
-of the final device.
-</p>
-
-
-</header>
+        </div>
 
 
-</article>
+        <div class="topic-block">
+
+          <h3>
+            Pressure changes the transport
+          </h3>
+
+          <p>
+            Working pressure affects how frequently sputtered atoms collide
+            with the process gas before reaching the substrate. At lower
+            pressure, transport is generally more ballistic and directional.
+            At higher pressure, increased scattering broadens the arrival-angle
+            distribution and can change film morphology and step coverage.
+          </p>
+
+        </div>
 
 
-<footer class="footer">
+        <div class="topic-block">
 
-<p id="copyright_name">Sara Ghotb</p>
+          <h3>
+            Power and deposition rate
+          </h3>
 
-<a href="#" id="copyright_email">
-s.ghotb@gmail.com
-</a>
+          <p>
+            Increasing sputter power generally increases the energy delivered
+            to the target and can increase deposition rate, but it can also
+            influence target heating, plasma conditions, film stress, and the
+            energy of species arriving at the substrate.
+          </p>
 
-</footer>
+          <p>
+            As with etching, a useful process is not necessarily the one with
+            the highest possible rate. Uniformity, repeatability, interfaces,
+            and resulting film properties are equally important.
+          </p>
+
+        </div>
+
+      </section>
 
 
-</div>
+      <!-- Evaporation -->
+      <section class="section">
+
+        <p class="section-label">
+          Physical Vapor Deposition
+        </p>
+
+        <h2>
+          E-beam and thermal evaporation
+        </h2>
+
+        <div class="content-narrow">
+
+          <p>
+            Evaporation deposits material by heating a source until atoms or
+            molecules enter the vapor phase and travel toward the substrate
+            under high vacuum.
+          </p>
+
+          <p>
+            Because the transport is relatively directional, evaporation is
+            particularly useful when lift-off and sharp pattern definition are
+            important.
+          </p>
+
+        </div>
+
+
+        <div class="failure-grid">
+
+          <article class="failure-card">
+
+            <h3>
+              Thermal evaporation
+            </h3>
+
+            <p>
+              The source material is heated resistively until it evaporates.
+              It is conceptually simple and can work very well for materials
+              with suitable vapor pressure and thermal behavior.
+            </p>
+
+          </article>
+
+
+          <article class="failure-card">
+
+            <h3>
+              E-beam evaporation
+            </h3>
+
+            <p>
+              A focused electron beam heats the source material locally,
+              enabling evaporation of materials that require much higher
+              temperatures than are practical with many resistive sources.
+            </p>
+
+          </article>
+
+        </div>
+
+
+        <div class="topic-block">
+
+          <h3>
+            Directionality is both an advantage and a limitation
+          </h3>
+
+          <p>
+            Directional deposition helps maintain discontinuity across a
+            lift-off resist profile and can produce clean patterned films.
+            However, it may also lead to poor coverage over steep topography,
+            etched sidewalls, or recessed features.
+          </p>
+
+          <p>
+            The choice between evaporation and a more conformal method therefore
+            depends on whether pattern definition or three-dimensional coverage
+            is more important for that layer.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- ALD -->
+      <section class="section">
+
+        <p class="section-label">
+          Conformal Deposition
+        </p>
+
+        <h2>
+          Atomic layer deposition
+        </h2>
+
+        <div class="content-narrow">
+
+          <p>
+            Atomic layer deposition, or ALD, builds films through alternating
+            surface reactions. Ideally, each precursor pulse reacts only with
+            available surface sites, making the reaction self-limiting.
+          </p>
+
+          <p>
+            Because growth occurs through repeated surface-reaction cycles,
+            ALD can provide excellent thickness control and highly conformal
+            coverage over complex three-dimensional structures.
+          </p>
+
+        </div>
+
+
+        <div class="process-principle">
+
+          <div>
+
+            <span class="principle-number">01</span>
+
+            <h3>
+              Precursor exposure
+            </h3>
+
+            <p>
+              The first precursor reacts with available surface sites until
+              those sites are saturated.
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <span class="principle-number">02</span>
+
+            <h3>
+              Purge
+            </h3>
+
+            <p>
+              Excess precursor and reaction products are removed before the
+              next reactant is introduced.
+            </p>
+
+          </div>
+
+
+          <div>
+
+            <span class="principle-number">03</span>
+
+            <h3>
+              Second reaction
+            </h3>
+
+            <p>
+              A second precursor reacts with the modified surface, completing
+              the cycle and preparing it for the next layer.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="topic-block">
+
+          <h3>
+            Conformality changes what is possible
+          </h3>
+
+          <p>
+            ALD is especially useful when a film must coat sidewalls, narrow
+            gaps, or three-dimensional structures rather than simply cover a
+            flat surface.
+          </p>
+
+          <p>
+            That same conformality can also create integration challenges.
+            Material grows on nearly every accessible surface, so openings can
+            gradually narrow or close as the film becomes thicker.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- PECVD -->
+      <section class="section">
+
+        <p class="section-label">
+          Chemical Deposition
+        </p>
+
+        <h2>
+          Plasma-enhanced chemical vapor deposition
+        </h2>
+
+        <div class="content-narrow">
+
+          <p>
+            PECVD uses plasma-generated reactive species to drive film-forming
+            reactions at the substrate surface. The plasma allows deposition
+            to occur at lower substrate temperatures than many purely thermal
+            CVD processes.
+          </p>
+
+          <p>
+            This makes PECVD particularly useful for dielectric films and
+            device structures where the thermal budget is limited.
+          </p>
+
+        </div>
+
+
+        <div class="topic-block">
+
+          <h3>
+            Lower temperature comes with different tradeoffs
+          </h3>
+
+          <p>
+            Plasma activation can make deposition possible at relatively low
+            temperature, but film density, hydrogen incorporation, stress,
+            composition, and interface quality can depend strongly on the
+            deposition conditions.
+          </p>
+
+          <p>
+            The film therefore needs to be evaluated for the function it must
+            perform: electrical insulation, passivation, optical behavior,
+            masking, mechanical protection, or another device role.
+          </p>
+
+        </div>
+
+
+        <aside class="experience-note">
+
+          <p class="note-title">
+            From my cleanroom experience
+          </p>
+
+          <p>
+            I have used both ALD and PECVD for dielectric integration in
+            semiconductor-device fabrication. One of the most important
+            differences between them in practice is the balance between
+            conformality, deposition rate, geometry, and the function of the
+            dielectric within the full process.
+          </p>
+
+          <p>
+            A film that looks continuous from the top surface may not
+            necessarily fill a complex internal geometry correctly. This is
+            why cross-sectional characterization can become essential when
+            evaluating deposition around three-dimensional structures.
+          </p>
+
+        </aside>
+
+      </section>
+
+
+      <!-- PLD -->
+      <section class="section">
+
+        <p class="section-label">
+          Epitaxial Growth
+        </p>
+
+        <h2>
+          Pulsed laser deposition
+        </h2>
+
+        <div class="content-narrow">
+
+          <p>
+            Pulsed laser deposition, or PLD, played a central role in my PhD
+            research on superconducting oxide thin films. In PLD, a high-energy
+            pulsed laser is focused onto a solid target, producing a transient
+            plume of energetic species that travels toward a heated substrate.
+          </p>
+
+          <p>
+            PLD is particularly useful for complex oxides because material can
+            often be transferred from a multicomponent target while preserving
+            the overall composition more effectively than in many simpler
+            evaporation processes.
+          </p>
+
+        </div>
+
+
+        <div class="content-grid">
+
+          <div>
+
+            <h3>
+              Growth is controlled by competing processes
+            </h3>
+
+            <p>
+              The final film depends on what happens at several stages:
+              laser-target interaction, plume formation, transport through the
+              background gas, adsorption on the substrate, surface diffusion,
+              nucleation, and crystallization.
+            </p>
+
+            <p>
+              Substrate temperature and background-gas pressure are therefore
+              not merely machine settings. They influence the energy and
+              mobility of arriving species and the thermodynamic and kinetic
+              conditions under which the crystal forms.
+            </p>
+
+          </div>
+
+
+          <aside class="note-card">
+
+            <p class="note-title">
+              What PLD taught me
+            </p>
+
+            <p>
+              Thin-film growth is not simply:
+              <strong>deposit material until the desired thickness is reached.</strong>
+            </p>
+
+            <p>
+              The real objective is to create the
+              <strong>
+                structure, composition, interfaces, and physical properties
+                required by the material system.
+              </strong>
+            </p>
+
+          </aside>
+
+        </div>
+
+
+        <div class="topic-block">
+
+          <h3>
+            Substrate temperature
+          </h3>
+
+          <p>
+            Temperature influences surface diffusion and the ability of
+            arriving species to reorganize into the desired crystalline
+            structure. Too little mobility can produce poorly ordered growth,
+            while excessive temperature can promote unwanted reactions,
+            desorption, or changes in composition.
+          </p>
+
+        </div>
+
+
+        <div class="topic-block">
+
+          <h3>
+            Background pressure
+          </h3>
+
+          <p>
+            Background gas affects plume transport and can change the kinetic
+            energy of species reaching the substrate. For oxide growth, oxygen
+            pressure can also influence oxidation state, phase stability, and
+            defect chemistry.
+          </p>
+
+          <p>
+            This makes pressure an important part of both the growth kinetics
+            and the resulting electronic properties of the material.
+          </p>
+
+        </div>
+
+
+        <div class="topic-block">
+
+          <h3>
+            Epitaxy and substrate choice
+          </h3>
+
+          <p>
+            The substrate is not simply a mechanical support. Crystal symmetry,
+            lattice mismatch, surface termination, orientation, and thermal
+            properties can all influence nucleation and epitaxial growth.
+          </p>
+
+          <p>
+            Strain and interface effects can become particularly important in
+            complex oxides, where relatively small structural differences may
+            modify electronic or superconducting behavior.
+          </p>
+
+        </div>
+
+
+        <aside class="experience-note">
+
+          <p class="note-title">
+            From my research experience
+          </p>
+
+          <p>
+            During my PhD, I used PLD to grow electron-doped cuprate
+            superconducting thin films across different compositions and
+            process conditions. Growth optimization relied on structural and
+            electrical feedback rather than on deposition parameters alone.
+          </p>
+
+          <p>
+            X-ray diffraction helped identify phase quality and structural
+            changes, while low-temperature electrical measurements provided
+            another measure of whether the growth conditions produced the
+            intended superconducting state.
+          </p>
+
+          <p>
+            This experience strongly shaped how I approach process development:
+            the deposition recipe, material structure, and final functional
+            measurement should tell a consistent story.
+          </p>
+
+        </aside>
+
+      </section>
+
+
+      <!-- Film Quality -->
+      <section class="section">
+
+        <p class="section-label">
+          Film Quality
+        </p>
+
+        <h2>
+          Thickness is only one property
+        </h2>
+
+        <div class="failure-grid">
+
+          <article class="failure-card">
+
+            <h3>
+              Thickness
+            </h3>
+
+            <p>
+              Controls geometry and functional response, but thickness
+              uniformity across the sample or wafer can be just as important
+              as the nominal value.
+            </p>
+
+          </article>
+
+
+          <article class="failure-card">
+
+            <h3>
+              Roughness
+            </h3>
+
+            <p>
+              Surface morphology can influence interfaces, lithography,
+              scattering, adhesion, contact formation, and subsequent
+              deposition.
+            </p>
+
+          </article>
+
+
+          <article class="failure-card">
+
+            <h3>
+              Stress
+            </h3>
+
+            <p>
+              Intrinsic and thermal stress can lead to cracking, bowing,
+              delamination, or changes in device behavior.
+            </p>
+
+          </article>
+
+
+          <article class="failure-card">
+
+            <h3>
+              Composition
+            </h3>
+
+            <p>
+              Stoichiometry, contamination, oxidation state, and impurity
+              incorporation can strongly influence functional material
+              properties.
+            </p>
+
+          </article>
+
+
+          <article class="failure-card">
+
+            <h3>
+              Crystallinity
+            </h3>
+
+            <p>
+              Grain structure, epitaxy, defects, and phase purity can dominate
+              the behavior of superconducting, semiconducting, and optical
+              materials.
+            </p>
+
+          </article>
+
+
+          <article class="failure-card">
+
+            <h3>
+              Interfaces
+            </h3>
+
+            <p>
+              Adhesion, interdiffusion, native oxides, surface preparation, and
+              reaction layers can determine whether the final multilayer stack
+              performs as intended.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- Thermal Processing -->
+      <section class="section">
+
+        <p class="section-label">
+          Thermal Processing
+        </p>
+
+        <h2>
+          Deposition does not always end when the chamber opens
+        </h2>
+
+        <div class="content-narrow">
+
+          <p>
+            Annealing and other thermal treatments can change crystallinity,
+            oxidation state, stress, interfaces, contact resistance, and
+            material phase.
+          </p>
+
+          <p>
+            In device fabrication, the thermal budget must be considered across
+            the whole process flow. A temperature that improves one interface
+            may damage another material or change a previously deposited layer.
+          </p>
+
+          <p>
+            Thermal processing is therefore another integration problem:
+            temperature, atmosphere, duration, ramp conditions, and material
+            sequence all matter.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- Practical Lessons -->
+      <section class="section">
+
+        <p class="section-label">
+          Practical Lessons
+        </p>
+
+        <h2>
+          What thin-film work has taught me
+        </h2>
+
+
+        <div class="lesson-grid">
+
+          <article class="lesson-card">
+
+            <span>01</span>
+
+            <h3>
+              Choose the film for the device, not the chamber
+            </h3>
+
+            <p>
+              A familiar deposition tool is not necessarily the best process.
+              The film should be selected around the geometry, interface, and
+              functional requirements of the device.
+            </p>
+
+          </article>
+
+
+          <article class="lesson-card">
+
+            <span>02</span>
+
+            <h3>
+              Interfaces can dominate the result
+            </h3>
+
+            <p>
+              Surface preparation, contamination, native oxides, and previous
+              processing can matter as much as the nominal film thickness.
+            </p>
+
+          </article>
+
+
+          <article class="lesson-card">
+
+            <span>03</span>
+
+            <h3>
+              Characterization belongs inside process development
+            </h3>
+
+            <p>
+              Thickness, structure, roughness, composition, and electrical
+              behavior provide feedback on whether the deposition actually
+              produced the intended material.
+            </p>
+
+          </article>
+
+
+          <article class="lesson-card">
+
+            <span>04</span>
+
+            <h3>
+              A good film must survive the next step
+            </h3>
+
+            <p>
+              The deposition process is only successful if the film remains
+              compatible with subsequent lithography, etching, cleaning,
+              thermal processing, and device integration.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- Closing -->
+      <section class="page-closing">
+
+        <p class="section-label">
+          Continuing Notes
+        </p>
+
+        <h2>
+          Materials are part of the process story
+        </h2>
+
+        <p>
+          I plan to continue expanding this page with deeper notes on thin-film
+          growth, interfaces, superconducting oxides, deposition physics,
+          process-dependent film properties, and the relationship between
+          material quality and device behavior.
+        </p>
+
+        <div class="page-closing-links">
+
+          <a href="Characterization.html">
+            Continue to Characterization →
+          </a>
+
+          <a href="Nanofabrication.html">
+            Back to Nanofabrication →
+          </a>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+      <p>
+        © 2026 Sara Ghotb
+      </p>
+
+    </footer>
+
+  </div>
 
 </body>
 
