@@ -1,55 +1,860 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="-style/style.css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LP effect</title>
-  </head>
-  <body>
-    <div class="container">
-      <header class="main-header">
-        <h1>Sara Ghotb</h1>
 
-        <nav>
-          <a href="index.html">About</a>
-          <a href="Posts.html">Posts</a>
-          <a href="-blog/index.html">Blog</a>
-          <a href="CV.html">CV</a>
-        </nav>
-      </header>
+<head>
 
-    <h2>High temperature superconductors</h2>
-    <div class="author-box">
-      <img
-        src="img/related-4.png"
-        alt="Headshot of Laura Jones"
-        width="700"
-        height="350"
-        class="author-img"
-      />
-    </div>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    High-Temperature Superconductivity | Sara Ghotb, PhD
+  </title>
+
+  <meta
+    name="description"
+    content="An introduction to high-temperature superconductivity, cuprates, Mott physics, doping, phase diagrams, and electron-doped superconductors."
+  />
+
+  <meta name="author" content="Sara Ghotb" />
+  <meta name="robots" content="index, follow" />
+
+  <link
+    rel="canonical"
+    href="https://saraghotb.github.io/HTC.html"
+  />
+
+  <link
+    rel="stylesheet"
+    href="/-style/style.css?v=20260819-htc"
+  />
+
+
+  <!-- Page-specific styles -->
+  <style>
+
+    .htc-figure {
+      margin: 38px 0;
+      text-align: center;
+    }
+
+    .htc-figure img {
+      display: block;
+
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+
+      margin: 0 auto;
+
+      border-radius: 12px;
+    }
+
+    .htc-hero-image img {
+      width: 650px !important;
+      max-width: 100% !important;
+    }
+
+    .physics-equation {
+      max-width: 760px;
+
+      margin: 28px 0;
+      padding: 22px 26px;
+
+      border-left: 4px solid #315f9e;
+      border-radius: 0 12px 12px 0;
+
+      background: #f4f7fa;
+
+      font-size: 1.08rem;
+      line-height: 1.75;
+
+      color: #273444;
+    }
+
+    .physics-equation strong {
+      color: #111827;
+    }
+
+    .htc-key-point {
+      max-width: 820px;
+
+      margin-top: 38px;
+      padding: 28px 30px;
+
+      border: 1px solid #dce4ea;
+      border-radius: 14px;
+
+      background: #f8fafb;
+    }
+
+    .htc-key-point h3 {
+      margin-bottom: 12px;
+    }
+
+    .htc-key-point p {
+      margin-bottom: 12px;
+
+      line-height: 1.78;
+
+      color: #59646e;
+    }
+
+    .htc-key-point p:last-child {
+      margin-bottom: 0;
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+  <!-- Navigation -->
+  <header class="main-header">
+
+    <a href="index.html" class="site-name">
+      Sara Ghotb
+    </a>
+
+    <nav aria-label="Main navigation">
+
+      <a href="index.html">
+        About
+      </a>
+
+      <a href="Nanofabrication.html">
+        Nanofabrication
+      </a>
+
+      <a href="ThinFilmGrowth.html">
+        Thin Films
+      </a>
+
+      <a href="Characterization.html">
+        Characterization
+      </a>
+
+      <a href="Posts.html" class="active">
+        Physics
+      </a>
+
+      <a href="CV.html">
+        CV
+      </a>
+
+    </nav>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- Hero -->
+    <section class="page-hero">
+
+      <p class="eyebrow">
+        Cuprates • Strong Correlations • Superconductivity • Quantum Materials
+      </p>
+
+      <h1>
+        High-Temperature Superconductivity
+      </h1>
+
+      <p class="page-lead">
+        High-temperature superconducting cuprates are among the most studied
+        and still most puzzling materials in condensed matter physics.
+        Their superconducting state emerges from a strongly correlated
+        electronic system in which conventional single-particle descriptions
+        are often insufficient.
+      </p>
+
+    </section>
+
+
+
+    <!-- Main image -->
+    <section class="section">
+
+      <div class="htc-figure htc-hero-image">
+
+        <img
+          src="img/related-4.png"
+          alt="Illustration related to high-temperature superconductivity and cuprate materials"
+        />
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Why interesting -->
+    <section class="section">
+
+      <p class="section-label">
+        The Problem
+      </p>
+
+      <h2>
+        Why are cuprates unusual?
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          One of the great successes of solid-state physics is band theory.
+          In many materials, the complicated interactions among many electrons
+          can be approximated by treating electrons as quasiparticles moving
+          through an effective periodic potential.
+        </p>
+
+        <p>
+          This picture explains the electronic behavior of a huge range of
+          metals, semiconductors, and insulators.
+        </p>
+
+        <p>
+          But there are important materials where this approach fails.
+          Cuprate superconductors belong to that more strongly correlated
+          category.
+        </p>
+
+      </div>
+
+
+      <div class="htc-key-point">
+
+        <h3>
+          The key difficulty
+        </h3>
+
+        <p>
+          In strongly correlated systems, electron–electron interactions are
+          not a small correction to the single-particle picture. They can
+          determine the electronic state itself.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Mott -->
+    <section class="section">
+
+      <p class="section-label">
+        Strong Correlations
+      </p>
+
+      <h2>
+        From band theory to the Mott insulator
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          A classic example of the failure of simple band theory is the
+          Mott insulator.
+        </p>
+
+        <p>
+          In a simplified band picture, a partially filled electronic band
+          should allow electrons to move through the lattice and therefore
+          produce metallic behavior.
+        </p>
+
+        <p>
+          However, sufficiently strong Coulomb repulsion between electrons can
+          suppress that motion. Moving one electron onto a site already
+          occupied by another electron costs an interaction energy, commonly
+          represented by \(U\).
+        </p>
+
+        <p>
+          When this interaction becomes large compared with the kinetic energy
+          associated with hopping between sites, an electronically insulating
+          state can emerge even though conventional band filling would suggest
+          a metal.
+        </p>
+
+      </div>
+
+
+      <div class="physics-equation">
+
+        <strong>
+          Competition:
+        </strong>
+
+        electron hopping \(t\)
+        &nbsp;&nbsp; vs. &nbsp;&nbsp;
+        Coulomb interaction \(U\)
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Hubbard -->
+    <section class="section">
+
+      <p class="section-label">
+        Hubbard Model
+      </p>
+
+      <h2>
+        A minimal model for interacting electrons
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          One of the simplest theoretical models that captures this competition
+          is the Hubbard model.
+        </p>
+
+        <p>
+          The model contains two central ingredients: electrons can hop between
+          neighboring lattice sites, and two electrons occupying the same site
+          experience an interaction energy.
+        </p>
+
+      </div>
+
+
+      <div class="physics-equation">
+
+        <strong>
+          H = −t Σ(c†ᵢcⱼ + h.c.) + U Σnᵢ↑nᵢ↓
+        </strong>
+
+      </div>
+
+
+      <div class="content-narrow">
+
+        <p>
+          The hopping term favors delocalized electrons and metallic behavior,
+          while the interaction term favors localization.
+        </p>
+
+        <p>
+          Despite its compact form, the Hubbard model can produce remarkably
+          rich behavior and remains one of the central theoretical frameworks
+          used when discussing strongly correlated electron systems.
+        </p>
+
+      </div>
+
+
+      <div class="page-closing-links">
+
+        <a href="hubbard.html">
+          Explore the Hubbard Model →
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Cuprate structure -->
+    <section class="section">
+
+      <p class="section-label">
+        Cuprates
+      </p>
+
+      <h2>
+        The CuO₂ planes
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          Cuprate superconductors are layered materials whose essential
+          electronic structure is associated with copper–oxygen
+          CuO₂ planes.
+        </p>
+
+        <p>
+          The parent compounds are typically antiferromagnetic insulators.
+          Their insulating behavior cannot be understood adequately using a
+          simple weakly interacting band picture.
+        </p>
+
+        <p>
+          The strong interactions among electrons, together with the magnetic
+          structure of the CuO₂ planes, provide the starting point for much of
+          the physics of the cuprates.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Doping -->
+    <section class="section">
+
+      <p class="section-label">
+        Doping
+      </p>
+
+      <h2>
+        Turning an antiferromagnetic insulator into a superconductor
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          One of the most remarkable features of the cuprates is what happens
+          when charge carriers are introduced into the parent material.
+        </p>
+
+        <p>
+          Depending on the material family, one can add either holes or
+          electrons to the CuO₂ planes.
+        </p>
+
+        <p>
+          As doping increases, long-range antiferromagnetic order is weakened,
+          the electronic structure evolves, and superconductivity appears over
+          an intermediate range of carrier concentration.
+        </p>
+
+      </div>
+
+
+      <div class="physics-equation">
+
+        <strong>
+          Parent insulator
+          → doped correlated metal
+          → superconductivity
+        </strong>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Phase diagram -->
+    <section class="section">
+
+      <p class="section-label">
+        Phase Diagram
+      </p>
+
+      <h2>
+        The superconducting dome
+      </h2>
+
+      <div class="content-grid">
+
+
+        <div>
+
+          <p>
+            The superconducting critical temperature \(T_c\) does not simply
+            increase continuously with carrier concentration.
+          </p>
+
+          <p>
+            Instead, superconductivity usually occupies a finite doping range,
+            producing the characteristic superconducting dome in the
+            temperature–doping phase diagram.
+          </p>
+
+          <p>
+            At lower doping, superconductivity competes or coexists with other
+            electronic and magnetic phenomena. At high doping, superconductivity
+            eventually disappears again.
+          </p>
+
+        </div>
+
+
+        <aside class="note-card">
+
+          <p class="note-title">
+            Why the phase diagram matters
+          </p>
+
+          <p>
+            The phase diagram is not simply a map of transition temperatures.
+            It is one of the main experimental clues to how magnetism,
+            correlations, electronic structure, and superconductivity are
+            connected.
+          </p>
+
+        </aside>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Electron vs hole -->
+    <section class="section">
+
+      <p class="section-label">
+        Electron vs. Hole Doping
+      </p>
+
+      <h2>
+        Similar materials, asymmetric phase diagrams
+      </h2>
+
+      <div class="experience-grid">
+
+
+        <div>
+
+          <h3>
+            Hole-doped cuprates
+          </h3>
+
+          <p>
+            Most known high-\(T_c\) cuprates are hole-doped systems.
+            Their phase diagrams include superconductivity as well as several
+            unusual normal-state regimes, including the extensively studied
+            pseudogap region.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Electron-doped cuprates
+          </h3>
+
+          <p>
+            Electron-doped systems such as
+            Pr<sub>2−x</sub>Ce<sub>x</sub>CuO<sub>4</sub> and
+            Nd<sub>2−x</sub>Ce<sub>x</sub>CuO<sub>4</sub> occupy a smaller
+            family of materials.
+          </p>
+
+          <p>
+            They share many important features with hole-doped cuprates but
+            show significant differences in magnetic order, electronic
+            structure, and the evolution of the normal state with doping.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- d-wave -->
+    <section class="section">
+
+      <p class="section-label">
+        Unconventional Pairing
+      </p>
+
+      <h2>
+        Superconductivity beyond conventional BCS expectations
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          In conventional superconductors, Cooper pairing is usually described
+          using an electron–phonon interaction and an isotropic
+          \(s\)-wave superconducting gap.
+        </p>
+
+        <p>
+          Cuprate superconductors are different. Their superconducting gap has
+          predominantly \(d\)-wave symmetry, meaning that the magnitude and
+          sign of the order parameter depend strongly on momentum direction.
+        </p>
+
+        <p>
+          This is one of the clearest indications that cuprate
+          superconductivity cannot simply be understood as a higher-temperature
+          version of ordinary phonon-mediated superconductivity.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Experimental probes -->
+    <section class="section">
+
+      <p class="section-label">
+        Experimental Physics
+      </p>
+
+      <h2>
+        How do we study these materials?
+      </h2>
+
+      <div class="lesson-grid">
+
+
+        <article class="lesson-card">
+
+          <span>
+            01
+          </span>
+
+          <h3>
+            Electrical transport
+          </h3>
+
+          <p>
+            Resistivity, Hall effect, and magnetoresistance reveal how charge
+            carriers and scattering evolve across the phase diagram.
+          </p>
+
+        </article>
+
+
+
+        <article class="lesson-card">
+
+          <span>
+            02
+          </span>
+
+          <h3>
+            Magnetic measurements
+          </h3>
+
+          <p>
+            Susceptibility and magnetization measurements identify magnetic
+            transitions and superconducting behavior.
+          </p>
+
+        </article>
+
+
+
+        <article class="lesson-card">
+
+          <span>
+            03
+          </span>
+
+          <h3>
+            Structural characterization
+          </h3>
+
+          <p>
+            X-ray diffraction and related techniques are essential because
+            crystal quality, orientation, and composition strongly affect
+            superconducting properties.
+          </p>
+
+        </article>
+
+
+
+        <article class="lesson-card">
+
+          <span>
+            04
+          </span>
+
+          <h3>
+            Nanoscale devices
+          </h3>
+
+          <p>
+            Patterning superconducting films into Hall bars, wires, and rings
+            allows transport and quantum-interference phenomena to be studied
+            directly.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- My Research -->
+    <section class="section">
+
+      <p class="section-label">
+        My Research
+      </p>
+
+      <h2>
+        Electron-doped cuprates and quantum transport
+      </h2>
+
+
+      <div class="experience-note">
+
+        <p class="note-title">
+          From my doctoral research
+        </p>
+
+        <p>
+          My PhD research focused on electron-doped cuprate superconductors,
+          particularly
+          Pr<sub>2−x</sub>Ce<sub>x</sub>CuO<sub>4</sub> (PCCO), where I
+          investigated electronic transport across different doping regimes.
+        </p>
+
+        <p>
+          The work combined epitaxial thin-film growth, structural
+          characterization, device fabrication, low-temperature electrical
+          transport, Hall measurements, and magnetic-field-dependent
+          measurements.
+        </p>
+
+        <p>
+          I was particularly interested in how transport coefficients evolve
+          with doping and temperature and what those measurements reveal about
+          changes in the underlying electronic structure.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Connection -->
+    <section class="section">
+
+      <p class="section-label">
+        From Materials to Devices
+      </p>
+
+      <h2>
+        Why fabrication matters in superconductivity research
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          Studying a correlated material often requires much more than simply
+          measuring a bulk crystal.
+        </p>
+
+        <p>
+          Thin films must first be grown with controlled composition and
+          crystalline quality. They are then patterned into geometries suitable
+          for transport measurements. Contacts, etching, film thickness, and
+          device geometry can all influence the resulting data.
+        </p>
+
+        <p>
+          This is one of the reasons superconductivity became closely connected
+          to my interest in thin-film growth and nanofabrication.
+        </p>
+
+      </div>
+
+
+      <div class="page-closing-links">
+
+        <a href="ThinFilmGrowth.html">
+          Explore Thin Films →
+        </a>
+
+        <a href="Nanofabrication.html">
+          Explore Nanofabrication →
+        </a>
+
+        <a href="LP.html">
+          Explore the Little–Parks Effect →
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Closing -->
+    <section class="page-closing">
+
+      <p class="section-label">
+        An Open Problem
+      </p>
+
+      <h2>
+        Why cuprates are still fascinating
+      </h2>
+
+      <p>
+        Decades after the discovery of high-temperature superconductivity,
+        cuprates continue to challenge our understanding of strongly
+        interacting quantum matter. Their phase diagrams connect
+        antiferromagnetism, unusual metallic states, electronic reconstruction,
+        and superconductivity in ways that are still actively investigated.
+      </p>
+
+
+      <div class="page-closing-links">
+
+        <a href="Posts.html">
+          Explore more Physics →
+        </a>
+
+        <a href="LP.html">
+          Little–Parks Effect →
+        </a>
+
+        <a href="index.html">
+          Back to About →
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <footer class="footer">
 
     <p>
-      One of the most successful description of electrons in solid is band theory which is based on reducing many body interactions to an effective one body description.
-However, there are various situation where band theory fails and the most known one is Mott insulator.
-According to the band theory we know that odd number of electrons per unit cell should give you a metal. For instance band theory prediction for CoO is to be a metal because it has odd number of electrons however it is an insulator.
-So band theory fails which means single particle image is not valid for all problems and we need to consider interaction effects as well.
-This is a great motivation for studying HM which is the simplest model that describes the electron in the lattice.
+      © 2026 Sara Ghotb
     </p>
 
-    <footer class="footer">
-      <p id="copyright_name">Sara Ghotb</p> 
-      <a href="#" id="copyright_email">s.ghotb@gmail.com</a>
-    </p>
-    
-    <div>
-      <a href='https://twitter.com/sara94704737'><img src='https://img.icons8.com/ios-glyphs/30/000000/twitter-squared.png'/></a>
-      <a href='https://www.linkedin.com/in/sara-ghotb-b7355384/'><img src='https://img.icons8.com/ios-glyphs/30/000000/linkedin.png'/></a>
-      <a href='https://github.com/SARAGHOTB'><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/></a>
-
-    </div>
   </footer>
-  </body>
+
+
+</div>
+
+</body>
+
 </html>
