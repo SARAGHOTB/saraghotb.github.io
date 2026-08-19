@@ -78,10 +78,24 @@
 
       background: #ffffff;
 
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+
       box-shadow:
         0 5px 14px
         rgba(17, 24, 39, 0.08);
     }
+
+    .art-item img:hover {
+  transform: scale(1.12);
+
+  box-shadow:
+    0 12px 28px
+    rgba(17, 24, 39, 0.18);
+
+  position: relative;
+  z-index: 10;
+}
 
 
     @media (max-width: 1000px) {
