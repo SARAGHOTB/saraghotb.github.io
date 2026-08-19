@@ -53,6 +53,150 @@
     href="/-style/bookstyle.css?v=20260819-new"
   />
 
+  <style>
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 38px;
+  }
+
+  .book-card {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 22px;
+    align-items: start;
+
+    padding: 22px;
+
+    border: 1px solid #e1e6ea;
+    border-radius: 14px;
+
+    background: #fafbfc;
+  }
+
+  .book-card .book-cover {
+    width: 110px !important;
+    height: 165px !important;
+    max-width: 110px !important;
+    max-height: 165px !important;
+
+    object-fit: contain !important;
+
+    margin: 0 !important;
+
+    border-radius: 5px;
+
+    background: #ffffff;
+
+    box-shadow: 0 5px 14px rgba(17, 24, 39, 0.08);
+  }
+
+  .book-info {
+    min-width: 0;
+  }
+
+  .book-info h3 {
+    margin-bottom: 4px;
+    font-size: 1.05rem;
+    line-height: 1.35;
+    color: #111827;
+  }
+
+  .book-author {
+    margin-bottom: 12px;
+    font-size: 0.84rem;
+    font-weight: 650;
+    color: #7a8590;
+  }
+
+  .book-note {
+    margin: 0;
+    font-size: 0.91rem;
+    line-height: 1.7;
+    color: #5c6771;
+  }
+
+
+  /* Small bookshelf covers */
+
+  .book-shelf {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 38px;
+  }
+
+  .shelf-book {
+    text-align: center;
+  }
+
+  .shelf-book img {
+    width: 95px !important;
+    height: 145px !important;
+    max-width: 95px !important;
+    max-height: 145px !important;
+
+    object-fit: contain !important;
+
+    margin: 0 auto 12px !important;
+
+    border-radius: 5px;
+
+    box-shadow: 0 5px 14px rgba(17, 24, 39, 0.08);
+  }
+
+  .shelf-book h3 {
+    margin-bottom: 3px;
+    font-size: 0.88rem;
+    line-height: 1.35;
+  }
+
+  .shelf-book p {
+    font-size: 0.76rem;
+    color: #7a8590;
+  }
+
+
+  @media (max-width: 900px) {
+
+    .book-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .book-shelf {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+
+  @media (max-width: 600px) {
+
+    .book-card {
+      grid-template-columns: 85px 1fr;
+      gap: 16px;
+    }
+
+    .book-card .book-cover {
+      width: 85px !important;
+      height: 128px !important;
+      max-width: 85px !important;
+      max-height: 128px !important;
+    }
+
+    .book-shelf {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .shelf-book img {
+      width: 85px !important;
+      height: 128px !important;
+      max-width: 85px !important;
+      max-height: 128px !important;
+    }
+  }
+</style>
+
 </head>
 
 
