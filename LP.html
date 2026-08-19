@@ -1,240 +1,879 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="-style/style.css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LP effect</title>
-  </head>
-  <body>
-    <div class="container">
-      <header class="main-header">
-        <h1>Sara Ghotb</h1>
 
-        <nav>
-          <a href="index.html">About</a>
-          <a href="Posts.html">Posts</a>
-          <a href="-blog/index.html">Blog</a>
-          <a href="CV.html">CV</a>
-        </nav>
-      </header>
+<head>
 
-    <h2>What is Little-Parks effect?</h2>
-    <div class="author-box">
-      <img
-        src="img/related-1.jpg"
-        alt="Headshot of Laura Jones"
-        width="850"
-        height="350"
-        class="author-img"
-      />
-    </div>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Little–Parks Effect | Sara Ghotb, PhD
+  </title>
+
+  <meta
+    name="description"
+    content="An introduction to the Little–Parks effect, fluxoid quantization, superconducting rings, and macroscopic quantum coherence."
+  />
+
+  <meta name="author" content="Sara Ghotb" />
+  <meta name="robots" content="index, follow" />
+
+  <link
+    rel="canonical"
+    href="https://saraghotb.github.io/LP.html"
+  />
+
+  <link
+    rel="stylesheet"
+    href="/-style/style.css?v=20260819-final"
+  />
+
+
+  <!-- Page-specific styles -->
+  <style>
+
+    .lp-figure {
+      margin: 38px 0;
+      text-align: center;
+    }
+
+    .lp-figure img {
+      display: block;
+      width: auto !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin: 0 auto;
+    }
+
+    .lp-hero-image img {
+      width: 620px !important;
+      max-width: 100% !important;
+      height: auto !important;
+      border-radius: 12px;
+    }
+
+    .lp-equation img {
+      width: auto !important;
+      max-width: 420px !important;
+      max-height: 150px !important;
+      object-fit: contain;
+    }
+
+    .lp-equation-small img {
+      max-width: 300px !important;
+      max-height: 120px !important;
+    }
+
+    .equation-text {
+      max-width: 760px;
+      margin: 28px 0;
+      padding: 22px 26px;
+
+      border-left: 4px solid #315f9e;
+      border-radius: 0 12px 12px 0;
+
+      background: #f4f7fa;
+
+      font-size: 1.08rem;
+      line-height: 1.75;
+
+      color: #273444;
+    }
+
+    .equation-text strong {
+      color: #111827;
+    }
+
+    .lp-key-point {
+      max-width: 820px;
+      margin-top: 38px;
+      padding: 28px 30px;
+
+      border: 1px solid #dce4ea;
+      border-radius: 14px;
+
+      background: #f8fafb;
+    }
+
+    .lp-key-point h3 {
+      margin-bottom: 12px;
+    }
+
+    .lp-key-point p {
+      margin-bottom: 12px;
+      line-height: 1.78;
+      color: #59646e;
+    }
+
+    .lp-key-point p:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 600px) {
+
+      .lp-equation img,
+      .lp-equation-small img {
+        max-width: 90% !important;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+  <!-- Navigation -->
+  <header class="main-header">
+
+    <a href="index.html" class="site-name">
+      Sara Ghotb
+    </a>
+
+    <nav aria-label="Main navigation">
+
+      <a href="index.html">
+        About
+      </a>
+
+      <a href="Nanofabrication.html">
+        Nanofabrication
+      </a>
+
+      <a href="ThinFilmGrowth.html">
+        Thin Films
+      </a>
+
+      <a href="Characterization.html">
+        Characterization
+      </a>
+
+      <a href="Posts.html" class="active">
+        Physics
+      </a>
+
+      <a href="CV.html">
+        CV
+      </a>
+
+    </nav>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- Hero -->
+    <section class="page-hero">
+
+      <p class="eyebrow">
+        Superconductivity • Flux Quantization • Quantum Interference
+      </p>
+
+      <h1>
+        Little–Parks Effect
+      </h1>
+
+      <p class="page-lead">
+        The Little–Parks effect is a striking example of macroscopic quantum
+        behavior in a superconductor. When a superconducting ring is placed in
+        a magnetic field, its transition temperature — and therefore its
+        resistance near the transition — oscillates periodically with the
+        magnetic flux threading the ring.
+      </p>
+
+    </section>
+
+
+
+    <!-- Main image -->
+    <section class="section">
+
+      <div class="lp-figure lp-hero-image">
+
+        <img
+          src="img/related-1.jpg"
+          alt="Illustration related to the Little–Parks effect and superconducting ring"
+        />
+
+      </div>
+
+    </section>
+
+
+
+    <!-- What is LP -->
+    <section class="section">
+
+      <p class="section-label">
+        The Phenomenon
+      </p>
+
+      <h2>
+        What is the Little–Parks effect?
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          Consider a thin superconducting ring cooled close to its
+          superconducting transition temperature. If a magnetic field is
+          applied perpendicular to the ring, magnetic flux passes through its
+          central opening.
+        </p>
+
+        <p>
+          Because the superconducting state is described by a complex order
+          parameter with a well-defined phase, the phase accumulated while
+          travelling once around the closed ring cannot take an arbitrary
+          value. The superconducting wavefunction must return to the same value
+          after one complete circuit.
+        </p>
+
+        <p>
+          This requirement produces a quantization condition. As the applied
+          magnetic flux increases continuously, the preferred winding number of
+          the superconducting state changes discretely.
+        </p>
+
+        <p>
+          Close to the superconducting transition, these changes slightly
+          modify the free energy and therefore the transition temperature
+          \(T_c\). If the sample is measured at a fixed temperature within the
+          transition, the modulation of \(T_c\) appears experimentally as an
+          oscillation of resistance with magnetic field.
+        </p>
+
+      </div>
+
+
+      <div class="lp-key-point">
+
+        <h3>
+          The central idea
+        </h3>
+
+        <p>
+          The resistance oscillation is not simply a classical
+          magnetoresistance effect. Its periodicity reflects the quantization
+          of the superconducting condensate around a closed loop.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Periodicity -->
+    <section class="section">
+
+      <p class="section-label">
+        Periodicity
+      </p>
+
+      <h2>
+        One flux quantum per period
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          For a conventional superconductor, the relevant charge carriers in
+          the condensate are Cooper pairs with charge magnitude \(2e\).
+          Consequently, the superconducting magnetic flux quantum is
+        </p>
+
+      </div>
+
+
+      <div class="equation-text">
+
+        <strong>Φ₀ = h / 2e</strong>
+
+        <br />
+
+        Φ₀ ≈ 2.07 × 10<sup>−15</sup> Wb
+
+      </div>
+
+
+      <div class="content-narrow">
+
+        <p>
+          If the effective area enclosed by the superconducting ring is
+          \(A_\mathrm{eff}\), the approximate magnetic-field period is
+        </p>
+
+      </div>
+
+
+      <div class="equation-text">
+
+        <strong>ΔB ≈ Φ₀ / A<sub>eff</sub></strong>
+
+      </div>
+
+
+      <div class="content-narrow">
+
+        <p>
+          This relationship is particularly elegant because the geometry of
+          the fabricated device determines the field period of the quantum
+          oscillation.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Flux vs fluxoid -->
+    <section class="section">
+
+      <p class="section-label">
+        Fluxoid Quantization
+      </p>
+
+      <h2>
+        Magnetic flux is only part of the story
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          In a superconducting ring it is useful to distinguish between
+          magnetic flux and <strong>fluxoid</strong>.
+        </p>
+
+        <p>
+          Magnetic flux describes the magnetic field passing through an area.
+          The fluxoid additionally accounts for the contribution associated
+          with the circulating superconducting current.
+        </p>
+
+        <p>
+          Deep inside a sufficiently thick superconductor, where the
+          supercurrent along the chosen contour is negligible, fluxoid
+          quantization can reduce approximately to ordinary flux quantization.
+          In thin or mesoscopic structures, however, the current contribution
+          can be important.
+        </p>
+
+      </div>
+
+
+      <!-- Existing equation 1 -->
+      <div class="lp-figure lp-equation">
+
+        <img
+          src="img/LP/eq1.png"
+          alt="London equations for superconducting current and electromagnetic fields"
+        />
+
+      </div>
+
+
+      <div class="content-narrow">
+
+        <p>
+          The London equations relate the superconducting current density to
+          electric and magnetic fields and introduce the London penetration
+          depth, which determines how magnetic fields decay inside a
+          superconductor.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Order parameter -->
+    <section class="section">
+
+      <p class="section-label">
+        Superconducting Phase
+      </p>
+
+      <h2>
+        Why must the fluxoid be quantized?
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          The superconducting state can be represented by a complex order
+          parameter
+        </p>
+
+      </div>
+
+
+      <div class="equation-text">
+
+        <strong>Ψ = |Ψ|e<sup>iθ</sup></strong>
+
+      </div>
+
+
+      <div class="content-narrow">
+
+        <p>
+          where \(|Ψ|\) describes the amplitude of the superconducting
+          condensate and \(θ\) is its phase.
+        </p>
+
+        <p>
+          When we travel once around a closed superconducting loop, the
+          wavefunction must remain single-valued. Therefore, the total phase
+          change must be an integer multiple of \(2π\):
+        </p>
+
+      </div>
+
+
+      <div class="equation-text">
+
+        <strong>∮ ∇θ · dl = 2πn</strong>
+
+        &nbsp;&nbsp;&nbsp; n = 0, ±1, ±2, ...
+
+      </div>
+
+
+      <div class="content-narrow">
+
+        <p>
+          Combining this phase condition with the relationship between the
+          superconducting current and vector potential leads directly to
+          fluxoid quantization.
+        </p>
+
+      </div>
+
+
+      <div class="lp-figure lp-equation lp-equation-small">
+
+        <img
+          src="img/LP/eq2.png"
+          alt="Superconducting current equation involving the phase gradient"
+        />
+
+      </div>
+
+
+      <div class="lp-figure lp-equation lp-equation-small">
+
+        <img
+          src="img/LP/eq3.png"
+          alt="Closed-loop integral around a superconducting ring"
+        />
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Fluxoid expression -->
+    <section class="section">
+
+      <p class="section-label">
+        The Quantization Condition
+      </p>
+
+      <h2>
+        From phase winding to discrete fluxoid states
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          Integrating around a closed contour that surrounds the hole of the
+          superconducting ring produces a term associated with the magnetic
+          flux and another associated with the screening current.
+        </p>
+
+      </div>
+
+
+      <div class="lp-figure lp-equation lp-equation-small">
+
+        <img
+          src="img/LP/eq4.png"
+          alt="Magnetic flux expression for a superconducting loop"
+        />
+
+      </div>
+
+
+      <div class="content-narrow">
+
+        <p>
+          The requirement that the superconducting phase winds by an integer
+          multiple of \(2π\) gives a discrete set of allowed fluxoid states.
+        </p>
+
+      </div>
+
+
+      <div class="lp-figure lp-equation">
+
+        <img
+          src="img/LP/eq5.png"
+          alt="Phase quantization condition around a superconducting loop"
+        />
+
+      </div>
+
+
+      <div class="lp-figure lp-equation">
+
+        <img
+          src="img/LP/eq6.png"
+          alt="Fluxoid quantization equation"
+        />
+
+      </div>
+
+
+      <div class="equation-text">
+
+        <strong>Φ<sub>fluxoid</sub> = nΦ₀</strong>
+
+        <br />
+
+        Φ₀ = h / 2e
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Why oscillation -->
+    <section class="section">
+
+      <p class="section-label">
+        Physical Picture
+      </p>
+
+      <h2>
+        Why does the resistance oscillate?
+      </h2>
+
+      <div class="content-grid">
+
+
+        <div>
+
+          <p>
+            The applied magnetic flux generally does not exactly equal an
+            integer number of flux quanta.
+          </p>
+
+          <p>
+            The superconducting condensate therefore establishes a circulating
+            current so that the system occupies one of its allowed fluxoid
+            states.
+          </p>
+
+          <p>
+            As the magnetic field changes, the kinetic energy associated with
+            this circulating supercurrent changes. Near the transition
+            temperature, this slightly shifts the free-energy balance between
+            the superconducting and normal states.
+          </p>
+
+          <p>
+            The result is a periodic modulation of \(T_c\). Measuring
+            resistance at a temperature on the superconducting transition
+            converts that small \(T_c\) modulation into an observable
+            resistance oscillation.
+          </p>
+
+        </div>
+
+
+        <aside class="note-card">
+
+          <p class="note-title">
+            Experimental signature
+          </p>
+
+          <p>
+            Plot resistance versus applied magnetic field near \(T_c\).
+          </p>
+
+          <p>
+            A Little–Parks signal appears as periodic oscillations whose field
+            period is determined primarily by the effective area of the ring
+            and the superconducting flux quantum.
+          </p>
+
+        </aside>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Why important -->
+    <section class="section">
+
+      <p class="section-label">
+        Why It Matters
+      </p>
+
+      <h2>
+        A macroscopic quantum experiment
+      </h2>
+
+      <div class="lesson-grid">
+
+
+        <article class="lesson-card">
+
+          <span>
+            01
+          </span>
+
+          <h3>
+            Phase coherence
+          </h3>
+
+          <p>
+            The effect demonstrates that the superconducting condensate
+            maintains a coherent quantum phase around a macroscopic closed
+            path.
+          </p>
+
+        </article>
+
+
+
+        <article class="lesson-card">
+
+          <span>
+            02
+          </span>
+
+          <h3>
+            Flux quantization
+          </h3>
+
+          <p>
+            The oscillation period directly reflects the discrete fluxoid
+            states allowed in a multiply connected superconductor.
+          </p>
+
+        </article>
+
+
+
+        <article class="lesson-card">
+
+          <span>
+            03
+          </span>
+
+          <h3>
+            Cooper-pair charge
+          </h3>
+
+          <p>
+            Conventional \(h/2e\) periodicity is associated with a condensate
+            whose elementary superconducting charge is \(2e\).
+          </p>
+
+        </article>
+
+
+
+        <article class="lesson-card">
+
+          <span>
+            04
+          </span>
+
+          <h3>
+            Device geometry matters
+          </h3>
+
+          <p>
+            The field period depends on ring area, making nanofabrication part
+            of the physics rather than simply a way of preparing the sample.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Research -->
+    <section class="section">
+
+      <p class="section-label">
+        My Research
+      </p>
+
+      <h2>
+        Little–Parks physics in electron-doped cuprates
+      </h2>
+
+
+      <div class="experience-note">
+
+        <p class="note-title">
+          From my doctoral research
+        </p>
+
+        <p>
+          During my PhD, I worked with electron-doped cuprate superconductors,
+          including Pr<sub>2−x</sub>Ce<sub>x</sub>CuO<sub>4</sub> (PCCO), and
+          fabricated sub-micron superconducting structures for quantum
+          transport experiments.
+        </p>
+
+        <p>
+          Little–Parks measurements are particularly interesting in
+          unconventional superconductors because they connect a directly
+          measurable transport signal to the phase coherence and flux
+          periodicity of the superconducting state.
+        </p>
+
+        <p>
+          Experimentally, this means that materials growth, device geometry,
+          nanofabrication quality, low-temperature transport, and magnetic-field
+          control all become part of the same physics problem.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Fabrication connection -->
+    <section class="section">
+
+      <p class="section-label">
+        From Physics to Fabrication
+      </p>
+
+      <h2>
+        The ring is part of the experiment
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          A Little–Parks measurement is a good example of why device
+          fabrication cannot always be separated from fundamental physics.
+        </p>
+
+        <p>
+          The lithographically defined ring area determines the expected
+          oscillation period. Edge damage can alter superconductivity. Line
+          width affects current distribution. Film homogeneity influences the
+          transition. Contact geometry affects the measured resistance.
+        </p>
+
+        <p>
+          In this kind of experiment, fabrication is not merely sample
+          preparation — it helps define the physical system being measured.
+        </p>
+
+      </div>
+
+
+      <div class="page-closing-links">
+
+        <a href="Nanofabrication.html">
+          Explore Nanofabrication →
+        </a>
+
+        <a href="Posts.html">
+          Back to Physics & Research →
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Closing -->
+    <section class="page-closing">
+
+      <p class="section-label">
+        Superconducting Rings
+      </p>
+
+      <h2>
+        A simple geometry with deeply quantum behavior
+      </h2>
+
+      <p>
+        The Little–Parks effect is one of the experiments I like because the
+        idea is conceptually simple — a superconducting ring in a magnetic
+        field — yet the measurement exposes the phase coherence of a
+        macroscopic quantum state.
+      </p>
+
+      <div class="page-closing-links">
+
+        <a href="Posts.html">
+          Explore more Physics →
+        </a>
+
+        <a href="Characterization.html">
+          Explore Characterization →
+        </a>
+
+        <a href="index.html">
+          Back to About →
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <footer class="footer">
 
     <p>
-      The Little- Parks (stroke-linecap) experiment measures the resistance of a nanoring close to its transition temperature as a function
-      of applied magnetic field. It is used to detect resistance oscillations as
-      a function of the magnetic field with a single field period set by the
-      size of the ring and the charge of the supercurrent carriers. For
-      conventional superconductors, the charge is always q = -2e for the
-      electron pairs. However, there are theoretical models predicting different
-      values for superconducting copper-oxygen materials (cuprates) in different
-      doping regimes. Up to now, at optimal doping with the maximum critical
-      temperature, the existing measurements with YBa2Cu3O7 nanorings have also
-      shown q = -2e. Since our expertise lies rather in Pr2-xCexCuO4, the
-      electron-doped cuprates, we propose to explore the Little-Parks effect on
-      this material as a function of doping.
-    </p>
-    <p>Before jumping to Little-Parks effect we need to first understand the concept of fluxoid.
-      London for the first time introduced the concept of fluxoid associated with each hole passing
-      through a superconductor.
+      © 2026 Sara Ghotb
     </p>
 
-    <h3>Fluxoid quantization</h3>
-    <p>
-      One of the important phenomena that shows an evidence of a macroscopic quantum behavior in superconducting materials happens at multiply connected superconductors like superconducting rings or superconducting cylinders where there is a flux quantization.
-      London for the first time introduced the concept of fluxoid associated with each hole passing through the superconducting material.
-      Before start to introduce the concept of fluxoid, first lets review London equation.
-      Where first term is ordinary flux and the second term is for screening current part.
-      If the loop is taken in the interior of a bulk sc where the current is zero the fluxoid equals to
-      flux. So for a loop enclosing purely superconducting material the integration in the second term
-      vanishes everywhere inside the loop and the fluxoid would be have to zero.
-      However, if there is a physical hole or normal- non-sc material (where London equations are not
-      valid) the deduction that Φ = 0 is not valid any more.
-      One can show that the fluxoid has the same value for the same value for any loop in the sc enclosing the same non-sc spot and that value remains constant and the fluxoid is quantized in units of hq where q is the charge carrier and there are experiments that are designed to determine this q.
-      Frietz and Heinz London developed two important equations which relates the current to the electromagnetic field in superconducting materials.
-    </p>
-    <div class="author-box">
-      <img
-        src="img/LP/eq1.png"
-        alt="Bragg law"
-        width="250"
-        height="200"
-        class="author-img-gbleq"
-      />
-    </div>
-    <p>
-      in these equations Js is the superconducting current density and the E and B are respectively electric and the magnetic fields within the super- conductor. Also by looking at these equations it can be realized that the constant part looks like the London penetration depth. So, obviously critical current density and superconductivity coherent length and penetration depth are related.
-    </p>
-    <p>
-      From the second Ginzburg-Landau equation we can write:
-    </p>
-    <div class="author-box">
-      <img
-        src="img/LP/eq2.png"
-        alt="Bragg law"
-        width="250"
-        height="100"
-        class="author-img-gbleq"
-      />
-    </div>
-    <p>If we want to apply this equation on a closed line path around a hole in the superconductor we will have:</p>
-    <div class="author-box">
-      <img
-        src="img/LP/eq3.png"
-        alt="Bragg law"
-        width="250"
-        height="100"
-        class="author-img-gbleq"
-      />
-    </div>
-    <p>
-      In this formula Φ is called fluxoid which is the sum of two terms, where Φ is the ordinary magnetic flux enclosed in the area surrounded by the closed loop and the term associated with the screening current.
-      So from the definition of an ordinary flux in the loop, we have:
-    </p>
-    <div class="author-box">
-      <img
-        src="img/LP/eq4.png"
-        alt="Bragg law"
-        width="250"
-        height="100"
-        class="author-img-gbleq"
-      />
-    </div>
-    <p>
-      Fluxoid (Φ) is zero if we have purely superconducting material. So if the path encloses no hole and only superconducting material, fluxoid is going to be zero and the London equations are valid.
-      However, as soon as we have a hole or any non superconducting material in
-      the system fluxoid is not going to be zero. Φ has a unique constant value for all contours enclosing any given hole, which London predicted that this value should have a discrete set.
-      In order to understand better this equation lets look at it more closely.
-    </p>
-    <p>
-      If the loop which is taken in the interior bulk of the superconductor where the current is zero (Js = 0) the second term in the equation is zero and fluxoid is going to be equal to flux. Also, for the loop enclosing the purley superconducting material the Meisner effect exclude all the magnetic field from the material and the fluxoid is going to be zero.
-    </p>
-    <p>
-      Depending on the temperature and the value of the magnetic field, the order parameter will alter between zero and one. So the value for fluxoid is going to be zero inside the superconductor. However, if we have a physical hole or non superconducting material (where the London equations are not valid anymore) inside the superconducting material the deduction that fluxoid is zero is not hold anymore and two terms in the equation exist and they are both important.
-    </p>
-    <p>
-      So one can show that fluxoid has the same value for any loop in the super- conducting material enclosing the same non superconducting spot.
-      In order to show that fluxoid is quantized, from the fluxoid equation, the integral on the right side over the full path must be integer multiple of 2π in order to have the order parameter, single valued.
-    </p>
-    <div class="author-box">
-      <img
-        src="img/LP/eq5.png"
-        alt="Bragg law"
-        width="350"
-        height="100"
-        class="author-img-gbleq"
-      />
-    </div>
-    <p>
-      So the equation writes as:
-    </p>
-    <div class="author-box">
-      <img
-        src="img/LP/eq6.png"
-        alt="Bragg law"
-        width="300"
-        height="100"
-        class="author-img-gbleq"
-      />
-    </div>
-
-    <p>
-      Where, Φ0 = h = 2.07 × 10−7G − cm2 is the flux quantum for pair. This 2e
-      equation describes flux quantization.
-      From this equation one concludes that, if the integration is on the part that the screening currents are negligable, then the total magnetic flux through a superconducting loop is quantized in units of flux.
-      (This equation is equivalent to the Bohr-Sommerfeld quantum condition). After London prediction of fluxoid, different experiments have shown that the flux which is trapped in a multiply connected superconductors is multi- ple unit of hc/2e.
-    </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="footer">
-      <p id="copyright_name">Sara Ghotb</p> 
-      <a href="#" id="copyright_email">s.ghotb@gmail.com</a>
-    </p>
-    
-    <div>
-      <a href='https://twitter.com/sara94704737'><img src='https://img.icons8.com/ios-glyphs/30/000000/twitter-squared.png'/></a>
-      <a href='https://www.linkedin.com/in/sara-ghotb-b7355384/'><img src='https://img.icons8.com/ios-glyphs/30/000000/linkedin.png'/></a>
-      <a href='https://github.com/SARAGHOTB'><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/></a>
-
-    </div>
   </footer>
-  </body>
+
+
+</div>
+
+</body>
+
 </html>
