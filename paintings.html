@@ -2,10 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Painting & Art | Sara Ghotb</title>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Painting & Art | Sara Ghotb
+  </title>
 
   <meta
     name="description"
@@ -20,438 +27,740 @@
     href="https://saraghotb.github.io/paintings.html"
   />
 
-<link rel="stylesheet" href="/-style/style.css?v=20260819-final">
+  <link
+    rel="stylesheet"
+    href="/-style/style.css?v=20260819-paintings"
+  />
+
+
+  <!-- Painting-specific styles -->
+  <style>
+
+    .art-gallery {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+      gap: 20px;
+
+      margin-top: 38px;
+
+      align-items: start;
+    }
+
+
+    .art-item {
+      margin: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      text-align: center;
+    }
+
+
+    .art-item img {
+      display: block;
+
+      width: auto !important;
+      height: auto !important;
+
+      max-width: 210px !important;
+      max-height: 270px !important;
+
+      object-fit: contain !important;
+
+      margin: 0 auto !important;
+
+      border-radius: 8px;
+
+      background: #ffffff;
+
+      box-shadow:
+        0 5px 14px
+        rgba(17, 24, 39, 0.08);
+    }
+
+
+    @media (max-width: 1000px) {
+
+      .art-gallery {
+        grid-template-columns:
+          repeat(3, minmax(0, 1fr));
+      }
+
+    }
+
+
+    @media (max-width: 750px) {
+
+      .art-gallery {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+
+        gap: 16px;
+      }
+
+
+      .art-item img {
+        max-width: 180px !important;
+        max-height: 240px !important;
+      }
+
+    }
+
+
+    @media (max-width: 500px) {
+
+      .art-gallery {
+        grid-template-columns:
+          repeat(2, minmax(0, 1fr));
+
+        gap: 12px;
+      }
+
+
+      .art-item img {
+        max-width: 145px !important;
+        max-height: 190px !important;
+      }
+
+    }
+
+  </style>
 
 </head>
 
 
 <body>
 
-  <div class="container">
+
+<div class="container">
 
 
-    <!-- Navigation -->
-    <header class="main-header">
+  <!-- Navigation -->
+  <header class="main-header">
 
-      <a href="index.html" class="site-name">
-        Sara Ghotb
+    <a
+      href="index.html"
+      class="site-name"
+    >
+      Sara Ghotb
+    </a>
+
+
+    <nav aria-label="Main navigation">
+
+      <a href="index.html">
+        About
       </a>
 
-      <nav aria-label="Main navigation">
-        <a href="index.html">About</a>
-        <a href="Nanofabrication.html">Nanofabrication</a>
-        <a href="ThinFilmGrowth.html">Thin Films</a>
-        <a href="Characterization.html">Characterization</a>
-        <a href="Posts.html">Physics</a>
-        <a href="CV.html">CV</a>
-      </nav>
+      <a href="Nanofabrication.html">
+        Nanofabrication
+      </a>
 
-    </header>
+      <a href="ThinFilmGrowth.html">
+        Thin Films
+      </a>
 
+      <a href="Characterization.html">
+        Characterization
+      </a>
 
+      <a href="Posts.html">
+        Physics
+      </a>
 
-    <main>
+      <a href="CV.html">
+        CV
+      </a>
 
+    </nav>
 
-      <!-- Hero -->
-      <section class="page-hero">
+  </header>
 
-        <p class="eyebrow">
-          Painting • Drawing • Color • Abstraction
-        </p>
 
-        <h1>
-          Painting & Art
-        </h1>
 
-        <p class="page-lead">
-          Painting is one of the ways I step outside the structure of
-          scientific work and explore ideas more freely. I enjoy experimenting
-          with color, geometry, patterns, landscapes, and abstraction — sometimes
-          with pencils and paint, and sometimes digitally.
-        </p>
+  <main>
 
-      </section>
 
+    <!-- Hero -->
+    <section class="page-hero">
 
-
-      <!-- Introduction -->
-      <section class="section">
-
-        <p class="section-label">
-          Why I Paint
-        </p>
-
-        <h2>
-          Another way of looking closely
-        </h2>
-
-        <div class="content-narrow">
-
-          <p>
-            I am a physicist by training, but I have always enjoyed creative
-            work. Painting gives me a very different kind of space to experiment:
-            there does not need to be a measurement, a process window, or a
-            correct answer.
-          </p>
-
-          <p>
-            At the same time, I often notice connections between the things that
-            attract me in science and the things that attract me visually:
-            symmetry, repetition, irregularity, structure, scale, texture, and
-            patterns found in nature.
-          </p>
-
-          <p>
-            I have experimented with colored pencils, traditional painting, and
-            digital illustration. This page is simply a growing collection of
-            things I have made and enjoyed making.
-          </p>
-
-        </div>
-
-      </section>
-
-
-
-      <!-- Art and Science -->
-      <section class="section section-alt">
-
-        <p class="section-label">
-          Art & Science
-        </p>
-
-        <h2>
-          Pattern, structure, and observation
-        </h2>
-
-        <div class="experience-grid">
-
-          <div>
-
-            <h3>
-              Nature is full of patterns
-            </h3>
-
-            <p>
-              Microscopic structures, crystal lattices, interference patterns,
-              magnetic fields, branching structures, and geometries found in
-              nature can all be visually fascinating.
-            </p>
-
-            <p>
-              Scientific images are created to convey information, but they can
-              also reveal unexpected forms, textures, and symmetries.
-            </p>
-
-          </div>
-
-
-          <div>
-
-            <h3>
-              Creating without a process recipe
-            </h3>
-
-            <p>
-              In fabrication, small variations can determine whether a process
-              succeeds or fails. Painting gives me almost the opposite
-              experience: variations, imperfections, and unexpected results can
-              become part of the work.
-            </p>
-
-            <p>
-              That freedom is probably one of the reasons I enjoy it.
-            </p>
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-
-      <!-- Materials -->
-      <section class="section">
-
-        <p class="section-label">
-          Materials
-        </p>
-
-        <h2>
-          What I like to work with
-        </h2>
-
-        <div class="expertise-grid">
-
-
-          <article class="expertise-card">
-
-            <h3>
-              Colored Pencils
-            </h3>
-
-            <p>
-              I particularly enjoy colored pencils for their precision,
-              layering, and ability to build color gradually.
-            </p>
-
-          </article>
-
-
-          <article class="expertise-card">
-
-            <h3>
-              Painting
-            </h3>
-
-            <p>
-              Traditional painting gives me more freedom to work with texture,
-              larger shapes, color relationships, and less controlled forms.
-            </p>
-
-          </article>
-
-
-          <article class="expertise-card">
-
-            <h3>
-              Digital Art
-            </h3>
-
-            <p>
-              Digital drawing opened another way to experiment with composition,
-              repetition, geometry, and color without being limited by physical
-              materials.
-            </p>
-
-          </article>
-
-
-          <article class="expertise-card">
-
-            <h3>
-              Experimentation
-            </h3>
-
-            <p>
-              I do not try to stay within one particular style. Part of the fun
-              is trying something different and seeing where it goes.
-            </p>
-
-          </article>
-
-
-        </div>
-
-      </section>
-
-
-
-      <!-- Gallery -->
-      <section class="section art-gallery-section">
-
-        <p class="section-label">
-          Gallery
-        </p>
-
-        <h2>
-          Some of my work
-        </h2>
-
-        <p class="section-intro">
-          A selection of paintings, drawings, and visual experiments I have
-          created over time.
-        </p>
-
-
-        <div class="art-gallery">
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-1.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-2.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-3.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-4.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-5.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-6.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-7.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-8.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-9.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-10.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-11.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-12.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-13.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-14.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-15.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-16.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-17.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-18.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-19.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-20.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-21.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-22.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-23.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-24.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-25.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-26.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-27.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-28.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-29.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-30.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-31.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-32.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-          <figure class="art-item">
-            <img src="img/gallery/gal-33.jpeg" alt="Artwork by Sara Ghotb" loading="lazy" />
-          </figure>
-
-        </div>
-
-      </section>
-
-
-
-      <!-- Closing -->
-      <section class="page-closing">
-
-        <p class="section-label">
-          Beyond the Lab
-        </p>
-
-        <h2>
-          Different kinds of curiosity
-        </h2>
-
-        <p>
-          Painting, reading, learning languages, and physics may look like very
-          different interests, but for me they share something important:
-          curiosity and the enjoyment of learning by doing.
-        </p>
-
-        <div class="page-closing-links">
-
-          <a href="index.html">
-            Back to About →
-          </a>
-
-          <a href="books.html">
-            Explore Books & Reading →
-          </a>
-
-        </div>
-
-      </section>
-
-
-    </main>
-
-
-
-    <footer class="footer">
-
-      <p>
-        © 2026 Sara Ghotb
+      <p class="eyebrow">
+        Painting • Drawing • Color • Abstraction
       </p>
 
-    </footer>
+      <h1>
+        Painting & Art
+      </h1>
+
+      <p class="page-lead">
+        Painting is one of the ways I step outside the structure of
+        scientific work and explore ideas more freely. I enjoy experimenting
+        with color, geometry, patterns, landscapes, and abstraction —
+        sometimes with pencils and paint, and sometimes digitally.
+      </p>
+
+    </section>
 
 
-  </div>
+
+    <!-- Introduction -->
+    <section class="section">
+
+      <p class="section-label">
+        Why I Paint
+      </p>
+
+      <h2>
+        Another way of looking closely
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          I am a physicist by training, but I have always enjoyed creative
+          work. Painting gives me a very different kind of space to
+          experiment: there does not need to be a measurement, a process
+          window, or a correct answer.
+        </p>
+
+        <p>
+          At the same time, I often notice connections between the things
+          that attract me in science and the things that attract me visually:
+          symmetry, repetition, irregularity, structure, scale, texture, and
+          patterns found in nature.
+        </p>
+
+        <p>
+          I have experimented with colored pencils, traditional painting,
+          and digital illustration. This page is simply a growing collection
+          of things I have made and enjoyed making.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Art and Science -->
+    <section class="section section-alt">
+
+      <p class="section-label">
+        Art & Science
+      </p>
+
+      <h2>
+        Pattern, structure, and observation
+      </h2>
+
+
+      <div class="experience-grid">
+
+
+        <div>
+
+          <h3>
+            Nature is full of patterns
+          </h3>
+
+          <p>
+            Microscopic structures, crystal lattices, interference patterns,
+            magnetic fields, branching structures, and geometries found in
+            nature can all be visually fascinating.
+          </p>
+
+          <p>
+            Scientific images are created to convey information, but they can
+            also reveal unexpected forms, textures, and symmetries.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Creating without a process recipe
+          </h3>
+
+          <p>
+            In fabrication, small variations can determine whether a process
+            succeeds or fails. Painting gives me almost the opposite
+            experience: variations, imperfections, and unexpected results
+            can become part of the work.
+          </p>
+
+          <p>
+            That freedom is probably one of the reasons I enjoy it.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Materials -->
+    <section class="section">
+
+      <p class="section-label">
+        Materials
+      </p>
+
+      <h2>
+        What I like to work with
+      </h2>
+
+
+      <div class="expertise-grid">
+
+
+        <article class="expertise-card">
+
+          <h3>
+            Colored Pencils
+          </h3>
+
+          <p>
+            I particularly enjoy colored pencils for their precision,
+            layering, and ability to build color gradually.
+          </p>
+
+        </article>
+
+
+
+        <article class="expertise-card">
+
+          <h3>
+            Painting
+          </h3>
+
+          <p>
+            Traditional painting gives me more freedom to work with texture,
+            larger shapes, color relationships, and less controlled forms.
+          </p>
+
+        </article>
+
+
+
+        <article class="expertise-card">
+
+          <h3>
+            Digital Art
+          </h3>
+
+          <p>
+            Digital drawing opened another way to experiment with composition,
+            repetition, geometry, and color without being limited by physical
+            materials.
+          </p>
+
+        </article>
+
+
+
+        <article class="expertise-card">
+
+          <h3>
+            Experimentation
+          </h3>
+
+          <p>
+            I do not try to stay within one particular style. Part of the fun
+            is trying something different and seeing where it goes.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Gallery -->
+    <section class="section art-gallery-section">
+
+      <p class="section-label">
+        Gallery
+      </p>
+
+      <h2>
+        Some of my work
+      </h2>
+
+      <p class="section-intro">
+        A selection of paintings, drawings, and visual experiments I have
+        created over time.
+      </p>
+
+
+
+      <div class="art-gallery">
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-1.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-2.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-3.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-4.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-5.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-6.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-7.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-8.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-9.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-10.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-11.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-12.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-13.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-14.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-15.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-16.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-17.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-18.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-19.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-20.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-21.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-22.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-23.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-24.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-25.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-26.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-27.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-28.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-29.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-30.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-31.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-32.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+        <figure class="art-item">
+          <img
+            src="img/gallery/gal-33.jpeg"
+            alt="Artwork by Sara Ghotb"
+            loading="lazy"
+          />
+        </figure>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Closing -->
+    <section class="page-closing">
+
+      <p class="section-label">
+        Beyond the Lab
+      </p>
+
+      <h2>
+        Different kinds of curiosity
+      </h2>
+
+      <p>
+        Painting, reading, learning languages, and physics may look like very
+        different interests, but for me they share something important:
+        curiosity and the enjoyment of learning by doing.
+      </p>
+
+
+      <div class="page-closing-links">
+
+        <a href="index.html">
+          Back to About →
+        </a>
+
+        <a href="books.html">
+          Explore Books & Reading →
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <footer class="footer">
+
+    <p>
+      © 2026 Sara Ghotb
+    </p>
+
+  </footer>
+
+
+</div>
+
 
 </body>
 
