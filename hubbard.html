@@ -1,55 +1,992 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="-style/style.css" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LP effect</title>
-  </head>
-  <body>
-    <div class="container">
-      <header class="main-header">
-        <h1>Sara Ghotb</h1>
 
-        <nav>
-          <a href="index.html">About</a>
-          <a href="Posts.html">Posts</a>
-          <a href="-blog/index.html">Blog</a>
-          <a href="CV.html">CV</a>
-        </nav>
-      </header>
+<head>
 
-    <h2>Graphene twisted bilayer</h2>
-    <div class="author-box">
-      <img
-        src="img/related-3.png"
-        alt="Headshot of Laura Jones"
-        width="350"
-        height="350"
-        class="author-img-gbl"
-      />
-    </div>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>
+    Hubbard Model | Sara Ghotb, PhD
+  </title>
+
+  <meta
+    name="description"
+    content="An introduction to the Hubbard model, electron hopping, Coulomb interactions, Mott insulation, antiferromagnetism, and strongly correlated electron systems."
+  />
+
+  <meta name="author" content="Sara Ghotb" />
+  <meta name="robots" content="index, follow" />
+
+  <link
+    rel="canonical"
+    href="https://saraghotb.github.io/hubbard.html"
+  />
+
+  <link
+    rel="stylesheet"
+    href="/-style/style.css?v=20260819-hubbard"
+  />
+
+
+  <!-- Page-specific styles -->
+  <style>
+
+    .hubbard-figure {
+      margin: 38px 0;
+      text-align: center;
+    }
+
+    .hubbard-figure img {
+      display: block;
+
+      width: auto !important;
+      height: auto !important;
+      max-width: 100% !important;
+
+      margin: 0 auto;
+
+      border-radius: 12px;
+    }
+
+    .hubbard-hero-image img {
+      width: 420px !important;
+      max-width: 100% !important;
+    }
+
+    .physics-equation {
+      max-width: 800px;
+
+      margin: 30px 0;
+      padding: 24px 28px;
+
+      border-left: 4px solid #315f9e;
+      border-radius: 0 12px 12px 0;
+
+      background: #f4f7fa;
+
+      font-size: 1.08rem;
+      line-height: 1.8;
+
+      color: #273444;
+    }
+
+    .physics-equation strong {
+      color: #111827;
+    }
+
+    .hubbard-key-point {
+      max-width: 820px;
+
+      margin-top: 38px;
+      padding: 28px 30px;
+
+      border: 1px solid #dce4ea;
+      border-radius: 14px;
+
+      background: #f8fafb;
+    }
+
+    .hubbard-key-point h3 {
+      margin-bottom: 12px;
+    }
+
+    .hubbard-key-point p {
+      margin-bottom: 12px;
+      line-height: 1.78;
+      color: #59646e;
+    }
+
+    .hubbard-key-point p:last-child {
+      margin-bottom: 0;
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+  <!-- Navigation -->
+  <header class="main-header">
+
+    <a href="index.html" class="site-name">
+      Sara Ghotb
+    </a>
+
+    <nav aria-label="Main navigation">
+
+      <a href="index.html">
+        About
+      </a>
+
+      <a href="Nanofabrication.html">
+        Nanofabrication
+      </a>
+
+      <a href="ThinFilmGrowth.html">
+        Thin Films
+      </a>
+
+      <a href="Characterization.html">
+        Characterization
+      </a>
+
+      <a href="Posts.html" class="active">
+        Physics
+      </a>
+
+      <a href="CV.html">
+        CV
+      </a>
+
+    </nav>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- Hero -->
+    <section class="page-hero">
+
+      <p class="eyebrow">
+        Strong Correlations • Mott Physics • Lattice Models • Quantum Materials
+      </p>
+
+      <h1>
+        The Hubbard Model
+      </h1>
+
+      <p class="page-lead">
+        The Hubbard model is one of the simplest models capable of describing
+        a fundamental competition in condensed matter physics: electrons want
+        to move through a lattice, but they also repel one another.
+        From this simple competition emerges surprisingly rich many-body
+        physics.
+      </p>
+
+    </section>
+
+
+
+    <!-- Main image -->
+    <section class="section">
+
+      <div class="hubbard-figure hubbard-hero-image">
+
+        <img
+          src="img/related-3.png"
+          alt="Illustration related to the Hubbard model and strongly correlated electrons"
+        />
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Motivation -->
+    <section class="section">
+
+      <p class="section-label">
+        Motivation
+      </p>
+
+      <h2>
+        When the independent-electron picture is not enough
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          One of the great successes of solid-state physics is the idea that
+          many electrons in a crystal can often be described approximately as
+          independent quasiparticles moving through an effective periodic
+          potential.
+        </p>
+
+        <p>
+          This picture leads naturally to electronic band theory and explains
+          the behavior of many metals, semiconductors, and insulators.
+        </p>
+
+        <p>
+          But some materials cannot be understood adequately this way.
+          Electron–electron interactions can become strong enough that they
+          determine the electronic state itself.
+        </p>
+
+        <p>
+          The Hubbard model was introduced as a minimal way to study this
+          competition between electron motion and electron repulsion.
+        </p>
+
+      </div>
+
+
+      <div class="hubbard-key-point">
+
+        <h3>
+          The core idea
+        </h3>
+
+        <p>
+          The model asks a deceptively simple question:
+          what happens when electrons are allowed to hop through a lattice,
+          but occupying the same lattice site costs interaction energy?
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Equation -->
+    <section class="section">
+
+      <p class="section-label">
+        Hamiltonian
+      </p>
+
+      <h2>
+        Two terms, two competing tendencies
+      </h2>
+
+      <div class="physics-equation">
+
+        <strong>
+          H =
+          −t Σ<sub>⟨i,j⟩,σ</sub>
+          (c†<sub>iσ</sub>c<sub>jσ</sub> + h.c.)
+          +
+          U Σ<sub>i</sub>
+          n<sub>i↑</sub>n<sub>i↓</sub>
+        </strong>
+
+      </div>
+
+
+      <div class="content-narrow">
+
+        <p>
+          Despite its compact form, the Hubbard Hamiltonian contains the two
+          ingredients needed to generate a wide range of correlated-electron
+          behavior.
+        </p>
+
+      </div>
+
+
+      <div class="experience-grid">
+
+
+        <div>
+
+          <h3>
+            Hopping: t
+          </h3>
+
+          <p>
+            The first term describes an electron moving between neighboring
+            lattice sites.
+          </p>
+
+          <p>
+            Larger \(t\) favors delocalization, allowing electrons to spread
+            through the lattice and lowering their kinetic energy.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h3>
+            Interaction: U
+          </h3>
+
+          <p>
+            The second term describes the energetic cost of placing two
+            electrons with opposite spin on the same site.
+          </p>
+
+          <p>
+            Larger \(U\) suppresses double occupancy and favors localization.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- competition -->
+    <section class="section">
+
+      <p class="section-label">
+        Competing Energy Scales
+      </p>
+
+      <h2>
+        Kinetic energy versus Coulomb repulsion
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          Much of the physics of the Hubbard model is controlled by the
+          competition between \(t\) and \(U\), or more generally between the
+          interaction strength and the electronic bandwidth.
+        </p>
+
+      </div>
+
+
+      <div class="physics-equation">
+
+        <strong>
+          Small U/t
+        </strong>
+        &nbsp; → &nbsp;
+        electrons remain relatively itinerant
+
+        <br /><br />
+
+        <strong>
+          Large U/t
+        </strong>
+        &nbsp; → &nbsp;
+        electronic correlations and localization become important
+
+      </div>
+
+    </section>
+
+
+
+    <!-- weak coupling -->
+    <section class="section">
+
+      <p class="section-label">
+        Weak Coupling
+      </p>
+
+      <h2>
+        When hopping dominates
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          If the interaction energy \(U\) is small compared with the kinetic
+          energy scale, electrons can move relatively freely through the
+          lattice.
+        </p>
+
+        <p>
+          In this regime, the system can often retain a metallic character and
+          may be treated starting from an itinerant-electron picture.
+        </p>
+
+        <p>
+          Electron interactions are still present, but they act more as a
+          correction to the motion of otherwise mobile quasiparticles.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- strong coupling -->
+    <section class="section">
+
+      <p class="section-label">
+        Strong Coupling
+      </p>
+
+      <h2>
+        When interaction dominates
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          If \(U\) becomes sufficiently large, putting two electrons on the
+          same lattice site becomes energetically expensive.
+        </p>
+
+        <p>
+          An electron may then be prevented from hopping onto a neighboring
+          occupied site even though ordinary band filling would otherwise
+          permit electronic motion.
+        </p>
+
+        <p>
+          This interaction-driven localization is at the heart of Mott
+          physics.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- half filling -->
+    <section class="section">
+
+      <p class="section-label">
+        Half Filling
+      </p>
+
+      <h2>
+        One electron per site
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          A particularly important case occurs when the lattice contains, on
+          average, one electron per site. This is known as half filling for the
+          single-band Hubbard model.
+        </p>
+
+        <p>
+          Without strong interactions, electrons could still hop between sites
+          and form an electronic band.
+        </p>
+
+        <p>
+          But if the on-site repulsion is sufficiently strong, hopping onto an
+          occupied site creates an energetically costly doubly occupied state.
+          Electron motion can therefore become strongly suppressed.
+        </p>
+
+      </div>
+
+
+      <div class="hubbard-key-point">
+
+        <h3>
+          Mott insulating behavior
+        </h3>
+
+        <p>
+          The resulting insulating state does not arise simply because a band
+          is completely filled. It arises because interactions prevent charge
+          motion.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Mott -->
+    <section class="section">
+
+      <p class="section-label">
+        Mott Insulator
+      </p>
+
+      <h2>
+        An insulator created by interactions
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          A Mott insulator is one of the most important examples of a state
+          where a simple noninteracting band description becomes inadequate.
+        </p>
+
+        <p>
+          The electrons are present at an electronic filling that might permit
+          metallic behavior in a weakly interacting picture, yet strong
+          electron–electron repulsion suppresses charge motion.
+        </p>
+
+        <p>
+          This is why the Mott state is fundamentally a many-body phenomenon.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- spins -->
+    <section class="section">
+
+      <p class="section-label">
+        Spin Physics
+      </p>
+
+      <h2>
+        Localization does not eliminate quantum dynamics
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          Even when charge motion is strongly suppressed, the electron spins
+          can still interact.
+        </p>
+
+        <p>
+          An electron can virtually hop onto a neighboring occupied site and
+          return. These virtual processes generate an effective magnetic
+          interaction known as superexchange.
+        </p>
+
+      </div>
+
+
+      <div class="physics-equation">
+
+        <strong>
+          J ≈ 4t² / U
+        </strong>
+
+      </div>
+
+
+      <div class="content-narrow">
+
+        <p>
+          In the simplest strong-coupling picture, this interaction favors
+          antiferromagnetic alignment of neighboring spins.
+        </p>
+
+        <p>
+          Thus a model that begins only with hopping and on-site repulsion can
+          naturally generate magnetic order.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- intuitive -->
+    <section class="section">
+
+      <p class="section-label">
+        Physical Picture
+      </p>
+
+      <h2>
+        A simple way to visualize the model
+      </h2>
+
+      <div class="process-principle">
+
+
+        <div>
+
+          <span class="principle-number">
+            01
+          </span>
+
+          <h3>
+            Empty neighbor
+          </h3>
+
+          <p>
+            If the neighboring site is empty, an electron can hop there with an
+            energy scale determined by \(t\).
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <span class="principle-number">
+            02
+          </span>
+
+          <h3>
+            Occupied neighbor
+          </h3>
+
+          <p>
+            If the neighboring site already contains an electron of opposite
+            spin, hopping creates double occupancy and costs an energy \(U\).
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <span class="principle-number">
+            03
+          </span>
+
+          <h3>
+            Large U
+          </h3>
+
+          <p>
+            When \(U\) is large, electrons avoid double occupancy, suppressing
+            charge motion and creating strong correlations between sites.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- doping -->
+    <section class="section">
+
+      <p class="section-label">
+        Away from Half Filling
+      </p>
+
+      <h2>
+        Doping a correlated system
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          The physics becomes even richer when electrons are added to or
+          removed from a half-filled correlated state.
+        </p>
+
+        <p>
+          Empty sites or additional carriers provide new possibilities for
+          charge motion while strong local interactions remain important.
+        </p>
+
+        <p>
+          The competition among carrier motion, magnetism, and correlations
+          leads to a difficult many-body problem whose complete behavior is
+          still not known analytically in two dimensions.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- cuprates -->
+    <section class="section">
+
+      <p class="section-label">
+        Connection to Cuprates
+      </p>
+
+      <h2>
+        Why the Hubbard model matters for high-Tc superconductivity
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          The Hubbard model became particularly important after the discovery
+          of high-temperature superconductivity in copper-oxide materials.
+        </p>
+
+        <p>
+          The parent cuprates are strongly correlated antiferromagnetic
+          insulators. When carriers are introduced through doping, they evolve
+          into a much richer electronic phase diagram that includes
+          superconductivity.
+        </p>
+
+        <p>
+          Because the two-dimensional Hubbard model contains both strong
+          on-site interactions and antiferromagnetic correlations, it became
+          one of the central minimal models used to investigate the underlying
+          physics of the cuprates.
+        </p>
+
+      </div>
+
+
+      <div class="page-closing-links">
+
+        <a href="HTC.html">
+          Explore High-Temperature Superconductivity →
+        </a>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- why hard -->
+    <section class="section">
+
+      <p class="section-label">
+        The Challenge
+      </p>
+
+      <h2>
+        Simple Hamiltonian, very difficult solution
+      </h2>
+
+      <div class="content-narrow">
+
+        <p>
+          One reason the Hubbard model is so famous is the contrast between how
+          easy it is to write down and how difficult it is to solve.
+        </p>
+
+        <p>
+          The many-electron Hilbert space grows extremely rapidly with system
+          size, and interactions prevent the problem from being reduced to
+          independent particles.
+        </p>
+
+        <p>
+          As a result, physicists use a wide range of analytical and numerical
+          techniques, including exact diagonalization, quantum Monte Carlo,
+          dynamical mean-field theory, density-matrix renormalization group,
+          cluster methods, and tensor-network approaches.
+        </p>
+
+      </div>
+
+
+      <div class="hubbard-key-point">
+
+        <h3>
+          Why that matters
+        </h3>
+
+        <p>
+          The difficulty is not a sign that the model is poorly chosen.
+          Rather, it reflects the enormous complexity that can emerge from
+          interacting quantum particles even when the microscopic rules are
+          remarkably simple.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- connections -->
+    <section class="section">
+
+      <p class="section-label">
+        Connections
+      </p>
+
+      <h2>
+        One model connecting several areas of condensed matter physics
+      </h2>
+
+      <div class="lesson-grid">
+
+
+        <article class="lesson-card">
+
+          <span>
+            01
+          </span>
+
+          <h3>
+            Mott physics
+          </h3>
+
+          <p>
+            The model captures the competition between itinerancy and
+            interaction-driven localization.
+          </p>
+
+        </article>
+
+
+        <article class="lesson-card">
+
+          <span>
+            02
+          </span>
+
+          <h3>
+            Magnetism
+          </h3>
+
+          <p>
+            Strong-coupling virtual hopping naturally generates
+            antiferromagnetic superexchange.
+          </p>
+
+        </article>
+
+
+        <article class="lesson-card">
+
+          <span>
+            03
+          </span>
+
+          <h3>
+            High-Tc cuprates
+          </h3>
+
+          <p>
+            The Hubbard model provides a minimal theoretical language for
+            discussing doped correlated CuO₂ planes.
+          </p>
+
+        </article>
+
+
+        <article class="lesson-card">
+
+          <span>
+            04
+          </span>
+
+          <h3>
+            Quantum simulators
+          </h3>
+
+          <p>
+            Hubbard physics can also be engineered with ultracold atoms in
+            optical lattices, allowing strongly correlated lattice models to be
+            explored in highly controlled experiments.
+          </p>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Personal -->
+    <section class="section">
+
+      <p class="section-label">
+        Why I Find It Interesting
+      </p>
+
+      <h2>
+        A bridge from simple models to real quantum materials
+      </h2>
+
+
+      <div class="experience-note">
+
+        <p class="note-title">
+          From my condensed matter background
+        </p>
+
+        <p>
+          I encountered the Hubbard model through my work on strongly
+          correlated superconducting materials and electron-doped cuprates.
+        </p>
+
+        <p>
+          What I find especially interesting is how a Hamiltonian with only
+          hopping and local repulsion can already generate localization,
+          magnetism, and a highly nontrivial doping-dependent phase diagram.
+        </p>
+
+        <p>
+          It is a good reminder that in quantum materials, complexity does not
+          necessarily require a complicated microscopic model.
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- Closing -->
+    <section class="page-closing">
+
+      <p class="section-label">
+        Strongly Correlated Electrons
+      </p>
+
+      <h2>
+        Simple ingredients, collective behavior
+      </h2>
+
+      <p>
+        The Hubbard model captures one of the central themes of condensed matter
+        physics: the behavior of a material cannot always be understood by
+        studying its electrons independently. When interactions become strong,
+        entirely new collective states can emerge.
+      </p>
+
+
+      <div class="page-closing-links">
+
+        <a href="HTC.html">
+          High-Temperature Superconductivity →
+        </a>
+
+        <a href="GTL.html">
+          Twisted Bilayer Graphene →
+        </a>
+
+        <a href="Posts.html">
+          Explore more Physics →
+        </a>
+
+        <a href="index.html">
+          Back to About →
+        </a>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
+  <footer class="footer">
 
     <p>
-      One of the most successful description of electrons in solid is band theory which is based on reducing many body interactions to an effective one body description.
-However, there are various situation where band theory fails and the most known one is Mott insulator.
-According to the band theory we know that odd number of electrons per unit cell should give you a metal. For instance band theory prediction for CoO is to be a metal because it has odd number of electrons however it is an insulator.
-So band theory fails which means single particle image is not valid for all problems and we need to consider interaction effects as well.
-This is a great motivation for studying HM which is the simplest model that describes the electron in the lattice.
+      © 2026 Sara Ghotb
     </p>
 
-    <footer class="footer">
-      <p id="copyright_name">Sara Ghotb</p> 
-      <a href="#" id="copyright_email">s.ghotb@gmail.com</a>
-    </p>
-    
-    <div>
-      <a href='https://twitter.com/sara94704737'><img src='https://img.icons8.com/ios-glyphs/30/000000/twitter-squared.png'/></a>
-      <a href='https://www.linkedin.com/in/sara-ghotb-b7355384/'><img src='https://img.icons8.com/ios-glyphs/30/000000/linkedin.png'/></a>
-      <a href='https://github.com/SARAGHOTB'><img src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/></a>
-
-    </div>
   </footer>
-  </body>
+
+
+</div>
+
+</body>
+
 </html>
