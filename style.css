@@ -1166,15 +1166,16 @@ nav a.active {
 
 .art-gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
   margin-top: 40px;
+  align-items: start;
 }
 
 .art-item {
   margin: 0;
   overflow: hidden;
-  border-radius: 14px;
+  border-radius: 10px;
   background: #f7f7f7;
 }
 
@@ -1189,14 +1190,14 @@ nav a.active {
   transform: scale(1.025);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .art-gallery {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .art-gallery {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
