@@ -94,6 +94,38 @@
       margin-bottom: 0;
     }
 
+    .project-note a {
+      color: #315f9e;
+      font-weight: 600;
+    }
+
+    .project-figure {
+      width: 600px;
+      max-width: 100%;
+      margin: 34px auto 38px;
+      text-align: center;
+    }
+
+    .project-figure-wide {
+      width: 760px;
+    }
+
+    .project-figure img {
+      display: block;
+      width: 100% !important;
+      height: auto !important;
+      margin: 0 auto !important;
+      border-radius: 8px;
+    }
+
+    .project-figure figcaption {
+      margin-top: 10px;
+      font-size: 0.86rem;
+      line-height: 1.5;
+      color: #6b7280;
+      text-align: center;
+    }
+
     .project-navigation {
       display: flex;
       flex-wrap: wrap;
@@ -113,33 +145,6 @@
     .project-navigation a:hover {
       text-decoration: underline;
     }
-
-    .project-figure {
-  width: 600px;
-  max-width: 100%;
-  margin: 34px auto 38px;
-  text-align: center;
-}
-
-.project-figure-wide {
-  width: 760px;
-}
-
-.project-figure img {
-  display: block;
-  width: 100% !important;
-  height: auto !important;
-  margin: 0 auto !important;
-  border-radius: 8px;
-}
-
-.project-figure figcaption {
-  margin-top: 10px;
-  font-size: 0.86rem;
-  line-height: 1.5;
-  color: #6b7280;
-  text-align: center;
-}
 
   </style>
 
@@ -185,9 +190,9 @@
         </h1>
 
         <p class="page-lead">
-          From fabrication of Hall-bar devices to low-temperature transport
-          measurements and the study of nonlinear Hall response in
-          electron-doped cuprate thin films.
+          From fabrication of Hall-bar devices to low-temperature
+          magnetotransport measurements and the study of nonlinear Hall
+          response in electron-doped cuprate thin films.
         </p>
 
         <div class="project-meta">
@@ -203,7 +208,7 @@
 
 
 
-      <!-- Overview -->
+      <!-- Project Overview -->
       <section class="section">
 
         <p class="section-label">
@@ -238,7 +243,7 @@
 
 
 
-      <!-- Hall Bar -->
+      <!-- Device Design -->
       <section class="section">
 
         <p class="section-label">
@@ -263,69 +268,69 @@
             ρ<sub>xx</sub>, while transverse voltage probes provide
             ρ<sub>yx</sub>. Measuring both quantities as functions of
             temperature and magnetic field provides a much richer picture of
-            the electronic transport than a simple two-terminal resistance
+            electronic transport than a simple two-terminal resistance
             measurement.
           </p>
 
           <h3>
-  Four-terminal transport measurements
-</h3>
-
-<p>
-  In a four-terminal measurement, current is supplied through one pair of
-  contacts while the voltage is measured using a separate pair. Because
-  negligible current flows through the voltage-measurement circuit, the
-  measured voltage is largely separated from lead and contact resistance,
-  making this configuration particularly useful for precise transport
-  measurements.
-</p>
-
-<p>
-  A Hall bar extends this principle by providing multiple voltage contacts.
-  Longitudinal voltage probes measure the voltage drop along the direction
-  of current flow, while transverse probes measure the Hall voltage
-  perpendicular to the applied current.
-</p>
-
-  <figure class="project-figure project-figure-wide">
-  <img
-    src="img/projects/SSE-graph-Hall.png"
-    alt="Fabrication sequence and electrical measurement configuration of a Hall-bar device"
-  />
-
-  <figcaption>
-    Schematic fabrication sequence of a Hall-bar device using a
-    substrate-selective epitaxy approach. The final geometry illustrates
-    separate current and voltage contacts used for longitudinal and
-    transverse transport measurements.
-  </figcaption>
-</figure>
-
-          <div class="project-note">
-  <p>
-    <strong>Process-integration connection.</strong>
-    The device shown here was fabricated using a substrate-selective
-    epitaxy strategy, in which patterning is introduced before growth of
-    the functional epitaxial layer. This approach was developed to reduce
-    direct processing of the final thin film.
-    <a href="SSE.html">Explore the substrate-selective epitaxy project →</a>
-  </p>
-</div>
+            Four-probe transport measurements
+          </h3>
 
           <p>
-  With current driven through the device, the longitudinal voltage
-  V<sub>xx</sub> is measured along the current path, while the transverse
-  voltage V<sub>xy</sub> is measured across the Hall bar. Reversing the
-  magnetic field is particularly useful for separating the symmetric
-  longitudinal response from the antisymmetric Hall contribution.
-</p>
+            In a four-probe measurement, current is supplied through one pair
+            of contacts while voltage is measured using a separate pair.
+            Because negligible current flows through the voltage-measurement
+            circuit, contributions from lead and contact resistance are
+            strongly reduced.
+          </p>
+
+          <p>
+            The six-contact Hall-bar devices used in this work extend this
+            principle by providing multiple voltage probes. Longitudinal
+            probes measure the voltage drop along the direction of current
+            flow, while transverse probes measure the Hall voltage
+            perpendicular to the applied current.
+          </p>
+
+          <figure class="project-figure project-figure-wide">
+
+            <img
+              src="img/projects/SSE-graph-Hall.png"
+              alt="Substrate-selective fabrication sequence for a Hall-bar device and electrical measurement geometry"
+            />
+
+            <figcaption>
+              Hall-bar fabrication and measurement geometry using a
+              substrate-selective epitaxy approach. Separate current and
+              voltage contacts enable longitudinal and transverse transport
+              measurements.
+            </figcaption>
+
+          </figure>
+
+          <p>
+            With current driven through the device, the longitudinal voltage
+            V<sub>xx</sub> is measured along the current path, while the
+            transverse voltage V<sub>xy</sub> is measured across the Hall
+            bar. Reversing the magnetic field makes it possible to isolate
+            the antisymmetric Hall contribution from voltage offsets caused
+            by small contact misalignments.
+          </p>
 
           <div class="project-note">
+
             <p>
-              The devices used in this work employed a six-probe Hall-bar
-              geometry, enabling longitudinal and transverse transport
-              measurements from the same patterned sample.
+              <strong>Process-integration connection.</strong>
+              The device shown here was also fabricated using a
+              substrate-selective epitaxy strategy, in which the geometry is
+              defined before growth of the functional epitaxial layer. The
+              complete process and its comparison with conventional
+              fabrication are discussed in the
+              <a href="SSE.html">
+                Substrate-Selective Epitaxy project →
+              </a>
             </p>
+
           </div>
 
         </div>
@@ -349,40 +354,68 @@
 
           <p>
             Fabrication began with superconducting epitaxial thin films.
-            Lithography was used to define the Hall-bar geometry, followed by
-            pattern transfer and device preparation for electrical
+            Lithography was used to define the Hall-bar geometry, followed
+            by pattern transfer and device preparation for electrical
             measurements.
           </p>
 
           <p>
-  The fabricated device contains a narrow central current channel with
-  transverse and longitudinal voltage probes. Large contact pads provide
-  access to the patterned structure for electrical connection and
-  low-temperature transport measurements.
-</p>
+            The fabricated device contains a narrow central current channel
+            with transverse and longitudinal voltage probes. Large contact
+            pads provide access to the patterned structure for electrical
+            connection and low-temperature transport measurements.
+          </p>
 
-<figure class="project-figure">
-  <img
-    src="img/projects/hall-sample-lab.png"
-    alt="Fabricated Hall-bar device and sample mounted for electrical transport measurements"
-  />
+          <figure class="project-figure">
 
-  <figcaption>
-    Hall-bar device fabricated from an epitaxial thin film. (a) Patterned
-    device with contact pads and voltage probes. (b) Sample mounted and
-    electrically connected for low-temperature transport measurements.
-  </figcaption>
-</figure>
+            <img
+              src="img/projects/hall-sample-lab.png"
+              alt="Fabricated Hall-bar device and sample mounted for electrical transport measurements"
+            />
+
+            <figcaption>
+              Fabricated Hall-bar device. (a) Patterned thin-film device with
+              electrical contact pads. (b) Device mounted and electrically
+              connected for low-temperature magnetotransport measurements.
+            </figcaption>
+
+          </figure>
+
 
           <h3>
-            Typical process flow
+            Comparing fabrication approaches
           </h3>
 
           <p>
-            The fabrication sequence involved resist coating, lithographic
-            pattern definition, development, pattern transfer, and electrical
-            contacting. Depending on the specific process, dry etching or ion
-            milling could be used to transfer the pattern into the film.
+            Because electron-doped cuprate thin films can be sensitive to
+            post-growth processing, I explored different approaches for
+            defining Hall-bar devices. Conventional devices were patterned
+            by photolithography followed by Ar ion milling, with the sample
+            cooled using liquid nitrogen to limit heating during pattern
+            transfer.
+          </p>
+
+          <p>
+            As an alternative, I used a substrate-selective epitaxy approach
+            in which the device geometry is defined before growth of the
+            functional epitaxial layer. This minimizes direct post-growth
+            processing of the superconducting film.
+          </p>
+
+          <p>
+            Consistent resistivity and Hall-effect measurements across
+            independently fabricated devices provided an important
+            experimental check that the observed transport behavior was
+            intrinsic to the material rather than an artifact of a
+            particular fabrication route.
+          </p>
+
+          <p>
+            The development and process integration of this alternative
+            approach are discussed separately in the
+            <a href="SSE.html">
+              Substrate-Selective Epitaxy project →
+            </a>
           </p>
 
           <p>
@@ -397,7 +430,7 @@
 
 
 
-      <!-- Hall Physics -->
+      <!-- Hall Effect -->
       <section class="section">
 
         <p class="section-label">
@@ -426,6 +459,11 @@
             Deviations from linearity can contain information that is not
             visible in the conventional low-field Hall coefficient alone.
           </p>
+
+          <!--
+            PAPER FIGURE TO BE ADDED HERE LATER:
+            Hall coefficient RH(T) showing the sign changes.
+          -->
 
         </div>
 
@@ -466,18 +504,25 @@
             The cubic contribution provides an additional experimental
             quantity that can be followed as a function of temperature and
             doping. Its behavior becomes particularly interesting near
-            regimes where the conventional Hall coefficient becomes small or
-            changes sign.
+            temperatures where the conventional Hall coefficient becomes
+            small or changes sign.
           </p>
 
           <div class="project-note">
+
             <p>
-              A Hall coefficient close to zero does not necessarily imply the
-              absence of mobile charge carriers. Competing electron-like and
-              hole-like contributions can partially cancel in the linear Hall
-              response while still producing measurable nonlinear transport.
+              A Hall coefficient close to zero does not imply the absence of
+              mobile charge carriers. Electron-like and hole-like
+              contributions can partially cancel in the linear Hall response
+              while higher-order transport contributions remain measurable.
             </p>
+
           </div>
+
+          <!--
+            PAPER FIGURE TO BE ADDED HERE LATER:
+            rho_yx(B) around the Hall-coefficient crossing temperature.
+          -->
 
         </div>
 
@@ -485,7 +530,7 @@
 
 
 
-      <!-- Two Carrier -->
+      <!-- Two Carrier Interpretation -->
       <section class="section">
 
         <p class="section-label">
@@ -505,19 +550,38 @@
           </p>
 
           <p>
-            Starting from the Drude description for two carrier populations,
-            longitudinal and transverse transport can be related to carrier
-            densities and mobilities. Combining Hall data with additional
-            transport measurements therefore provides a route toward
-            separating contributions from different parts of the electronic
-            structure.
+            Starting from the semiclassical Drude description for two carrier
+            populations, longitudinal and transverse transport can be related
+            to the carrier densities and mobilities of the two populations.
           </p>
 
           <p>
-            This analysis becomes especially useful when the linear Hall
-            coefficient alone gives an incomplete or ambiguous description of
-            the system.
+            In the low-field limit, the Hall resistivity can be expanded in
+            odd powers of magnetic field:
           </p>
+
+          <div class="equation-box">
+            ρ<sub>yx</sub>
+            =
+            R<sub>H</sub>B
+            +
+            C B<sup>3</sup>
+            +
+            D B<sup>5</sup>
+            + ...
+          </div>
+
+          <p>
+            When R<sub>H</sub> becomes small, the nonlinear terms become much
+            easier to resolve experimentally. The sign and magnitude of the
+            cubic coefficient C therefore provide information that is not
+            contained in the ordinary linear Hall coefficient alone.
+          </p>
+
+          <!--
+            PAPER FIGURE TO BE ADDED HERE LATER:
+            rho_yx/B versus B^2 for extraction of RH and C.
+          -->
 
         </div>
 
@@ -541,18 +605,23 @@
           <p>
             The Hall effect in cuprate superconductors is closely connected
             to the evolution of their electronic structure with temperature
-            and doping. Studying nonlinear contributions provides an
-            additional experimental handle on carrier reconstruction,
-            competing transport channels, and the balance between
-            electron-like and hole-like states.
+            and doping. Nonlinear transport provides an additional
+            experimental probe of the balance between electron-like and
+            hole-like contributions and of electronic behavior that cannot
+            always be inferred from the linear Hall coefficient alone.
           </p>
 
           <p>
-            For me, this project also illustrates the full experimental path
-            from thin-film material to patterned device, cryogenic
-            measurement, quantitative analysis, and interpretation of the
-            underlying condensed-matter physics.
+            This project also illustrates the complete experimental path from
+            thin-film material and process integration to patterned device,
+            cryogenic measurement, quantitative analysis, and interpretation
+            of the underlying condensed-matter physics.
           </p>
+
+          <!--
+            OPTIONAL FUTURE FIGURE:
+            Doping dependence of nonlinear coefficient C from the newer study.
+          -->
 
         </div>
 
@@ -574,13 +643,20 @@
           </h2>
 
           <p>
-            Selected publications, transport figures, and related theoretical
-            discussion will be added here as this project page develops.
+            The nonlinear Hall response investigated in this project was
+            developed through two related studies: an initial detailed study
+            of overdoped PCCO and a subsequent investigation of its evolution
+            across a broader doping range.
           </p>
 
+          <!--
+            PUBLICATION LINKS AND CITATIONS WILL BE ADDED HERE
+            AFTER WE FINALIZE THE PAPER-FIGURE SECTION.
+          -->
+
           <p>
-            For broader background on my experimental work and superconducting
-            materials, see the Physics section of this website.
+            For broader background on superconductivity and quantum-material
+            physics, see the Physics section of this website.
           </p>
 
           <a href="Posts.html" class="text-link">
