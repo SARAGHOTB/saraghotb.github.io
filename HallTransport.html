@@ -652,10 +652,59 @@
             contained in the ordinary linear Hall coefficient alone.
           </p>
 
-          <!--
-            PAPER FIGURE TO BE ADDED HERE LATER:
-            rho_yx/B versus B^2 for extraction of RH and C.
-          -->
+<h3>
+  Extracting the cubic contribution
+</h3>
+
+<p>
+  The nonlinear contribution can be isolated more directly by dividing
+  the Hall resistivity by magnetic field. Starting from
+</p>
+
+<div class="equation-box">
+  ρ<sub>yx</sub>
+  =
+  R<sub>H</sub>B
+  +
+  C B<sup>3</sup>
+  + ...
+</div>
+
+<p>
+  division by B gives
+</p>
+
+<div class="equation-box">
+  ρ<sub>yx</sub> / B
+  =
+  R<sub>H</sub>
+  +
+  C B<sup>2</sup>
+  + ...
+</div>
+
+<p>
+  Plotting ρ<sub>yx</sub>/B as a function of B<sup>2</sup> therefore
+  provides a direct way to separate the first two contributions:
+  the intercept at B = 0 gives R<sub>H</sub>, while the slope gives
+  the cubic coefficient C.
+</p>
+
+<figure class="project-figure">
+  <img
+    src="img/projects/pcco-cubic-extraction.png"
+    alt="Hall resistivity divided by magnetic field as a function of magnetic field squared in PCCO"
+  />
+
+  <figcaption>
+    Extraction of the nonlinear Hall contribution near the
+    Hall-coefficient crossing. Plotting ρ<sub>yx</sub>/B against
+    B<sup>2</sup> separates the linear Hall coefficient
+    R<sub>H</sub> from the leading cubic coefficient C.
+    Adapted from Ghotb <em>et al.</em>,
+    <em>Physical Review B</em> 110, 134519 (2024).
+  </figcaption>
+</figure>
 
         </div>
 
