@@ -4,6 +4,7 @@
 <head>
 
   <meta charset="UTF-8" />
+
   <meta
     name="viewport"
     content="width=device-width, initial-scale=1.0"
@@ -23,11 +24,15 @@
     href="/-style/style.css?v=20260914"
   />
 
+
   <style>
 
-    /* --------------------------------------------------
+    /* ==================================================
        LITTLE–PARKS PROJECT PAGE
-       -------------------------------------------------- */
+       ================================================== */
+
+
+    /* ---------- HERO ---------- */
 
     .project-hero {
       padding: 78px 0 50px;
@@ -79,14 +84,12 @@
     }
 
 
-    /* --------------------------------------------------
-       HERO IMAGE
-       -------------------------------------------------- */
+    /* ---------- HERO IMAGE ---------- */
 
     .hero-device {
-      width: 760px;
+      width: 720px;
       max-width: 100%;
-      margin: 20px auto 70px;
+      margin: 18px auto 70px;
       text-align: center;
     }
 
@@ -107,9 +110,7 @@
     }
 
 
-    /* --------------------------------------------------
-       PAGE SECTIONS
-       -------------------------------------------------- */
+    /* ---------- SECTIONS ---------- */
 
     .section {
       padding: 58px 0;
@@ -150,9 +151,7 @@
     }
 
 
-    /* --------------------------------------------------
-       FIGURES
-       -------------------------------------------------- */
+    /* ---------- FIGURES ---------- */
 
     .project-figure {
       width: 650px;
@@ -186,9 +185,7 @@
     }
 
 
-    /* --------------------------------------------------
-       EQUATIONS / NOTES
-       -------------------------------------------------- */
+    /* ---------- EQUATIONS ---------- */
 
     .equation-box {
       max-width: 620px;
@@ -203,6 +200,9 @@
       line-height: 1.8;
     }
 
+
+    /* ---------- NOTES ---------- */
+
     .project-note {
       margin: 30px 0;
       padding: 20px 24px;
@@ -215,9 +215,7 @@
     }
 
 
-    /* --------------------------------------------------
-       PROCESS STRIP
-       -------------------------------------------------- */
+    /* ---------- PROCESS STRIP ---------- */
 
     .process-strip {
       display: grid;
@@ -255,9 +253,7 @@
     }
 
 
-    /* --------------------------------------------------
-       PHYSICS VISUAL
-       -------------------------------------------------- */
+    /* ---------- PHYSICS CHAIN ---------- */
 
     .physics-chain {
       display: flex;
@@ -282,9 +278,7 @@
     }
 
 
-    /* --------------------------------------------------
-       BOTTOM NAVIGATION
-       -------------------------------------------------- */
+    /* ---------- BOTTOM NAVIGATION ---------- */
 
     .project-navigation {
       display: flex;
@@ -299,6 +293,8 @@
       text-decoration: none;
     }
 
+
+    /* ---------- RESPONSIVE ---------- */
 
     @media (max-width: 760px) {
 
@@ -316,6 +312,7 @@
 
     }
 
+
     @media (max-width: 480px) {
 
       .process-strip {
@@ -332,7 +329,10 @@
 <body>
 
 
-  <!-- HEADER -->
+  <!-- ==================================================
+       HEADER
+       ================================================== -->
+
   <header class="site-header">
 
     <div class="container nav-wrap">
@@ -342,13 +342,31 @@
       </a>
 
       <nav class="site-nav">
+
         <a href="index.html">About</a>
+
         <a href="Projects.html">Projects</a>
-        <a href="Nanofabrication.html">Nanofabrication</a>
-        <a href="ThinFilmGrowth.html">Thin Films</a>
-        <a href="Characterization.html">Characterization</a>
-        <a href="Posts.html">Physics</a>
-        <a href="CV.html">CV</a>
+
+        <a href="Nanofabrication.html">
+          Nanofabrication
+        </a>
+
+        <a href="ThinFilmGrowth.html">
+          Thin Films
+        </a>
+
+        <a href="Characterization.html">
+          Characterization
+        </a>
+
+        <a href="Posts.html">
+          Physics
+        </a>
+
+        <a href="CV.html">
+          CV
+        </a>
+
       </nav>
 
     </div>
@@ -356,10 +374,14 @@
   </header>
 
 
+
   <main>
 
 
-    <!-- HERO -->
+    <!-- ==================================================
+         HERO
+         ================================================== -->
+
     <section class="project-hero">
 
       <div class="container">
@@ -381,14 +403,32 @@
             and macroscopic quantum behavior.
           </p>
 
+
           <div class="project-tags">
 
-            <span class="project-tag">Electron-Beam Lithography</span>
-            <span class="project-tag">Photolithography</span>
-            <span class="project-tag">Superconductivity</span>
-            <span class="project-tag">SEM</span>
-            <span class="project-tag">AFM</span>
-            <span class="project-tag">Quantum Transport</span>
+            <span class="project-tag">
+              Electron-Beam Lithography
+            </span>
+
+            <span class="project-tag">
+              Photolithography
+            </span>
+
+            <span class="project-tag">
+              Superconductivity
+            </span>
+
+            <span class="project-tag">
+              SEM
+            </span>
+
+            <span class="project-tag">
+              AFM
+            </span>
+
+            <span class="project-tag">
+              Quantum Transport
+            </span>
 
           </div>
 
@@ -399,13 +439,17 @@
     </section>
 
 
-    <!-- HERO DEVICE IMAGE -->
+
+    <!-- ==================================================
+         HERO DEVICE IMAGE
+         ================================================== -->
+
     <div class="container">
 
       <figure class="hero-device">
 
         <img
-          src="img/projects/ring-device-afm.jpg"
+          src="img/projects/afm-ring1.jpeg"
           alt="Three-dimensional AFM image of a superconducting ring device"
         />
 
@@ -420,7 +464,11 @@
     </div>
 
 
-    <!-- PROJECT OVERVIEW -->
+
+    <!-- ==================================================
+         PROJECT OVERVIEW
+         ================================================== -->
+
     <section class="section">
 
       <div class="container">
@@ -450,25 +498,33 @@
             connected to the superconducting response.
           </p>
 
+
           <div class="equation-box">
-            Φ<sub>0</sub> = h / 2e
+
+            Φ<sub>0</sub> =
+            h / 2e
+
           </div>
+
 
           <p>
             The superconducting flux quantum therefore contains one of
-            the central signatures of Cooper pairing: the relevant charge
-            is 2e rather than e.
+            the central signatures of Cooper pairing: the relevant
+            charge is 2e rather than e.
           </p>
 
+
           <div class="project-note">
+
             <p>
               <strong>Why rings?</strong>
-              A multiply connected geometry provides a closed path around
-              which the phase of the superconducting order parameter must
-              satisfy a quantization condition. This transforms a simple
-              patterned loop into a device for probing quantum coherence
-              on a mesoscopic scale.
+              A multiply connected geometry provides a closed path
+              around which the phase of the superconducting order
+              parameter must satisfy a quantization condition. This
+              transforms a patterned loop into a device for probing
+              quantum coherence on a mesoscopic scale.
             </p>
+
           </div>
 
         </div>
@@ -478,7 +534,11 @@
     </section>
 
 
-    <!-- FROM CHIP TO DEVICE -->
+
+    <!-- ==================================================
+         CHIP TO DEVICE
+         ================================================== -->
+
     <section class="section">
 
       <div class="container">
@@ -486,6 +546,7 @@
         <p class="section-label">
           Device Fabrication
         </p>
+
 
         <div class="project-section">
 
@@ -496,7 +557,7 @@
           <p>
             The project required connecting two very different length
             scales: large contact structures that can be handled and
-            wire-bonded experimentally, and a much smaller central ring
+            electrically contacted, and a much smaller central ring
             where the relevant superconducting physics occurs.
           </p>
 
@@ -506,14 +567,14 @@
         <figure class="project-figure project-figure-wide">
 
           <img
-            src="img/projects/ring-chip-process.png"
-            alt="Superconducting ring chip during fabrication, handling and electrical contacting"
+            src="img/projects/nano-rings.png"
+            alt="Superconducting ring chip during fabrication and electrical contacting"
           />
 
           <figcaption>
             Device progression from patterned chip to a contacted and
             wired sample. Large-scale contact structures provide access
-            to the micron- and nanoscale device located at the center.
+            to the micro- and nanoscale device located at the center.
           </figcaption>
 
         </figure>
@@ -523,29 +584,76 @@
 
           <div class="process-strip">
 
-            <div class="process-step">
-              <span class="process-number">01</span>
-              <strong>Thin Film</strong>
-              <span>Superconducting material deposited on a substrate.</span>
-            </div>
 
             <div class="process-step">
-              <span class="process-number">02</span>
-              <strong>Patterning</strong>
-              <span>Device and contact geometry defined lithographically.</span>
+
+              <span class="process-number">
+                01
+              </span>
+
+              <strong>
+                Thin Film
+              </strong>
+
+              <span>
+                Superconducting material deposited on a substrate.
+              </span>
+
             </div>
 
-            <div class="process-step">
-              <span class="process-number">03</span>
-              <strong>Ring Definition</strong>
-              <span>Micron- and nanoscale loop geometry patterned at the device center.</span>
-            </div>
 
             <div class="process-step">
-              <span class="process-number">04</span>
-              <strong>Electrical Access</strong>
-              <span>Device contacted for low-temperature transport measurements.</span>
+
+              <span class="process-number">
+                02
+              </span>
+
+              <strong>
+                Patterning
+              </strong>
+
+              <span>
+                Device and contact geometry defined lithographically.
+              </span>
+
             </div>
+
+
+            <div class="process-step">
+
+              <span class="process-number">
+                03
+              </span>
+
+              <strong>
+                Ring Definition
+              </strong>
+
+              <span>
+                Micro- and nanoscale loop geometry patterned at the
+                device center.
+              </span>
+
+            </div>
+
+
+            <div class="process-step">
+
+              <span class="process-number">
+                04
+              </span>
+
+              <strong>
+                Electrical Access
+              </strong>
+
+              <span>
+                Device contacted for low-temperature transport
+                measurements.
+              </span>
+
+            </div>
+
 
           </div>
 
@@ -556,7 +664,11 @@
     </section>
 
 
-    <!-- DEVICE GEOMETRY -->
+
+    <!-- ==================================================
+         DEVICE GEOMETRY
+         ================================================== -->
+
     <section class="section">
 
       <div class="container">
@@ -565,18 +677,19 @@
           Device Geometry
         </p>
 
+
         <div class="project-section">
 
           <h2>
-            Bringing the measurement leads to a microscopic loop
+            Bringing measurement leads to a microscopic loop
           </h2>
 
           <p>
-            The contact geometry narrows progressively toward the central
-            superconducting ring. This allows conventional electrical
-            connections at the chip scale while preserving a small,
-            well-defined multiply connected region at the center of the
-            device.
+            The contact geometry narrows progressively toward the
+            central superconducting ring. This allows conventional
+            electrical connections at the chip scale while preserving
+            a small, well-defined multiply connected region at the
+            center of the device.
           </p>
 
         </div>
@@ -585,8 +698,8 @@
         <figure class="project-figure">
 
           <img
-            src="img/projects/ring-optical-device.jpg"
-            alt="Optical microscope image of superconducting ring device and electrical leads"
+            src="img/projects/ring-om.jpeg"
+            alt="Optical microscope image of a superconducting ring device"
           />
 
           <figcaption>
@@ -614,14 +727,19 @@
     </section>
 
 
-    <!-- PATTERN DEVELOPMENT -->
+
+    <!-- ==================================================
+         EBL
+         ================================================== -->
+
     <section class="section">
 
       <div class="container">
 
         <p class="section-label">
-          Lithography
+          Electron-Beam Lithography
         </p>
+
 
         <div class="project-section">
 
@@ -644,8 +762,8 @@
         <figure class="project-figure project-figure-small">
 
           <img
-            src="img/projects/ring-resist-pattern.png"
-            alt="SEM image of developed electron-beam resist defining a superconducting ring device"
+            src="img/projects/ring.jpeg"
+            alt="SEM image of a developed electron-beam lithography ring pattern"
           />
 
           <figcaption>
@@ -661,7 +779,11 @@
     </section>
 
 
-    <!-- NANOSCALE -->
+
+    <!-- ==================================================
+         NANOSCALE RINGS
+         ================================================== -->
+
     <section class="section">
 
       <div class="container">
@@ -670,6 +792,7 @@
           Scaling Down
         </p>
 
+
         <div class="project-section">
 
           <h2>
@@ -677,9 +800,9 @@
           </h2>
 
           <p>
-            Reducing the ring dimensions pushes the fabrication toward
-            the length scales relevant to superconducting coherence.
-            At this point, electron-beam lithography, pattern-transfer
+            Reducing the ring dimensions pushes fabrication toward the
+            length scales relevant to superconducting coherence. At
+            this point, electron-beam lithography, pattern-transfer
             fidelity, and high-resolution metrology become central to
             the experiment.
           </p>
@@ -690,7 +813,7 @@
         <figure class="project-figure project-figure-wide">
 
           <img
-            src="img/projects/ring-nanoscale-sem.png"
+            src="img/projects/ringring.jpeg"
             alt="High-resolution SEM images of nanoscale superconducting rings"
           />
 
@@ -725,7 +848,11 @@
     </section>
 
 
-    <!-- AFM -->
+
+    <!-- ==================================================
+         AFM CHARACTERIZATION
+         ================================================== -->
+
     <section class="section">
 
       <div class="container">
@@ -733,6 +860,7 @@
         <p class="section-label">
           Characterization
         </p>
+
 
         <div class="project-section">
 
@@ -753,7 +881,7 @@
         <figure class="project-figure project-figure-wide">
 
           <img
-            src="img/projects/ring-afm-comparison.png"
+            src="img/projects/nanoafm-rings.png"
             alt="AFM images of superconducting ring devices at different scan sizes"
           />
 
@@ -769,7 +897,7 @@
         <figure class="project-figure project-figure-small">
 
           <img
-            src="img/projects/ring-afm-3d.png"
+            src="img/projects/rings-afm.png"
             alt="Three-dimensional AFM topography of a superconducting ring"
           />
 
@@ -786,7 +914,11 @@
     </section>
 
 
-    <!-- LITTLE PARKS PHYSICS -->
+
+    <!-- ==================================================
+         LITTLE-PARKS PHYSICS
+         ================================================== -->
+
     <section class="section">
 
       <div class="container">
@@ -794,6 +926,7 @@
         <p class="section-label">
           Little–Parks Physics
         </p>
+
 
         <div class="project-section">
 
@@ -805,15 +938,21 @@
             In a thin-walled superconducting ring near the transition
             temperature, the allowed superconducting state adjusts as
             magnetic flux is threaded through the loop. The system
-            selects the integer winding number that minimizes its free
+            selects an integer winding number that minimizes its free
             energy.
           </p>
 
+
           <div class="equation-box">
+
             Φ = B A<sub>eff</sub>
+
             <br />
+
             Φ<sub>0</sub> = h / 2e
+
           </div>
+
 
           <p>
             As the applied flux changes, the preferred winding number
@@ -822,37 +961,47 @@
             magnetic flux.
           </p>
 
+
           <div class="physics-chain">
 
             <div class="physics-item">
               Magnetic flux
             </div>
 
-            <div class="physics-arrow">→</div>
+            <div class="physics-arrow">
+              →
+            </div>
 
             <div class="physics-item">
               Phase winding
             </div>
 
-            <div class="physics-arrow">→</div>
+            <div class="physics-arrow">
+              →
+            </div>
 
             <div class="physics-item">
               Supercurrent
             </div>
 
-            <div class="physics-arrow">→</div>
+            <div class="physics-arrow">
+              →
+            </div>
 
             <div class="physics-item">
               Free energy
             </div>
 
-            <div class="physics-arrow">→</div>
+            <div class="physics-arrow">
+              →
+            </div>
 
             <div class="physics-item">
               T<sub>c</sub>
             </div>
 
           </div>
+
 
           <p>
             The superconducting transition temperature consequently
@@ -862,6 +1011,18 @@
             in T<sub>c</sub> produces a measurable change in resistance.
           </p>
 
+
+          <div class="project-note">
+
+            <p>
+              <strong>Little–Parks effect.</strong>
+              The fundamental periodicity corresponds to one
+              superconducting flux quantum passing through the effective
+              area of the ring.
+            </p>
+
+          </div>
+
         </div>
 
       </div>
@@ -869,7 +1030,11 @@
     </section>
 
 
-    <!-- PERIOD -->
+
+    <!-- ==================================================
+         GEOMETRY AND PERIODICITY
+         ================================================== -->
+
     <section class="section">
 
       <div class="container">
@@ -878,6 +1043,7 @@
           Geometry ↔ Quantum Periodicity
         </p>
 
+
         <div class="project-section">
 
           <h2>
@@ -885,22 +1051,29 @@
           </h2>
 
           <p>
-            One flux quantum is added when the magnetic flux through the
-            effective loop area changes by Φ<sub>0</sub>. The expected
-            magnetic-field period is therefore
+            One flux quantum corresponds to a change in magnetic flux
+            through the effective loop area of Φ<sub>0</sub>. The
+            characteristic magnetic-field period is therefore
           </p>
 
+
           <div class="equation-box">
+
             ΔB =
-            Φ<sub>0</sub> / A<sub>eff</sub>
+            Φ<sub>0</sub>
+            /
+            A<sub>eff</sub>
+
           </div>
 
+
           <p>
-            This equation provides the direct bridge between fabrication
+            This equation provides a direct bridge between fabrication
             and measurement: the dimensions observed by microscopy
             determine the characteristic magnetic-field scale expected
             from flux quantization.
           </p>
+
 
           <div class="project-note">
 
@@ -921,7 +1094,11 @@
     </section>
 
 
-    <!-- GL -->
+
+    <!-- ==================================================
+         GINZBURG-LANDAU
+         ================================================== -->
+
     <section class="section">
 
       <div class="container">
@@ -930,39 +1107,55 @@
           Ginzburg–Landau Picture
         </p>
 
+
         <div class="project-section">
 
           <h2>
-            Connecting coherence length, ring radius and T<sub>c</sub>
+            Connecting coherence length, ring radius and
+            T<sub>c</sub>
           </h2>
 
           <p>
-            Near the superconducting transition, the Little–Parks effect
-            can be described within Ginzburg–Landau theory. For a
-            thin-walled ring, the suppression of the transition
+            Near the superconducting transition, the Little–Parks
+            effect can be described within Ginzburg–Landau theory.
+            For a thin-walled ring, the suppression of the transition
             temperature depends on the mismatch between the applied
             flux and the nearest allowed fluxoid state.
           </p>
 
+
           <div class="equation-box">
+
             ΔT<sub>c</sub> / T<sub>c</sub>
+
             ∝
+
             ξ² / r²
+
             &nbsp;
+
             (n − Φ / Φ<sub>0</sub>)²
+
           </div>
 
+
           <p>
-            The periodic array of superconducting states is centered at
-            integer values of Φ/Φ<sub>0</sub>. The suppression of
-            T<sub>c</sub> becomes largest between neighboring integer
-            states, while the system switches winding number to remain
-            in the lowest available free-energy state.
+            The periodic array of superconducting states is centered
+            at integer values of Φ/Φ<sub>0</sub>. Between neighboring
+            integer states, the circulating supercurrent increases the
+            kinetic-energy contribution and suppresses the transition
+            temperature.
           </p>
 
           <p>
-            This also explains why device dimensions matter so strongly:
-            the characteristic response contains the ratio between the
+            The system changes winding number as the applied flux
+            increases, producing a periodic sequence of lowest-energy
+            superconducting states.
+          </p>
+
+          <p>
+            Device dimensions therefore matter fundamentally: the
+            characteristic response contains the ratio between the
             superconducting coherence length and the ring radius.
           </p>
 
@@ -973,7 +1166,11 @@
     </section>
 
 
-    <!-- WHAT PROJECT CONNECTS -->
+
+    <!-- ==================================================
+         PROJECT PERSPECTIVE
+         ================================================== -->
+
     <section class="section">
 
       <div class="container">
@@ -981,6 +1178,7 @@
         <p class="section-label">
           Project Perspective
         </p>
+
 
         <div class="project-section">
 
@@ -991,11 +1189,12 @@
           <p>
             Superconducting ring devices sit at the intersection of
             nanofabrication, materials science, low-temperature
-            transport and quantum physics. Successfully interpreting
-            such a device requires the fabrication geometry,
-            superconducting length scales and electrical measurement
-            to be considered together.
+            transport, and quantum physics. Understanding such a device
+            requires the fabrication geometry, superconducting length
+            scales, and electrical measurement to be considered
+            together.
           </p>
+
 
           <div class="project-note">
 
@@ -1013,11 +1212,17 @@
 
           <div class="project-navigation">
 
-            <a href="Projects.html" class="text-link">
+            <a
+              href="Projects.html"
+              class="text-link"
+            >
               ← Back to Projects
             </a>
 
-            <a href="HallTransport.html" class="text-link">
+            <a
+              href="HallTransport.html"
+              class="text-link"
+            >
               Hall Transport Project →
             </a>
 
@@ -1033,7 +1238,11 @@
   </main>
 
 
-  <!-- FOOTER -->
+
+  <!-- ==================================================
+       FOOTER
+       ================================================== -->
+
   <footer class="site-footer">
 
     <div class="container">
